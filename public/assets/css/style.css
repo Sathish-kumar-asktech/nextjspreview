@@ -594,7 +594,7 @@ a.theme-btn.style-four:not(:hover):after {
 
 /* List style Two */
 .list-style-two li:not(:last-child) {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .list-style-two li a {
@@ -4335,17 +4335,19 @@ h6,
     align-items: center;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
+    background-color: white;
     justify-content: start;
   }
 }
 .main-menu .navbar-header .navbar-toggle {
   float: right;
-  padding: 4px 0;
+  padding: 4px 15px;
   cursor: pointer;
   background: transparent;
 }
 .main-menu .navbar-header .navbar-toggle .icon-bar {
-  background: var(--base-color);
+  /* background: var(--base-color); */
+  background: white;
   height: 2px;
   width: 30px;
   display: block;
@@ -4663,7 +4665,9 @@ h6,
 
 .main-header.menu-white .menu-sidebar button .icon-bar,
 .main-header.menu-white .main-menu .navbar-toggle .icon-bar {
-  background: white;
+  /* background: white; */
+  background: rgb(27, 18, 67);
+ 
 }
 
 .main-header.menu-white .toggle-btn {
@@ -4701,7 +4705,7 @@ h6,
   margin-top: -50px;
   margin-right: 25px;
   padding: 25px 30px;
-  background: var(--secondary-color);
+  background: var(--secondary-color);f
   -webkit-clip-path: polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%);
   clip-path: polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%);
 }
@@ -4715,10 +4719,13 @@ h6,
 }
 
 .main-header.header-one .mobile-logo {
-  padding: 10px 25px;
-  background: var(--secondary-color);
-  -webkit-clip-path: polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%);
-  clip-path: polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%);
+  padding: 10px 16px;
+  /* position: relative;
+  right: 20px; */
+  background: white;
+  /* -webkit-clip-path: polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%);
+  clip-path: polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%); */
+
 }
 .main-header.header-one .mobile-logo img {
   max-height: 50px;
@@ -4865,10 +4872,15 @@ h6,
   }
 }
 
+.new-font-play
+{
+  font-family: 'Play', sans-serif;
+}
+
 .hero-images {
   z-index: 1;
   position: relative;
-  margin-bottom: -71px;
+  margin-bottom: -56px;
 }
 @media only screen and (min-width: 1400px) {
   .hero-images {
@@ -5834,6 +5846,12 @@ h6,
 .why-choose-image {
   position: relative;
   z-index: 1;
+}
+
+.why-choose-img {
+  object-fit: contain;
+  max-height: fit-content;
+  mix-blend-mode: multiply;
 }
 .why-choose-image:before {
   content: "";
@@ -11086,7 +11104,8 @@ blockquote .name:before {
 .footer-logo {
   padding: 25px 30px;
   display: inline-block;
-  background: var(--secondary-color);
+  background-color: white;
+  /* background: var(--secondary-color); */
   -webkit-clip-path: polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%);
   clip-path: polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%);
 }

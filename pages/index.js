@@ -72,9 +72,11 @@ const Index = () => {
       <section className="hero-area bgc-gray rel z-1">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6 align-self-center">
+            <div className="col-lg-6 align-self-center mb-3">
               <div className="hero-content pt-115 pb-125 rpb-0 wow fadeInUp delay-0-4s">
-                <h1>WE BRING SUCCESS TO YOUR GREAT BUSINESS</h1>
+                <h1 style={{ fontFamily: "play" }}>
+                  WE BRING SUCCESS TO YOUR GREAT BUSINESS
+                </h1>
                 <p>
                   Revolutionize your operations with Ask Technology's
                   cutting-edge solutions. From ERP tailored for Textile &
@@ -138,7 +140,9 @@ const Index = () => {
             <div className="col-lg-6">
               <div className="about-content rmb-65 wow fadeInLeft delay-0-2s">
                 <div className="section-title mb-30">
-                  <span className="sub-title mb-15">About Company</span>
+                  <span className="sub-title mb-15 new-font-play">
+                    About Company
+                  </span>
                   <h3>Empowering Businesses with Innovative Solutions</h3>
                 </div>
                 <p>
@@ -245,12 +249,13 @@ const Index = () => {
       </section>
       {/* About Area end */}
       {/* Hero Section End */}
+
       {/* Partners Area start */}
-      <section className="partners-area mt-60 pb-100 pt-150 rmt-30 rpb-70 rel z-1">
+      <section className="partners-area pb-100 pt-150 rmt-30 rpb-70 rel z-1">
         <div>
           <div className="section-title text-center mb-50 wow fadeInUp delay-0-2s">
             {/* <span className="sub-title mb-15">Global Partners</span> */}
-            <h2>Our Partners</h2>
+            <h2 className="new-font-play">Our Partners</h2>
           </div>
           <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 justify-content-center">
             <Marquee
@@ -312,7 +317,7 @@ const Index = () => {
         <div className="container">
           <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
             {/* <span className="sub-title mb-15">Learn Our Project</span> */}
-            <h2>
+            <h2 className="new-font-play">
               PRODUCTS & <span style={{ color: "#9376E0" }}>SERVICES</span>
             </h2>
           </div>
@@ -690,7 +695,7 @@ const Index = () => {
             </div>
 
             <div className="col-xl-6 col-md-6">
-              <div className="service-two-item wow fadeInUp delay-0-3s">
+              <div className="service-two-item mx-4 wow fadeInUp delay-0-3s">
                 <BootstrapTooltip
                   title="Learn More about mobile services"
                   arrow
@@ -724,7 +729,7 @@ const Index = () => {
             </div>
 
             <div className="col-xl-6 col-md-6">
-              <div className="service-two-item wow fadeInUp delay-0-4s">
+              <div className="service-two-item mx-4 wow fadeInUp delay-0-4s">
                 <div className="d-flex justify-content-start align-items-center gap-4">
                   <div className="icon">
                     <img src="assets/images/about/erp.png" className="icon" />
@@ -750,7 +755,7 @@ const Index = () => {
             </div>
 
             <div className="col-xl-6 col-md-6">
-              <div className="service-two-item wow fadeInUp delay-0-4s">
+              <div className="service-two-item mx-4 wow fadeInUp delay-0-4s">
                 <div className="d-flex justify-content-start align-items-center gap-4">
                   <div className="icon">
                     <img src="assets/images/about/crm.png" className="icon" />
@@ -775,7 +780,7 @@ const Index = () => {
             </div>
 
             <div className="col-xl-6 col-md-6">
-              <div className="service-two-item wow fadeInUp delay-0-6s">
+              <div className="service-two-item mx-4 wow fadeInUp delay-0-6s">
                 <div className="d-flex justify-content-start align-items-center gap-4">
                   <div className="icon">
                     <img
@@ -803,7 +808,7 @@ const Index = () => {
             </div>
 
             <div className="col-xl-6 col-md-6">
-              <div className="service-two-item wow fadeInUp delay-0-5s">
+              <div className="service-two-item mx-4 wow fadeInUp delay-0-5s">
                 <div className="d-flex justify-content-start align-items-center gap-4">
                   <div className="icon">
                     {/* <i className="flaticon-logo" /> */}
@@ -829,7 +834,7 @@ const Index = () => {
             </div>
 
             <div className="col-xl-6 col-md-6">
-              <div className="service-two-item wow fadeInUp delay-0-7s">
+              <div className="service-two-item mx-4 wow fadeInUp delay-0-7s">
                 <div className="d-flex justify-content-between align-items-center gap-4">
                   <div className="icon">
                     {/* <i className="flaticon-seo" /> */}
@@ -934,7 +939,7 @@ const Index = () => {
 
       {/* Techveel Area End */}
       {/* Techveel Area start */}
-      <section className="about-area-four pt-25 mb-5 rpt-0 rel z-2">
+      <section className=" about-area-four pt-25 mb-5 rpt-0 rel z-2">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-xl-6">
@@ -1091,10 +1096,10 @@ const Index = () => {
           <div className="row justify-content-center">
             <div className="col-xl-8">
               <div className="section-title text-center mb-45 wow fadeInUp delay-0-2s">
-                <span className="sub-title mb-15">
+                <span className="sub-title mb-15 new-font-play">
                   Why Choose Ask Technology
                 </span>
-                <h5>
+                <h5 className="my-4">
                   At Ask Technology, we understand that the right technology
                   partner can make all the difference. Here's why we stand out
                   in the crowded tech landscape
@@ -1190,8 +1195,12 @@ const Index = () => {
                     <div className="col-lg-6">
                       <div className="why-choose-image rmb-55">
                         <img
-                          src="assets/images/about/why-choose1.jpg"
+                          src={
+                            "https://ik.imagekit.io/sathishask2024/Deconstructed.gif?updatedAt=1710852540100"
+                          }
+                          // src="assets/images/about/why-choose1.jpg"
                           alt="Why Choose"
+                          className="why-choose-img "
                         />
                       </div>
                     </div>
@@ -1251,8 +1260,9 @@ const Index = () => {
                     <div className="col-lg-6">
                       <div className="why-choose-image rmt-55">
                         <img
-                          src="assets/images/about/why-choose1.jpg"
+                          src="https://ik.imagekit.io/sathishask2024/Visionary%20technology-amico.png?updatedAt=1710852508007"
                           alt="Why Choose"
+                          className="why-choose-img "
                         />
                       </div>
                     </div>

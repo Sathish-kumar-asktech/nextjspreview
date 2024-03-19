@@ -25,7 +25,7 @@ const Footer = () => {
               <div className="content">
                 <span>Hotline</span>
                 <br />
-                <a href="callto:+000(123)45688">+000 (123) 456 88</a>
+                <a href="callto:+000(123)45688">+044 4503 4080</a>
               </div>
             </div>
           </div>
@@ -42,15 +42,11 @@ const Footer = () => {
                   </a>
                 </Link>
               </div>
-              <p>
-                Sed perspiciatis unde omnste natus error voluptatem accusanti
-                doloreue audantium totamrem aeriam.
+              <p style={{color:'white'}}>
+                #36,2nd floor, Railway Border Rd, opposite to
+                Kodambakkam Railway Station, Akbarabad, Kodambakkam, Chennai,
+                Tamil Nadu 600024 .
               </p>
-              <Link legacyBehavior href="/about">
-                <a className="read-more">
-                  Learn More Us <i className="fas fa-long-arrow-right" />
-                </a>
-              </Link>
             </div>
           </div>
           <div className="col-xl-3 col-sm-6 order-xl-2">
@@ -139,39 +135,34 @@ const Footer = () => {
                   <ul className="list-style-two">
                     <li>
                       <Link legacyBehavior href="service-details">
-                        <a>Product Design</a>
+                        <a>Mobile App Solutions</a>
                       </Link>
                     </li>
                     <li>
                       <Link legacyBehavior href="service-details">
-                        <a>Design &amp; Development</a>
+                        <a>Enterprise Application  Development</a>
                       </Link>
                     </li>
                     <li>
                       <Link legacyBehavior href="service-details">
-                        <a>UX/UI Strategy</a>
+                        <a>Ecommerce Application Development</a>
                       </Link>
                     </li>
                     <li>
                       <Link legacyBehavior href="service-details">
-                        <a>Search Engine</a>
+                        <a>UI/UX Strategy</a>
                       </Link>
                     </li>
                     <li>
                       <Link legacyBehavior href="service-details">
-                        <a>IT Consulting</a>
+                        <a>Digital Marketing</a>
                       </Link>
                     </li>
                     <li>
                       <Link legacyBehavior href="service-details">
-                        <a>Software Development</a>
+                        <a>ERP Software Development</a>
                       </Link>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="service-details">
-                        <a>Business Analysis</a>
-                      </Link>
-                    </li>
+                    </li>                  
                   </ul>
                 </div>
               </div>

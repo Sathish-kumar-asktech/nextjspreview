@@ -33,7 +33,7 @@ const Header4 = () => {
                 {/* Main Menu End*/}
               </div>
               {/* Nav Search */}
-              <div className="nav-search py-10">
+              <div className="nav-search py-10 bg-white">
                 <Search />
               </div>
               {/* Menu Button */}

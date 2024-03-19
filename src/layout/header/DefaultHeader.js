@@ -30,9 +30,9 @@ const DefaultHeader = () => {
               {/* Main Menu End*/}
             </div>
             {/* Nav Search */}
-            <div className="nav-search ms-xl-auto py-10">
+            {/* <div className="nav-search ms-xl-auto py-10">
               <Search />
-            </div>
+            </div> */}
             {/* Menu Button */}
             <div className="menu-btns">
               <Link legacyBehavior href="/contact">

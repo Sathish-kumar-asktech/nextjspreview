@@ -37,6 +37,7 @@
 
 .mobile-menu {
   display: none;
+  /* background-color: white; */
 }
 .desktop-menu {
   display: block;
