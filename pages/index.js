@@ -3,10 +3,8 @@ import { TestimonialsSlider2 } from "@/src/components/slider/TestimonialsSlider"
 import { projectSliderActive } from "@/src/sliderProps";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-// import "@/styles/buttons.css";
-// import Marquee, { Motion } from "react-marquee-slider";
-// import _ from "lodash";
-// import { randomIntFromInterval } from "./utils";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import ProgressBar from "@/src/components/ProgressBar";
 import mockup from "@/public/assets/images/about/mockup.png";
 import Marquee from "react-fast-marquee";
@@ -15,6 +13,12 @@ import { styled } from "@mui/material/styles";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import { Nav, Tab } from "react-bootstrap";
+
+import {
+  mainSliderActive,
+  serviceThreeSlider,
+  testimonialThreeSlider,
+} from "@/src/sliderProps";
 
 const Counter = dynamic(() => import("@/src/components/Counter"), {
   ssr: false,
@@ -66,6 +70,9 @@ const PartnerIcon = ({ imageName }) => (
 );
 
 const Index = () => {
+  const theme = useTheme();
+  const matchesSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <Layout header={1}>
       {/* Hero Section Start */}
@@ -261,7 +268,7 @@ const Index = () => {
             <Marquee
               direction="right"
               pauseOnHover
-              gradient={500}
+              gradient={100}
               loop={0}
               autoFill
             >
@@ -684,10 +691,9 @@ const Index = () => {
       <section className="services-area bgc-gray text-white pt-75 pb-10 rel z-1">
         <div className="container">
           <div className="row medium-gap">
-            <div className="col-xl-12 col-md-6">
-              <div className="section-title mb-60 wow fadeInUp delay-0-2s">
+            <div className="col-xl-12 col-md-12">
+              <div className={`${matchesSmallScreen && "text-center"} section-title mb-60 wow fadeInUp delay-0-2s`}>
                 <span className="sub-title mb-15">Our Services</span>
-
                 <h2 style={{ fontFamily: "Oswald", color: "#EEF5FF" }}>
                   We Provide Best IT Services
                 </h2>
@@ -701,21 +707,27 @@ const Index = () => {
                   arrow
                   placement="bottom-end"
                 >
-                  <div className="d-flex justify-content-start align-items-center gap-4">
+                  <div
+                    className={`${
+                      matchesSmallScreen && "flex-column"
+                    } d-flex   justify-content-start align-items-center gap-4`}
+                  >
                     <div className="icon">
                       <img
                         src="assets/images/about/mobile-app.png"
                         className="icon"
                       />
-                      {/* <i className="flaticon-app-development" /> */}
                     </div>
                     <div className="content">
-                      <h4 style={{ fontFamily: "Oswald" }}>
+                      <h4
+                        style={{ fontFamily: "Oswald" }}
+                        className={`${matchesSmallScreen && "text-center"}`}
+                      >
                         <Link legacyBehavior href="service-details">
                           Mobile App Solutions
                         </Link>
                       </h4>
-                      <p>
+                      <p className={`${matchesSmallScreen && "text-center"}`}>
                         Unlock the potential of mobile technology with our
                         bespoke mobile app solutions. From concept to
                         deployment, we craft intuitive and engaging apps
@@ -730,18 +742,25 @@ const Index = () => {
 
             <div className="col-xl-6 col-md-6">
               <div className="service-two-item mx-4 wow fadeInUp delay-0-4s">
-                <div className="d-flex justify-content-start align-items-center gap-4">
+                <div
+                  className={`${
+                    matchesSmallScreen && "flex-column"
+                  } d-flex   justify-content-start align-items-center gap-4`}
+                >
                   <div className="icon">
                     <img src="assets/images/about/erp.png" className="icon" />
                     {/* <i className="flaticon-networking" /> */}
                   </div>
                   <div className="content">
-                    <h4 style={{ fontFamily: "Oswald" }}>
+                    <h4
+                      style={{ fontFamily: "Oswald" }}
+                      className={`${matchesSmallScreen && "text-center"}`}
+                    >
                       <Link legacyBehavior href="service-details">
                         ERP Software Development
                       </Link>
                     </h4>
-                    <p>
+                    <p className={`${matchesSmallScreen && "text-center"}`}>
                       Transform your business operations with our custom ERP
                       software development services. Tailored to your unique
                       requirements, our ERP solutions streamline processes,
@@ -756,18 +775,25 @@ const Index = () => {
 
             <div className="col-xl-6 col-md-6">
               <div className="service-two-item mx-4 wow fadeInUp delay-0-4s">
-                <div className="d-flex justify-content-start align-items-center gap-4">
+                <div
+                  className={`${
+                    matchesSmallScreen && "flex-column"
+                  } d-flex   justify-content-start align-items-center gap-4`}
+                >
                   <div className="icon">
                     <img src="assets/images/about/crm.png" className="icon" />
                     {/* <i className="flaticon-networking" /> */}
                   </div>
                   <div className="content">
-                    <h4 style={{ fontFamily: "Oswald" }}>
+                    <h4
+                      style={{ fontFamily: "Oswald" }}
+                      className={`${matchesSmallScreen && "text-center"}`}
+                    >
                       <Link legacyBehavior href="service-details">
                         Enterprise Application Development
                       </Link>
                     </h4>
-                    <p>
+                    <p className={`${matchesSmallScreen && "text-center"}`}>
                       Empower your business with scalable and robust enterprise
                       applications that streamline operations and enhance
                       productivity. Our custom-built solutions are designed to
@@ -781,7 +807,11 @@ const Index = () => {
 
             <div className="col-xl-6 col-md-6">
               <div className="service-two-item mx-4 wow fadeInUp delay-0-6s">
-                <div className="d-flex justify-content-start align-items-center gap-4">
+                <div
+                  className={`${
+                    matchesSmallScreen && "flex-column"
+                  } d-flex   justify-content-start align-items-center gap-4`}
+                >
                   <div className="icon">
                     <img
                       src="assets/images/about/ecommerce.png"
@@ -790,12 +820,15 @@ const Index = () => {
                     {/* <i className="flaticon-coding" /> */}
                   </div>
                   <div className="content">
-                    <h4 style={{ fontFamily: "Oswald" }}>
+                    <h4
+                      style={{ fontFamily: "Oswald" }}
+                      className={`${matchesSmallScreen && "text-center"}`}
+                    >
                       <Link legacyBehavior href="service-details">
                         Ecommerce Application Development
                       </Link>
                     </h4>
-                    <p>
+                    <p className={`${matchesSmallScreen && "text-center"}`}>
                       Revolutionize your online presence with our ecommerce
                       application development services. From user-friendly
                       interfaces to secure payment gateways, we create dynamic
@@ -809,19 +842,26 @@ const Index = () => {
 
             <div className="col-xl-6 col-md-6">
               <div className="service-two-item mx-4 wow fadeInUp delay-0-5s">
-                <div className="d-flex justify-content-start align-items-center gap-4">
+                <div
+                  className={`${
+                    matchesSmallScreen && "flex-column"
+                  } d-flex   justify-content-start align-items-center gap-4`}
+                >
                   <div className="icon">
                     {/* <i className="flaticon-logo" /> */}
                     <img src="assets/images/about/ui.png" className="icon" />
                   </div>
 
                   <div className="content">
-                    <h4 style={{ fontFamily: "Oswald" }}>
+                    <h4
+                      style={{ fontFamily: "Oswald" }}
+                      className={`${matchesSmallScreen && "text-center"}`}
+                    >
                       <Link legacyBehavior href="service-details">
                         UI/UX Strategy
                       </Link>
                     </h4>
-                    <p>
+                    <p className={`${matchesSmallScreen && "text-center"}`}>
                       Elevate your digital presence with our UI/UX strategy
                       services. We combine innovative design principles with
                       user-centric strategies to create intuitive interfaces and
@@ -835,18 +875,25 @@ const Index = () => {
 
             <div className="col-xl-6 col-md-6">
               <div className="service-two-item mx-4 wow fadeInUp delay-0-7s">
-                <div className="d-flex justify-content-between align-items-center gap-4">
+                <div
+                  className={`${
+                    matchesSmallScreen && "flex-column"
+                  } d-flex   justify-content-start align-items-center gap-4`}
+                >
                   <div className="icon">
                     {/* <i className="flaticon-seo" /> */}
                     <img src="assets/images/about/video.png" className="icon" />
                   </div>
                   <div className="content">
-                    <h4 style={{ fontFamily: "Oswald" }}>
+                    <h4
+                      style={{ fontFamily: "Oswald" }}
+                      className={`${matchesSmallScreen && "text-center"}`}
+                    >
                       <Link legacyBehavior href="service-details">
                         Digital Marketing
                       </Link>
                     </h4>
-                    <p>
+                    <p className={`${matchesSmallScreen && "text-center"}`}>
                       Amplify your online reach and drive growth with our
                       digital marketing solutions. From SEO and PPC campaigns to
                       social media management, we help you navigate the digital
@@ -1577,7 +1624,7 @@ const Index = () => {
                     <Marquee
                       direction="left"
                       pauseOnClick
-                      gradient={500}
+                      gradient={100}
                       loop={0}
                       autoFill
                       speed={90}
@@ -1607,7 +1654,7 @@ const Index = () => {
                     <Marquee
                       direction="right"
                       pauseOnClick
-                      gradient={500}
+                      gradient={100}
                       loop={0}
                       autoFill
                       speed={90}
@@ -1625,178 +1672,226 @@ const Index = () => {
       </section>
       {/* Skills Area end */}
 
-      {/* Pricing Plan Area start */}
-      {/* <section className="price-plan-area bgc-lighter mt-30 rmt-0 pt-220 pb-100 rpb-70 rel z-1">
-        <div className="container pt-20">
-          <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
-            <span className="sub-title mb-15">Amazing Pricing Plan</span>
-            <h2>Affordable Pricing Packages</h2>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-xl-4 col-md-6">
-              <div className="pricing-plan-item wow fadeInUp delay-0-2s">
-                <span className="badge">Best Package</span>
-                <h4 className="title">Basic Plan</h4>
-                <span className="price-count">5 Services Included</span>
-                <span className="price">29.85</span>
-                <Link legacyBehavior href="/pricing">
-                  <a className="theme-btn style-two">
-                    Choose Package <i className="fas fa-long-arrow-right" />
-                  </a>
-                </Link>
-                <h5>This Plan Included :</h5>
-                <ul>
-                  <li>
-                    <a href="#">Premium Quality Supports (24/7)</a>
-                  </li>
-                  <li>
-                    <a href="#">IT Consultations (Business Growth)</a>
-                  </li>
-                  <li>
-                    <a href="#">Web Design &amp; Development</a>
-                  </li>
-                  <li>
-                    <a href="#">Search Engine Optimization (SEO )</a>
-                  </li>
-                  <li>
-                    <a href="#">User &amp; Market Research</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="pricing-plan-item wow fadeInUp delay-0-4s">
-                <span className="badge">Best Package</span>
-                <h4 className="title">standard Plan</h4>
-                <span className="price-count">7 Services Included</span>
-                <span className="price">49.64</span>
-                <Link legacyBehavior href="/pricing">
-                  <a className="theme-btn style-two">
-                    Choose Package <i className="fas fa-long-arrow-right" />
-                  </a>
-                </Link>
-                <h5>This Plan Included :</h5>
-                <ul>
-                  <li>
-                    <a href="#">Premium Quality Supports (24/7)</a>
-                  </li>
-                  <li>
-                    <a href="#">IT Consultations (Business Growth)</a>
-                  </li>
-                  <li>
-                    <a href="#">Web Design &amp; Development</a>
-                  </li>
-                  <li>
-                    <a href="#">Search Engine Optimization (SEO )</a>
-                  </li>
-                  <li>
-                    <a href="#">User &amp; Market Research</a>
-                  </li>
-                  <li>
-                    <a href="#">UX/UI Strategy (Design &amp; Develop)</a>
-                  </li>
-                  <li>
-                    <a href="#">Product Engineering</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="pricing-plan-item wow fadeInUp delay-0-6s">
-                <span className="badge">Best Package</span>
-                <h4 className="title">Golden Package</h4>
-                <span className="price-count">7 Services Included</span>
-                <span className="price">98.73</span>
-                <Link legacyBehavior href="/pricing">
-                  <a className="theme-btn style-two">
-                    Choose Package <i className="fas fa-long-arrow-right" />
-                  </a>
-                </Link>
-                <h5>This Plan Included :</h5>
-                <ul>
-                  <li>
-                    <a href="#">Premium Quality Supports (24/7)</a>
-                  </li>
-                  <li>
-                    <a href="#">IT Consultations (Business Growth)</a>
-                  </li>
-                  <li>
-                    <a href="#">Web Design &amp; Development</a>
-                  </li>
-                  <li>
-                    <a href="#">Search Engine Optimization (SEO )</a>
-                  </li>
-                  <li>
-                    <a href="#">User &amp; Market Research</a>
-                  </li>
-                  <li>
-                    <a href="#">UX/UI Strategy (Design &amp; Develop)</a>
-                  </li>
-                  <li>
-                    <a href="#">Product Engineering</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="price-shapes">
-          <img
-            className="shape one wow fadeInLeft delay-0-5s"
-            src="assets/images/shapes/price-left.png"
-            alt="Shape"
-          />
-          <img
-            className="shape two"
-            src="assets/images/shapes/price-right.png"
-            alt="Shape"
-          />
-        </div>
-      </section> */}
-      {/* Pricing Plan Area end */}
-
-      {/* Testimonials Area start */}
-      <section className="testimonials-area py-130 rpy-100 rel z-1">
+   
+     
+      
+      {/* Contact Form Section Start */}
+      <section
+        className="contact-form-area py-130 rpy-100 bgs-cover"
+        style={{
+          backgroundImage: "url(assets/images/background/contact-form-bg.jpg)",
+        }}
+      >
         <div className="container">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-xl-5 col-lg-6">
-              <div className="testimonial-left-part rmb-85 wow fadeInLeft delay-0-2s">
-                <div className="section-title mb-45">
-                  <span className="sub-title mb-15">Our Testimonials</span>
-                  <h2>What Our Clients Say About Solutions</h2>
+          <div className="row gap-100 align-items-center">
+            <div className="col-lg-7">
+              <div className="contact-form bg-white p-80 rmb-55 wow fadeInRight delay-0-2s">
+                <div className="section-title mb-30">
+                  <h3>Get In Touch With Us</h3>
                 </div>
-                <TestimonialsSlider2 />
+                <form
+                  onSubmit={(e) => e.preventDefault()}
+                  className="form-style-one"
+                  action="#"
+                  name="contact-form"
+                >
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          className="form-control"
+                          defaultValue=""
+                          placeholder="Full name"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          id="phone"
+                          name="phone"
+                          className="form-control"
+                          defaultValue=""
+                          placeholder="Phone Number"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-12">
+                      <div className="form-group">
+                        <input
+                          type="email"
+                          id="emailid"
+                          name="email"
+                          className="form-control"
+                          defaultValue=""
+                          placeholder="Email"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-12">
+                      <div className="form-group">
+                        <textarea
+                          name="message"
+                          id="message"
+                          className="form-control"
+                          rows={3}
+                          placeholder="Message"
+                          required
+                          defaultValue={""}
+                        />
+                      </div>
+                    </div>
+                    <div className="col-xl-12">
+                      <div className="form-group mb-0">
+                        <button
+                          type="submit"
+                          className="theme-btn style-two mt-15 w-100"
+                        >
+                          send message <i className="far fa-long-arrow-right" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
-            <div className="col-lg-6">
-              <div className="testimonial-right-part wow fadeInRight delay-0-2s">
-                <img
-                  src="assets/images/testimonials/testimonial.jpg"
-                  alt="Testimonial"
-                />
-                <div className="testi-image-over">
-                  <h3>We Have More 3248+ Reviews From Global Clients</h3>
-                  <img
-                    src="assets/images/testimonials/signature.png"
-                    alt="Signature"
-                  />
+            <div className="col-lg-5">
+              <div className="contact-info-wrap wow fadeInLeft delay-0-2s">
+                <div className="section-title mb-40">
+                  <span className="sub-title mb-10">Need Consultations ?</span>
+                  <h2>Have A Project? We Would Love To Hear From You.</h2>
                 </div>
-                <div className="dot-shapes">
-                  <img
-                    src="assets/images/testimonials/testimonial-dots.png"
-                    alt="Dots"
-                  />
-                  <img
-                    src="assets/images/testimonials/testimonial-dots.png"
-                    alt="Dots"
-                  />
+                <div className="contact-info-part">
+                  <div className="contact-info-item">
+                    <div className="icon">
+                      <i className="far fa-map-marked-alt" />
+                    </div>
+                    <div className="content">
+                      <span>Location</span>
+                      <h5>55 Main Street, New York</h5>
+                    </div>
+                  </div>
+                  <div className="contact-info-item">
+                    <div className="icon">
+                      <i className="far fa-envelope-open-text" />
+                    </div>
+                    <div className="content">
+                      <span>Email Us</span>
+                      <h5>
+                        <a href="mailto:support@gmail.com">support@gmail.com</a>
+                      </h5>
+                    </div>
+                  </div>
+                  <div className="contact-info-item">
+                    <div className="icon">
+                      <i className="far fa-phone" />
+                    </div>
+                    <div className="content">
+                      <span>Hotline</span>
+                      <h5>
+                        <a href="calto:+000(123)45688">+000 (123) 456 88</a>
+                      </h5>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* Testimonials Area end */}
+      {/* Contact Form Section End */}
+      {/* Testimonials Area Three Start */}
+      <section className="testimonials-three-area py-130 rpy-100">
+        <div className="container">
+          <div className="row gap-80 align-items-center">
+            <div className="col-xl-7 col-lg-6">
+              <div className="testimonials-three-image rmb-55 wow fadeInLeft delay-0-2s">
+                <img
+                  src="assets/images/testimonials/testimonials-three.png"
+                  alt="Testimonials"
+                />
+              </div>
+            </div>
+            <div className="col-xl-5 col-lg-6">
+              <div className="testimonials-three-wrap wow fadeInRight delay-0-2s">
+                <div className="section-title mb-45">
+                  <span className="sub-title mb-10">Our Testimonials</span>
+                  <h2>What Our Clients Say About Solutions</h2>
+                </div>
+                <Slider
+                  {...testimonialThreeSlider}
+                  className="testimonial-three-slider"
+                >
+                  <div className="testimonial-item">
+                    <div className="content">
+                      <div className="testi-header">
+                        <h4>Excellent Works</h4>
+                        <div className="ratting">
+                          <i className="fas fa-star" />
+                          <i className="fas fa-star" />
+                          <i className="fas fa-star" />
+                          <i className="fas fa-star" />
+                          <i className="fas fa-star-half-alt" />
+                        </div>
+                      </div>
+                      <div className="testi-text">
+                        Sed ut perspiciatis unde omnis iste natus voluptatem
+                        accus antiume dolorem queauy antium totam aperiam eaque
+                        quaey veritatis vitaec
+                      </div>
+                      <div className="testi-footer">
+                        <div className="icon">
+                          <i className="flaticon-quotation" />
+                        </div>
+                        <div className="title">
+                          <h4>Andrew D. Bricker</h4>
+                          <span className="designation">CEO &amp; Founder</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="testimonial-item">
+                    <div className="content">
+                      <div className="testi-header">
+                        <h4>Excellent Works</h4>
+                        <div className="ratting">
+                          <i className="fas fa-star" />
+                          <i className="fas fa-star" />
+                          <i className="fas fa-star" />
+                          <i className="fas fa-star" />
+                          <i className="fas fa-star-half-alt" />
+                        </div>
+                      </div>
+                      <div className="testi-text">
+                        On the other hand denounce righteous indignations and
+                        dislike men who beguiled and demoralized by the charms
+                        of pleasure moment blinded foresee
+                      </div>
+                      <div className="testi-footer">
+                        <div className="icon">
+                          <i className="flaticon-quotation" />
+                        </div>
+                        <div className="title">
+                          <h4>Jose T. McMichael</h4>
+                          <span className="designation">Senior Manager</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Slider>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Testimonials Area Three End */}
+
 
       {/* Blog Area start */}
       <section className="blog-area pb-150 mb-30 rmb-0 rel z-1">
@@ -1925,103 +2020,6 @@ const Index = () => {
       </section>
       {/* Blog Area end */}
 
-      {/* Work Process Area end */}
-      {/* Team Area start */}
-      {/* <section className="team-area pb-100 rpb-70 rel z-1">
-        <div className="container">
-          <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-            <span className="sub-title mb-15">Team Member</span>
-            <h2>Amazing Team Members</h2>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="team-member wow fadeInUp delay-0-2s">
-                <img src="assets/images/team/member1.jpg" alt="Team" />
-                <h4>Johnathan P. Bailey</h4>
-                <span className="designation">UX/UI Designer</span>
-                <div className="social-style-two">
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="team-member wow fadeInUp delay-0-4s">
-                <img src="assets/images/team/member2.jpg" alt="Team" />
-                <h4>Mark M. Hughes</h4>
-                <span className="designation">Web Developer</span>
-                <div className="social-style-two">
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="team-member wow fadeInUp delay-0-6s">
-                <img src="assets/images/team/member3.jpg" alt="Team" />
-                <h4>Donald B. Mitchell</h4>
-                <span className="designation">Software Engineer</span>
-                <div className="social-style-two">
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6">
-              <div className="team-member wow fadeInUp delay-0-8s">
-                <img src="assets/images/team/member4.jpg" alt="Team" />
-                <h4>Bennie N. Bannister</h4>
-                <span className="designation">Senior Consultant</span>
-                <div className="social-style-two">
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* Team Area end */}
     </Layout>
   );
 };

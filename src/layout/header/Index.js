@@ -20,6 +20,7 @@ const Header = ({ header }) => {
 
     default:
       return <DefaultHeader />;
+      
   }
 };
 export default Header;

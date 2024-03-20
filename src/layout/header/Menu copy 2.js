@@ -50,7 +50,7 @@ const MobileMenu = () => {
           <ul className="navigation clearfix">
             <li className="dropdown">
               <a href="#" onClick={() => active("home")}>
-                Options
+                Home
               </a>
               <ul style={activeSubMenu("home")}>
                 <li>
@@ -71,24 +71,21 @@ const MobileMenu = () => {
               </div>
             </li>
             <li className="dropdown">
-              <a href="#" onClick={() => active("home")}>
-                Company
+              <a href="#" onClick={() => active("Project")}>
+                Products
               </a>
-              <ul style={activeSubMenu("home")}>
+              <ul style={activeSubMenu("Project")}>
                 <li>
-                  <Link href="/">About US</Link>
+                  <Link href="project-grid">Project Grid</Link>
                 </li>
                 <li>
-                  <Link href="index2">Engagement Model</Link>
+                  <Link href="project-masonry">Project Masonry.</Link>
                 </li>
                 <li>
-                  <Link href="index3">IT Services</Link>
-                </li>
-                <li>
-                  <Link href="index4">Our Team</Link>
+                  <Link href="project-details">Project Details</Link>
                 </li>
               </ul>
-              <div className="dropdown-btn" onClick={() => active("home")}>
+              <div className="dropdown-btn" onClick={() => active("Project")}>
                 <span className="fas fa-chevron-down" />
               </div>
             </li>
@@ -111,27 +108,7 @@ const MobileMenu = () => {
                 <span className="fas fa-chevron-down" />
               </div>
             </li>
-
-            <li className="dropdown">
-              <a href="#" onClick={() => active("Project")}>
-                Products
-              </a>
-              <ul style={activeSubMenu("Project")}>
-                <li>
-                  <Link href="project-grid">Project Grid</Link>
-                </li>
-                <li>
-                  <Link href="project-masonry">Project Masonry.</Link>
-                </li>
-                <li>
-                  <Link href="project-details">Project Details</Link>
-                </li>
-              </ul>
-              <div className="dropdown-btn" onClick={() => active("Project")}>
-                <span className="fas fa-chevron-down" />
-              </div>
-            </li>
-
+          
             <li className="dropdown">
               <a href="#" onClick={() => active("shop")}>
                 Industries
@@ -154,7 +131,6 @@ const MobileMenu = () => {
                 <span className="fas fa-chevron-down" />
               </div>
             </li>
-
             <li className="dropdown">
               <a href="#" onClick={() => active("blog")}>
                 Careers
@@ -171,22 +147,34 @@ const MobileMenu = () => {
                 <span className="fas fa-chevron-down" />
               </div>
             </li>
-
-            <li className="dropdown">
-              <a href="#" onClick={() => active("blog")}>
-                Contact Us
+            {/* <li className="dropdown">
+              <a href="#" onClick={() => active("pages")}>
+                pages
               </a>
-              <ul style={activeSubMenu("blog")}>
+              <ul style={activeSubMenu("pages")}>
                 <li>
-                  <Link href="blog">Contact Us</Link>
+                  <Link href="about">About us</Link>
+                </li>
+                <li>
+                  <Link href="contact">Contact us</Link>
+                </li>
+                <li>
+                  <Link href="team">Team</Link>
+                </li>
+                <li>
+                  <Link href="faqs">faqs</Link>
+                </li>
+                <li>
+                  <Link href="pricing">Pricing Plan</Link>
+                </li>
+                <li>
+                  <Link href="404">404 error</Link>
                 </li>
               </ul>
-              <div className="dropdown-btn" onClick={() => active("blog")}>
+              <div className="dropdown-btn" onClick={() => active("pages")}>
                 <span className="fas fa-chevron-down" />
               </div>
-            </li>
-
-           
+            </li> */}
           </ul>
         </Accordion.Collapse>
       </Accordion>
@@ -206,7 +194,6 @@ const DeskTopMenu = () => {
             />
           </Link>
         </div>
-
         {/* Toggle Button */}
         <button
           type="button"
@@ -219,11 +206,10 @@ const DeskTopMenu = () => {
           <span className="icon-bar" />
         </button>
       </div>
-
       <div className="navbar-collapse collapse clearfix">
         <ul className="navigation clearfix">
-          {/* <li className="dropdown">
-            <a href="#">Options</a>
+          <li className="dropdown">
+            <a href="#">Home</a>
             <ul>
               <li>
                 <Link href="/">IT Company</Link>
@@ -241,19 +227,18 @@ const DeskTopMenu = () => {
             <div className="dropdown-btn">
               <span className="fas fa-chevron-down" />
             </div>
-          </li> */}
-
+          </li>
           <li className="dropdown">
-            <a href="#">Company</a>
+            <a href="#">Products</a>
             <ul>
               <li>
-                <Link href="/">About US</Link>
+                <Link href="project-grid">Project Grid</Link>
               </li>
               <li>
-                <Link href="index2">Engagement Model</Link>
+                <Link href="project-masonry">Project Masonry.</Link>
               </li>
               <li>
-                <Link href="index3">Our Team</Link>
+                <Link href="project-details">Project Details</Link>
               </li>
             </ul>
             <div className="dropdown-btn">
@@ -265,65 +250,20 @@ const DeskTopMenu = () => {
             <a href="#">services</a>
             <ul>
               <li>
-                <Link href="services" style={{ whiteSpace: "nowrap" }}>
-                  Mobile App Solutions
-                </Link>
+                <Link href="services">Services One</Link>
               </li>
               <li>
-                <Link href="services2" style={{ whiteSpace: "nowrap" }}>
-                  Enterprise Application Development
-                </Link>
+                <Link href="services2">Services Two</Link>
               </li>
               <li>
-                <Link href="service-details" style={{ whiteSpace: "nowrap" }}>
-                  Ecommerce Application Development
-                </Link>
-              </li>
-              <li>
-                <Link href="services" style={{ whiteSpace: "nowrap" }}>
-                  UI/UX Strategy
-                </Link>
-              </li>
-              <li>
-                <Link href="services2" style={{ whiteSpace: "nowrap" }}>
-                  Digital Marketing
-                </Link>
-              </li>
-              <li>
-                <Link href="service-details" style={{ whiteSpace: "nowrap" }}>
-                  ERP Software Development
-                </Link>
+                <Link href="service-details">service details</Link>
               </li>
             </ul>
             <div className="dropdown-btn">
               <span className="fas fa-chevron-down" />
             </div>
           </li>
-
-          <li className="dropdown">
-            <a href="#">Products</a>
-            <ul>
-              <li>
-                <Link href="project-grid" style={{ whiteSpace: "nowrap" }}>
-                  ERP for Textile & Garment Industries{" "}
-                </Link>
-              </li>
-              <li>
-                <Link href="project-masonry" style={{ whiteSpace: "nowrap" }}>
-                  Target SCM - Supply Chain Management.
-                </Link>
-              </li>
-              <li>
-                <Link href="project-details" style={{ whiteSpace: "nowrap" }}>
-                  HRMS - Target HR & Payroll Solutions
-                </Link>
-              </li>
-            </ul>
-            <div className="dropdown-btn">
-              <span className="fas fa-chevron-down" />
-            </div>
-          </li>
-
+         
           <li className="dropdown">
             <a href="#">Industries</a>
             <ul>
@@ -344,7 +284,6 @@ const DeskTopMenu = () => {
               <span className="fas fa-chevron-down" />
             </div>
           </li>
-
           <li className="dropdown">
             <a href="#">Careers</a>
             <ul>
@@ -359,16 +298,32 @@ const DeskTopMenu = () => {
               <span className="fas fa-chevron-down" />
             </div>
           </li>
-          
-          <li className="dropdown">
-            <a href="#" style={{ whiteSpace: "nowrap" }}>
-              Contact US
-            </a>
-          </li>
-
-          
-          
-
+          {/* <li className="dropdown">
+            <a href="#">pages</a>
+            <ul>
+              <li>
+                <Link href="about">About us</Link>
+              </li>
+              <li>
+                <Link href="contact">Contact us</Link>
+              </li>
+              <li>
+                <Link href="team">Team</Link>
+              </li>
+              <li>
+                <Link href="faqs">faqs</Link>
+              </li>
+              <li>
+                <Link href="pricing">Pricing Plan</Link>
+              </li>
+              <li>
+                <Link href="404">404 error</Link>
+              </li>
+            </ul>
+            <div className="dropdown-btn">
+              <span className="fas fa-chevron-down" />
+            </div>
+          </li> */}
         </ul>
       </div>
     </nav>

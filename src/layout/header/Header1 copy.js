@@ -11,7 +11,7 @@ const Header1 = () => {
   const matchesScreen = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
-    <header className="main-header  header-one  menu-white">
+    <header className="main-header header-one  menu-white">
       {/*Header-Upper*/}
       <div className="header-upper bgc-black2">
         <div
@@ -119,11 +119,8 @@ const Header1 = () => {
             {/* Menu Button */}
             <div className="menu-btns">
               <Link legacyBehavior href="/contact">
-                <a
-                  className="theme-btn"
-                  style={{ fontFamily: "roboto", whiteSpace: "nowrap" }}
-                >
-                  Hire A Developer <i className="fas fa-long-arrow-right" />
+                <a className="theme-btn" style={{ fontFamily: "roboto" }}>
+                  Get a Quote <i className="fas fa-long-arrow-right" />
                 </a>
               </Link>
             </div>
