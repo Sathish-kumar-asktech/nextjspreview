@@ -19,6 +19,7 @@ const DefaultHeader = () => {
                       src="assets/images/logos/logo.png"
                       alt="Logo"
                       title="Logo"
+                      style={{maxWidth:'50%'}}
                     />
                   </a>
                 </Link>

@@ -76,7 +76,7 @@ const MobileMenu = () => {
               </a>
               <ul style={activeSubMenu("home")}>
                 <li>
-                  <Link href="/">About US</Link>
+                  <Link href="about-us">About US</Link>
                 </li>
                 <li>
                   <Link href="index2">Engagement Model</Link>
@@ -247,7 +247,7 @@ const DeskTopMenu = () => {
             <a href="#">Company</a>
             <ul>
               <li>
-                <Link href="/">About US</Link>
+                <Link href="about-us">About US</Link>
               </li>
               <li>
                 <Link href="index2">Engagement Model</Link>
