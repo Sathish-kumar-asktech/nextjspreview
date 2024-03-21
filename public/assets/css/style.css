@@ -9942,8 +9942,9 @@ blockquote .name:before {
 
 /* Contact Page Form */
 .contact-form-wrap {
-  margin-top: -165px;
+  margin-top: 100px;
   padding: 130px 110px;
+  border-radius: 50px;
 }
 @media only screen and (max-width: 991px) {
   .contact-form-wrap {

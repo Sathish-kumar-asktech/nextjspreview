@@ -34,16 +34,16 @@ const Contact = () => {
                 <span className="sub-title mb-15">Need any Helps</span>
                 <h2>Contact Informations</h2>
               </div>
-              <p>
+              {/* <p>
                 Sed ut perspiciatis unde omnis natus errorsit voluptatem
                 accusantium doloremque laudantium aperiam eaque quae abillo
                 inventore veritatis quasi architecto beatae vitae dicta sunt
                 explicabo
-              </p>
+              </p> */}
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-xl-3 col-lg-4 col-md-6">
+            {/* <div className="col-xl-3 col-lg-4 col-md-6">
               <div className="contact-info-box wow fadeInUp delay-0-2s">
                 <div className="icon">
                   <i className="fal fa-map-marker-alt" />
@@ -51,42 +51,43 @@ const Contact = () => {
                 <h4>Locations</h4>
                 <span>553 Main Street, 2nd - Block, New York 32500</span>
               </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-md-6">
+            </div> */}
+            <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="contact-info-box wow fadeInUp delay-0-3s">
                 <div className="icon">
                   <i className="fal fa-envelope-open" />
                 </div>
                 <h4>Email Us</h4>
-                <a href="mailto:supportitinfo@gmail.com">
-                  supportitinfo@gmail.com
+                <a
+                  href="mailto:sales@asktek.net"
+                >
+                  sales@asktek.net
                 </a>
-                <br />
-                <a href="http://www.itservice.net">www.itservice.net</a>
+                <br /><br />
+                {/* <a href="http://www.itservice.net">www.itservice.net</a> */}
               </div>
             </div>
-            <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="contact-info-box wow fadeInUp delay-0-4s">
                 <div className="icon">
                   <i className="fal fa-phone-plus" />
                 </div>
                 <h4>Locations</h4>
                 <span>
-                  Mobile : <a href="callto:+000(123)45667">+000 (123) 45 667</a>
+                  Mobile : <a href="callto:+919840899559">+91 98408 99559</a>
                 </span>
                 <span>
-                  Teliphone : <a href="callto:+1234566">+1234566</a>
-                </span>
+                  Telephone : <a href="callto:+044-45034080">+044-45034080</a></span>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="contact-info-box wow fadeInUp delay-0-5s">
                 <div className="icon">
                   <i className="fal fa-clock" />
                 </div>
                 <h4>Working Hour</h4>
-                <b>Monday _ Friday,</b>
-                <span>08:00am - 06:00pm</span>
+                <b>Monday _ Saturday,</b>
+                <span>10:00am - 07:00pm</span>
               </div>
             </div>
           </div>
@@ -97,7 +98,7 @@ const Contact = () => {
       <div className="contact-page-map wow fadeInUp delay-0-2s">
         <div className="our-location">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m12!1m10!1m3!1d142190.2862584524!2d-74.01298319978558!3d40.721725351435126!2m1!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbd!4v1663473911885!5m2!1sen!2sbd"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7550794644962!2d80.22746827505244!3d13.051255813126886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267890e44ad75%3A0xa6eecf3f48cde4df!2sASK%20TECHNOLOGY!5e0!3m2!1sen!2sin!4v1711027578442!5m2!1sen!2sin"
             style={{ border: 0, width: "100%" }}
             allowFullScreen=""
             loading="lazy"
