@@ -932,6 +932,14 @@ a.theme-btn.style-four:not(:hover):after {
   color: white;
 }
 
+.text-white .mission-vision-item .icon i {
+  color: var(--primary-color);
+}
+
+.text-white .mission-vision-item .content p {
+  opacity: 0.6;
+}
+
 .text-white .service-two-item .icon i {
   color: var(--primary-color);
 }
@@ -5843,11 +5851,19 @@ h6,
   z-index: 1;
 }
 
+
+
 .why-choose-img {
   object-fit: contain;
   max-height: fit-content;
   mix-blend-mode: multiply;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* 
 .why-choose-image:before {
   content: "";
   z-index: -1;
@@ -5858,7 +5874,7 @@ h6,
   height: 186px;
   background: url(../images/about/why-choose-image-bg-dots.png) no-repeat
     center/cover;
-}
+} */
 
 .why-choose-content h3 {
   font-size: 30px;
@@ -5868,6 +5884,7 @@ h6,
   .why-choose-content h3 {
     font-size: 25px;
   }
+  
 }
 
 .why-choose-content .list-style-one li {
@@ -6195,14 +6212,16 @@ h6,
   color: var(--heading-color);
 }
 
-/* Service Style Two */
-.service-two-item {
+/* mission-vision-item */
+.mission-vision-item {
   margin-bottom: 46px;
   transition: all 0.5s;
   padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  border-radius: 10%;
 }
-
-.service-two-item:hover {
+/* 
+.mission-vision-item:hover {
   scale: 1.05;
   background-color: rgba(92, 73, 175, 0.489);
   color: black;
@@ -6212,7 +6231,7 @@ h6,
   transition: all 0.2s;
   padding: 15px;
   cursor: pointer;
-}
+} */
 
 /* Service Style Two */
 .service-two-item {
@@ -6239,6 +6258,11 @@ h6,
     display: -ms-flexbox;
     display: flex;
   }
+  .mission-vision-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .service-two-item .icon {
   font-size: 40px;
@@ -6248,6 +6272,20 @@ h6,
   /* margin: 5px 30px 25px 0; */
 }
 .service-two-item .content h4 {
+  margin-bottom: 15px;
+}
+
+.mission-vision-item .icon {
+  font-size: 40px;
+  max-width: 70%;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color);
+  /* margin: 5px 30px 25px 0; */
+}
+.mission-vision-item .content h4 {
   margin-bottom: 15px;
 }
 
@@ -6983,6 +7021,7 @@ h6,
   justify-content: center;
   margin-bottom: 30px;
   background: var(--lighter-color);
+  border-radius: 20px;
 }
 @media only screen and (max-width: 375px) {
   .partner-item {

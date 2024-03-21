@@ -3,8 +3,21 @@ import Layout from "@/layout";
 import { JeenaAccordion2 } from "@/src/components/JeenaAccordion";
 import Link from "next/link";
 
+import Marquee from "react-fast-marquee";
+import Slider from "react-slick";
+import dynamic from "next/dynamic";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+
+import {
+  mainSliderActive,
+  serviceThreeSlider,
+  testimonialThreeSlider,
+} from "@/src/sliderProps";
+
+const Counter = dynamic(() => import("@/src/components/Counter"), {
+  ssr: false,
+});
 
 const ServiceDetails = () => {
   const theme = useTheme();
@@ -98,46 +111,83 @@ const ServiceDetails = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="about-three-image rel z-1 mb-30 rmb-65 wow fadeInRight delay-0-2s">
+              <div className="about-five-images mt-55 rel z-1 wow fadeInRight delay-0-2s">
+                <img src="assets/images/about/about-five1.jpg" alt="About" />
+                <img src="assets/images/about/about-five2.jpg" alt="About" />
+                <div className="experience-years">
+                  <span className="years">25</span>
+                  <h4>Years Of Experienced IT Solutions</h4>
+                </div>
                 <img
-                  src="assets/images/about/about-three.jpg"
-                  alt="About"
-                  style={{ borderRadius: "10%" }}
+                  className="abut-bg-shape"
+                  src="assets/images/about/about-five-bg.png"
+                  alt="Shape"
                 />
               </div>
             </div>
           </div>
-        </div>
-        <div className="about-bg-shape">
-          <img src="assets/images/background/about-bg-shape.png" alt="About" />
-        </div>
-      </section>
-      {/* About Area end */}
 
-      <section className="services-area bg-none text-white pt-75 pb-10 rel z-1">
-        <div className="container">
-          <div className="row medium-gap">
-            <div className="col-xl-6 col-md-6">
-              <div className="service-two-item mx-4 wow fadeInUp delay-0-3s">
+          <div className="row align-items-center gap-20 mt-100">
+            <div className="col-xl-6 col-md-6  pt-25">
+              <div className="mission-vision-item  mx-4 wow fadeInUp delay-0-3s">
                 <div
                   className={`${
                     matchesSmallScreen && "flex-column"
-                  } d-flex   justify-content-start align-items-center gap-4`}
+                  } d-flex  flex-column justify-content-start align-items-center gap-4`}
                 >
                   <div className="icon">
                     <img
                       src="https://ik.imagekit.io/sathishask2024/20943892.jpg?updatedAt=1710941958371"
                       className="icon"
+                      style={{ objectFit: "contain", mixBlendMode: "multiply" }}
                     />
                   </div>
+
                   <div className="content">
                     <h2
                       style={{ fontFamily: "oswald", color: "#637A9F" }}
-                      className={`${matchesSmallScreen && "text-center"}`}
+                      className="text-center mb-2 pb-3"
+                      // className={`${matchesSmallScreen && "text-center"}`}
                     >
-                      <span style={{ color: "#1D24CA" }}></span> Our Mission
+                      <span style={{ color: "#1D24CA" }}></span> Our{" "}
+                      <span style={{ color: "#5356FF" }}>Mission</span>
                     </h2>
-                    <p className={`${matchesSmallScreen && "text-center"}`}>
+                    <p className="text-center">
+                      At Ask Technology, we empower businesses with
+                      transformative technology solutions, driving efficiency
+                      and growth. Through expertise, innovation, and commitment,
+                      we deliver unparalleled value, enabling clients to thrive
+                      in a rapidly evolving digital landscape.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-6 col-md-6  pt-25">
+              <div className="mission-vision-item  mx-4 wow fadeInUp delay-0-3s">
+                <div
+                  className={`${
+                    matchesSmallScreen && "flex-column"
+                  } d-flex  flex-column justify-content-start align-items-center gap-4`}
+                >
+                  <div className="icon">
+                    <img
+                      src="https://ik.imagekit.io/sathishask2024/Wavy_Bus-18_Single-11.jpg?updatedAt=1710941958118"
+                      className="icon"
+                      style={{ objectFit: "contain", mixBlendMode: "multiply" }}
+                    />
+                  </div>
+
+                  <div className="content">
+                    <h2
+                      style={{ fontFamily: "oswald", color: "#637A9F" }}
+                      className="text-center mb-2 pb-3"
+                      // className={`${matchesSmallScreen && "text-center"}`}
+                    >
+                      <span style={{ color: "#1D24CA" }}></span> Our{" "}
+                      <span style={{ color: "#6420AA" }}>Vision</span>
+                    </h2>
+                    <p className="text-center">
                       At Ask Technology, we envision a future where innovation
                       and technology empower businesses to achieve their fullest
                       potential. Our vision is to be the leading force driving
@@ -148,45 +198,138 @@ const ServiceDetails = () => {
                 </div>
               </div>
             </div>
-
-            <div className="col-xl-6 col-md-6">
-              <div className="service-two-item mx-4 wow fadeInUp delay-0-4s">
-                <div
-                  className={`${
-                    matchesSmallScreen && "flex-column"
-                  } d-flex   justify-content-start align-items-center gap-4`}
-                >
-                  <div className="icon">
-                    <img
-                      src="https://ik.imagekit.io/sathishask2024/Wavy_Bus-18_Single-11.jpg?updatedAt=1710941958118"
-                      className="icon"
-                    />
-                  </div>
-                  <div className="content">
-                    <h4
-                      style={{ fontFamily: "Oswald" }}
-                      className={`${matchesSmallScreen && "text-center"}`}
-                    >
-                      <Link legacyBehavior href="service-details">
-                        Our Vision
-                      </Link>
-                    </h4>
-                    <p className={`${matchesSmallScreen && "text-center"}`}>
-                      Our mission at Ask Technology is to empower businesses
-                      with transformative technology solutions that enhance
-                      efficiency, drive growth, and foster success. Through our
-                      expertise, innovation, and commitment to excellence, we
-                      strive to deliver unparalleled value to our clients,
-                      enabling them to thrive in a rapidly evolving digital
-                      landscape
-                    </p>
-                  </div>
-                </div>
+          </div>
+        </div>
+        <div className="about-bg-shape">
+          <img src="assets/images/background/about-bg-shape.png" alt="About" />
+        </div>
+      </section>
+      {/* About Area end */}
+      {/* Partners Area start */}
+      <section className="partners-area-two bgc-secondary pt-80 pb-50 rel z-1">
+        <div className="container">
+          <div className="section-title text-white text-center mb-50 wow fadeInUp delay-0-2s">
+            {/* <span className="sub-title mb-15">Our Partners</span> */}
+            <h2>Our Partners</h2>
+            <span className="bg-text">Partners</span>
+          </div>
+          {/* <Marquee
+            direction="right"
+            pauseOnHover
+            // gradient={100}
+            loop={0}
+            autoFill
+            
+          >
+            <div style={{ padding: 20 }} className="partner-item">
+              <div>
+              <img
+                src="assets/images/partners/partner1.png"
+                alt="Partner"
+                style={{ margin: 20 }}
+              />
               </div>
+            </div>
+
+            <div style={{ padding: 30 }} className="partner-item">
+              <img
+                src="assets/images/partners/partner2.png"
+                alt="Partner"
+                style={{ margin: 20 }}
+              />
+            </div>
+
+            <div style={{ padding: 30 }} className="partner-item">
+              <img
+                src="assets/images/partners/partner3.png"
+                alt="Partner"
+                style={{ margin: 20 }}
+              />
+            </div>
+
+            <div style={{ padding: 30 }} className="partner-item">
+              <img
+                src="assets/images/partners/partner4.png"
+                alt="Partner"
+                style={{ margin: 20 }}
+              />
+            </div>
+
+            <div style={{ padding: 30 }} className="partner-item">
+              <img
+                src="assets/images/partners/partner5.png"
+                alt="Partner"
+                style={{ margin: 20 }}
+              />
+            </div>
+          </Marquee> */}
+          <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 justify-content-center">
+            <div className="col">
+              <Link legacyBehavior href="/contact">
+                <a className="partner-item wow fadeInUp delay-0-3s">
+                  <img
+                    src="assets/images/partners/partner1.png"
+                    alt="Partner"
+                  />
+                </a>
+              </Link>
+            </div>
+            <div className="col">
+              <Link legacyBehavior href="/contact">
+                <a className="partner-item wow fadeInUp delay-0-4s">
+                  <img
+                    src="assets/images/partners/partner2.png"
+                    alt="Partner"
+                  />
+                </a>
+              </Link>
+            </div>
+            <div className="col">
+              <Link legacyBehavior href="/contact">
+                <a className="partner-item wow fadeInUp delay-0-5s">
+                  <img
+                    src="assets/images/partners/partner3.png"
+                    alt="Partner"
+                  />
+                </a>
+              </Link>
+            </div>
+            <div className="col">
+              <Link legacyBehavior href="/contact">
+                <a className="partner-item wow fadeInUp delay-0-6s">
+                  <img
+                    src="assets/images/partners/partner4.png"
+                    alt="Partner"
+                  />
+                </a>
+              </Link>
+            </div>
+            <div className="col">
+              <Link legacyBehavior href="/contact">
+                <a className="partner-item wow fadeInUp delay-0-7s">
+                  <img
+                    src="assets/images/partners/partner5.png"
+                    alt="Partner"
+                  />
+                </a>
+              </Link>
             </div>
           </div>
         </div>
+        <div className="partners-shapes">
+          <img
+            className="left-shape"
+            src="assets/images/partners/partner-shape-left.png"
+            alt="Shape"
+          />
+          <img
+            className="right-shape"
+            src="assets/images/partners/partner-shape-right.png"
+            alt="Shape"
+          />
+        </div>
       </section>
+      {/* Partners Area end */}
 
       <section className="service-details-area m-5 pt-130 rpt-100 pb-115 rpb-85">
         <div className="container">
@@ -202,7 +345,7 @@ const ServiceDetails = () => {
                   in the crowded tech landscape
                 </p>
 
-                <div className="row gap-90 align-items-center">
+                <div className="row gap-90  justify-content-center align-items-center">
                   <div className="col-lg-6">
                     <div className="why-choose-image rmb-55">
                       <img
@@ -212,6 +355,7 @@ const ServiceDetails = () => {
                         // src="assets/images/about/why-choose1.jpg"
                         alt="Why Choose"
                         className="why-choose-img "
+                        // style={{maxWidth:'70%',objectFit:'contain'}}
                       />
                     </div>
                   </div>
@@ -237,8 +381,8 @@ const ServiceDetails = () => {
                   </div>
                 </div>
 
-                <div className="row gap-90 align-items-center">
-                  <div className="col-lg-6">
+                <div className="row gap-90   justify-content-center  align-items-center">
+                  <div className="col-lg-6 order-lg-1 order-sm-2  order-2">
                     <div className="why-choose-content">
                       <h3 style={{ fontFamily: "oswald" }}>
                         Tailored Solutions, Every Time
@@ -258,7 +402,7 @@ const ServiceDetails = () => {
                     </div>
                   </div>
 
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 order-lg-2 order-sm-1 order-1 ">
                     <div className="why-choose-image rmt-55">
                       <img
                         src="https://ik.imagekit.io/sathishask2024/Brainstorming.gif?updatedAt=1710939131692"
@@ -269,16 +413,13 @@ const ServiceDetails = () => {
                   </div>
                 </div>
 
-                <div className="row gap-90 align-items-center">
+                <div className="row gap-90   justify-content-center  align-items-center">
                   <div className="col-lg-6">
                     <div className="why-choose-image rmb-55">
                       <img
-                        src={
-                          "https://ik.imagekit.io/sathishask2024/Analytics.gif?updatedAt=1710938626974"
-                        }
-                        // src="assets/images/about/why-choose1.jpg"
+                        src="https://ik.imagekit.io/sathishask2024/Analytics.gif?updatedAt=1710938626974"
                         alt="Why Choose"
-                        className="why-choose-img "
+                        className="why-choose-img"
                       />
                     </div>
                   </div>
@@ -296,18 +437,12 @@ const ServiceDetails = () => {
                         <li>In-depth Industry Expertise and Insight</li>
                         <li>Commitment to Exceeding Client Expectations</li>
                       </ul>
-
-                      {/* <Link legacyBehavior href="/about">
-                          <a className="theme-btn mt-30">
-                            Learn More <i className="fas fa-long-arrow-right" />
-                          </a>
-                        </Link> */}
                     </div>
                   </div>
                 </div>
 
-                <div className="row gap-90 align-items-center">
-                  <div className="col-lg-6">
+                <div className="row gap-90   justify-content-center  align-items-center">
+                  <div className="col-lg-6 order-lg-1 order-sm-2  order-2">
                     <div className="why-choose-content">
                       <h3>Client-Centric Approach</h3>
                       <p>
@@ -325,7 +460,7 @@ const ServiceDetails = () => {
                     </div>
                   </div>
 
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 order-lg-2 order-sm-1 order-1 ">
                     <div className="why-choose-image rmt-55">
                       <img
                         src="https://ik.imagekit.io/sathishask2024/Customer%20relationship%20management%20(1).gif?updatedAt=1710938626955"
@@ -336,7 +471,7 @@ const ServiceDetails = () => {
                   </div>
                 </div>
 
-                <div className="row gap-90 align-items-center">
+                <div className="row gap-90   justify-content-center  align-items-center">
                   <div className="col-lg-6">
                     <div className="why-choose-image rmb-55">
                       <img
@@ -366,8 +501,8 @@ const ServiceDetails = () => {
                   </div>
                 </div>
 
-                <div className="row gap-90 align-items-center">
-                  <div className="col-lg-6">
+                <div className="row gap-90   justify-content-center  align-items-center">
+                  <div className="col-lg-6 order-lg-1 order-sm-2  order-2">
                     <div className="why-choose-content">
                       <h3>Commitment to Excellence</h3>
                       <p>
@@ -389,7 +524,7 @@ const ServiceDetails = () => {
                     </div>
                   </div>
 
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 order-lg-2 order-sm-1 order-1 ">
                     <div className="why-choose-image rmt-55">
                       <img
                         src="https://ik.imagekit.io/sathishask2024/Customer%20relationship%20management.gif?updatedAt=1710938627031"
@@ -399,281 +534,319 @@ const ServiceDetails = () => {
                     </div>
                   </div>
                 </div>
-
-                <div className="image my-40 wow fadeInUp delay-0-2s">
-                  <img
-                    src="assets/images/services/service-details.jpg"
-                    alt="Service Details"
-                  />
-                </div>
-
-                <div className="row">
-                  <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-                    <h3>Innovation at the Core</h3>
-                  </div>
-                  <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
-                    <ul className="list-style-one">
-                      <li>Strategic UI/UX Assessment</li>
-                      <li>Thorough Contextual Research and 360° Planning</li>
-                      <li>Advanced Wireframing & Prototyping Techniques</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="row pb-30">
-                  <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
-                    <p>
-                      Our commitment to innovation drives everything we do. From
-                      developing cutting-edge solutions to adopting the latest
-                      technologies, we ensure your business stays ahead in a
-                      rapidly evolving digital landscape
-                    </p>
-                  </div>
-                  <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-                    <div className="image">
-                      <img
-                        src="assets/images/services/service-middle.jpg"
-                        alt="Service"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <h3>Service Management</h3>
-                <p>
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                  odit au fugit sed quia consequun tur magni dolores eos qui
-                  ratione voluptatem sequi nesciunt. Neque quisquam est, qui
-                  dolorem epsum quia dolor sit amet, consectetur, adipisci
-                  velit, sed quia non numquam eius modi tempora sncidunt ut
-                  labore et dolore magnam aliquam quaerat voluptatem.
-                </p>
-                <div
-                  className="faq-accordion pt-20 wow fadeInUp delay-0-2s"
-                  id="faq-accordion"
-                >
-                  <JeenaAccordion2 accordionsData={accordionData} />
-                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
+      {/* Statistics Area start */}
+      <section className="statistics-area-two rel z-2">
         <div className="container">
-          <div className="row gap-100">
-            <div className="col-lg-8">
-              <div className="service-details-content">
-                <div className="section-title mb-30">
-                  <h2>Web Design &amp; Development</h2>
-                </div>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudtium totam rem aperiam, eaque ipsa
-                  quae ab illo inventore veritatis quasi architecto beatae vitae
-                  dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                  sit aspernatur aut odit au fugit sed quia consequuntur magni
-                  dolores eos qui ratione voluptatem sequi nesciunt. Neque
-                  quisquam est, qui dolorem ipsum quia dolor sit amet,
-                  consectetur, adipisci velit, sed quia non numquam eius modi
-                  tempora incidunt ut labore et dolore magnam aliquam quaerat
-                  voluptatem. Ut ene minima veniam, quis nostrum exercitationem
-                  ullam corporis suscipit laboriosam aliquid exea commodi
-                  consequatur
-                </p>
-                <div className="image my-40 wow fadeInUp delay-0-2s">
-                  <img
-                    src="assets/images/services/service-details.jpg"
-                    alt="Service Details"
-                  />
-                </div>
-                <div className="row">
-                  <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-                    <h3>We Provide Best IT Services to Growth you Business</h3>
+          <div
+            className="statistics-inner style-two bgs-cover text-white p-80 pb-20"
+            style={{
+              backgroundImage: "url(assets/images/background/statistics.jpg)",
+            }}
+          >
+            <div className="row align-items-xl-start align-items-center">
+              <div className="col-xl-5 col-lg-6">
+                <div className="statistics-content mb-55 wow fadeInUp delay-0-2s">
+                  <div className="section-title mb-30">
+                    <span className="sub-title mb-15">Company Statistics</span>
+                    <h2 className="mt-3">Learn About Our Comapny Statistics</h2>
                   </div>
-                  <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
-                    <ul className="list-style-one">
-                      <li>Comprehensive UI/UX Assessment</li>
-                      <li>Deep Contextual Research &amp; Planning</li>
-                      <li>Wireframing &amp; Prototyping</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="row pb-30">
-                  <div className="col-md-6 mb-30 wow fadeInLeft delay-0-2s">
-                    <p>
-                      Aperiam eaque ipsa quae ab illo inventore veritatis quasi
-                      architecto beatae vitae dicta sunt explicabo. Nemo enim
-                      ipsam voluptatem quia voluptas sit aspernatur aut odit au
-                      fugit sed quia consequuntur magni dolores eos qui ratione
-                      voluptatem sequi nesciunt. Neque quisquam est, qui dolorem
-                      ipsum quia dolor sit amet, consectetur, adipisci velit,
-                      sed quia non numquam eius modi tempora incidunt ut labore
-                      et dolore magnam aliquam quaerat voluptatem minima
-                      veniamla
-                    </p>
-                  </div>
-                  <div className="col-md-6 mb-30 wow fadeInRight delay-0-2s">
-                    <div className="image">
-                      <img
-                        src="assets/images/services/service-middle.jpg"
-                        alt="Service"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <h3>Service Management</h3>
-                <p>
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                  odit au fugit sed quia consequun tur magni dolores eos qui
-                  ratione voluptatem sequi nesciunt. Neque quisquam est, qui
-                  dolorem epsum quia dolor sit amet, consectetur, adipisci
-                  velit, sed quia non numquam eius modi tempora sncidunt ut
-                  labore et dolore magnam aliquam quaerat voluptatem.
-                </p>
-                <div
-                  className="faq-accordion pt-20 wow fadeInUp delay-0-2s"
-                  id="faq-accordion"
-                >
-                  <JeenaAccordion2 accordionsData={accordionData} />
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="service-sidebar">
-                <div className="widget widget-category wow fadeInUp delay-0-2s">
-                  <h4 className="widget-title">Services Category</h4>
-                  <ul>
-                    <li>
-                      <Link legacyBehavior href="services">
-                        IT Consulting
-                      </Link>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="services">
-                        Product Design
-                      </Link>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="services">
-                        Web Design
-                      </Link>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="services">
-                        SEO Optimization
-                      </Link>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="services">
-                        Web Development
-                      </Link>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="services">
-                        UI/UX Strategy
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-                <div
-                  className="widget widget-cta"
-                  style={{
-                    backgroundImage:
-                      "url(assets/images/widgets/cta-widget-bg.jpg)",
-                  }}
-                >
-                  <span className="h5">Let's Work Together</span>
-                  <h2>IT Service Agency</h2>
-                  <Link legacyBehavior href="/contact">
-                    <a className="theme-btn style-four">
-                      Contact Us <i className="fas fa-angle-double-right" />
+                  {/* <Link legacyBehavior href="/about">
+                    <a className="read-more">
+                      Learn More <i className="fas fa-long-arrow-right" />
                     </a>
-                  </Link>
-                  <br />
-                  <a href="callto:+000(123)45688" className="number">
-                    <i className="fas fa-phone" /> +000 (123) 456 88
-                  </a>
-                  <img
-                    className="bg-shape"
-                    src="assets/images/widgets/cta-bg-lines.png"
-                    alt="Shape"
-                  />
+                  </Link> */}
                 </div>
-                <div className="widget widget-download wow fadeInUp delay-0-2s">
-                  <h4 className="widget-title">Download</h4>
-                  <ul>
-                    <li>
-                      <a href="#">
-                        Download pdf <i className="far fa-file-pdf" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        Download doc <i className="far fa-file-word" />
-                      </a>
-                    </li>
-                  </ul>
+              </div>
+              <div className="col-xl-7 col-lg-6">
+                <div className="row">
+                  <div className="col-xl-3 col-small col-6">
+                    <div className="counter-item counter-text-wrap wow fadeInDown delay-0-3s">
+                      <i className="flaticon-target" />
+                      <span
+                        className="count-text plus"
+                        data-speed={3000}
+                        data-stop={500}
+                      >
+                        <Counter end={500} />
+                      </span>
+                      <span className="counter-title">Projects Delivered</span>
+                    </div>
+                  </div>
+                  <div className="col-xl-3 col-small col-6">
+                    <div className="counter-item counter-text-wrap wow fadeInUp delay-0-3s">
+                      <i className="flaticon-target-audience" />
+                      <span
+                        className="count-text percent"
+                        data-speed={3000}
+                        data-stop="99"
+                      >
+                        <Counter end={98.9} decimals="1" />
+                      </span>
+                      <span className="counter-title"> Happy Clients</span>
+                    </div>
+                  </div>
+                  <div className="col-xl-3 col-small col-6">
+                    <div className="counter-item counter-text-wrap wow fadeInDown delay-0-3s">
+                      <i className="flaticon-customer-experience" />
+                      <span
+                        className="count-text plus"
+                        data-speed={3000}
+                        data-stop="25"
+                      >
+                        <Counter end={25} decimals="1" />
+                      </span>
+                      <span className="counter-title">Years Experience</span>
+                    </div>
+                  </div>
+                  <div className="col-xl-3 col-small col-6">
+                    <div className="counter-item counter-text-wrap wow fadeInUp delay-0-3s">
+                      <i className="flaticon-medal" />
+                      <span
+                        className="count-text plus"
+                        data-speed={3000}
+                        data-stop={100}
+                      >
+                        <Counter end={100} />
+                      </span>
+                      <span className="counter-title">Engineers</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      {/* Statistics Area end */}
 
-      {/* Service Details Area end */}
-
-      {/* Next Prev Service start */}
-      <div className="next-prev-service pb-80 rpb-50">
+      {/* Testimonials Area Three Start */}
+      <section className="testimonials-three-area py-130 rpy-100">
         <div className="container">
-          <hr />
-          <div className="next-prev-service mt-80">
-            <div className="next-prev-item wow fadeInLeft delay-0-2s">
-              <div className="image">
+          <div className="row gap-80 align-items-center">
+            <div className="col-xl-7 col-lg-6">
+              <div className="testimonials-three-image rmb-55 wow fadeInLeft delay-0-2s">
                 <img
-                  src="assets/images/services/service-prev.jpg"
-                  alt="Service"
+                  src="assets/images/testimonials/testimonials-three.png"
+                  alt="Testimonials"
                 />
-              </div>
-              <div className="content">
-                <h4>
-                  <Link legacyBehavior href="service-details">
-                    Product Engineering
-                  </Link>
-                </h4>
-                <Link legacyBehavior href="/service-details">
-                  <a className="read-more">
-                    Read More <i className="fal fa-angle-double-right" />
-                  </a>
-                </Link>
               </div>
             </div>
-            <Link legacyBehavior href="/services2">
-              <a className="show-all" />
-            </Link>
-            <div className="next-prev-item wow fadeInRight delay-0-2s">
-              <div className="content">
-                <h4>
-                  <Link legacyBehavior href="service-details">
-                    Cyber Security
-                  </Link>
-                </h4>
-                <Link legacyBehavior href="/service-details">
-                  <a className="read-more">
-                    Read More <i className="fal fa-angle-double-right" />
-                  </a>
-                </Link>
-              </div>
-              <div className="image">
-                <img
-                  src="assets/images/services/service-next.jpg"
-                  alt="Service"
-                />
+            <div className="col-xl-5 col-lg-6">
+              <div className="testimonials-three-wrap wow fadeInRight delay-0-2s">
+                <div className="section-title mb-45">
+                  <span className="sub-title mb-10">Our Testimonials</span>
+                  <h2>What Our Clients Say About Solutions</h2>
+                </div>
+                <Slider
+                  {...testimonialThreeSlider}
+                  className="testimonial-three-slider"
+                >
+                  <div className="testimonial-item">
+                    <div className="content">
+                      <div className="testi-header">
+                        <h4>Excellent Works</h4>
+                        <div className="ratting">
+                          <i className="fas fa-star" />
+                          <i className="fas fa-star" />
+                          <i className="fas fa-star" />
+                          <i className="fas fa-star" />
+                          <i className="fas fa-star-half-alt" />
+                        </div>
+                      </div>
+                      <div className="testi-text">
+                        The software we've been using has truly revolutionized
+                        our operations. Its intuitive interface and excellent
+                        customer support have significantly enhanced our
+                        workflow, making it an invaluable asset to our business
+                      </div>
+                      <div className="testi-footer">
+                        <div className="icon">
+                          <i className="flaticon-quotation" />
+                        </div>
+                        <div className="title">
+                          <h4>Sathish Kumar</h4>
+                          <span className="designation">CEO | TECHVEEL</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="testimonial-item">
+                    <div className="content">
+                      <div className="testi-header">
+                        <h4>Excellent Works</h4>
+                        <div className="ratting">
+                          <i className="fas fa-star" />
+                          <i className="fas fa-star" />
+                          <i className="fas fa-star" />
+                          <i className="fas fa-star" />
+                          <i className="fas fa-star-half-alt" />
+                        </div>
+                      </div>
+                      <div className="testi-text">
+                        This software has exceeded our expectations, offering
+                        seamless integration and exceptional functionality. It
+                        has become an indispensable tool for our daily
+                        operations, greatly enhancing our productivity and
+                        efficiency
+                      </div>
+                      <div className="testi-footer">
+                        <div className="icon">
+                          <i className="flaticon-quotation" />
+                        </div>
+                        <div className="title">
+                          <h4>Harel Manic</h4>
+                          <span className="designation">
+                            CEO | ERP Solutions
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Slider>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      {/* Testimonials Area Three End */}
+
+      {/* Contact Form Section Start */}
+      <section
+        className="contact-form-area py-130 rpy-100  mb-4 bgs-cover"
+        style={{
+          backgroundImage: "url(assets/images/background/contact-form-bg.jpg)",
+        }}
+      >
+        <div className="container">
+          <div className="row gap-100 align-items-center">
+            <div className="col-lg-7">
+              <div className="contact-form bg-white p-80 rmb-55 wow fadeInRight delay-0-2s">
+                <div className="section-title mb-30">
+                  <h3>Get In Touch With Us</h3>
+                </div>
+                <form
+                  onSubmit={(e) => e.preventDefault()}
+                  className="form-style-one"
+                  action="#"
+                  name="contact-form"
+                >
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          className="form-control"
+                          defaultValue=""
+                          placeholder="Full name"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          id="phone"
+                          name="phone"
+                          className="form-control"
+                          defaultValue=""
+                          placeholder="Phone Number"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-12">
+                      <div className="form-group">
+                        <input
+                          type="email"
+                          id="emailid"
+                          name="email"
+                          className="form-control"
+                          defaultValue=""
+                          placeholder="Email"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-12">
+                      <div className="form-group">
+                        <textarea
+                          name="message"
+                          id="message"
+                          className="form-control"
+                          rows={3}
+                          placeholder="Message"
+                          required
+                          defaultValue={""}
+                        />
+                      </div>
+                    </div>
+                    <div className="col-xl-12">
+                      <div className="form-group mb-0">
+                        <button
+                          type="submit"
+                          className="theme-btn style-two mt-15 w-100"
+                        >
+                          send message <i className="far fa-long-arrow-right" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div className="col-lg-5">
+              <div className="contact-info-wrap wow fadeInLeft delay-0-2s">
+                <div className="section-title mb-40">
+                  <span className="sub-title mb-10">Need Consultations ?</span>
+                  <h2>Need A Project? We Would Love To Hear From You.</h2>
+                </div>
+                <div className="contact-info-part">
+                  <div className="contact-info-item">
+                    <div className="icon">
+                      <i className="far fa-map-marked-alt" />
+                    </div>
+                    <div className="content">
+                      <span>Location</span>
+                      <h5>Kodambakkam, Chennai</h5>
+                    </div>
+                  </div>
+                  <div className="contact-info-item">
+                    <div className="icon">
+                      <i className="far fa-envelope-open-text" />
+                    </div>
+                    <div className="content">
+                      <span>Email Us</span>
+                      <h5>
+                        <a href="mailto:support@gmail.com">sales@asktek.net</a>
+                      </h5>
+                    </div>
+                  </div>
+                  <div className="contact-info-item">
+                    <div className="icon">
+                      <i className="far fa-phone" />
+                    </div>
+                    <div className="content">
+                      <span>Hotline</span>
+                      <h5>
+                        <a href="calto:+04445034080">+044 4503 4080</a>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Contact Form Section End */}
     </Layout>
   );
 };
