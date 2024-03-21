@@ -222,27 +222,7 @@ const DeskTopMenu = () => {
 
       <div className="navbar-collapse collapse clearfix">
         <ul className="navigation clearfix">
-          {/* <li className="dropdown">
-            <a href="#">Options</a>
-            <ul>
-              <li>
-                <Link href="/">IT Company</Link>
-              </li>
-              <li>
-                <Link href="index2">IT Solutions</Link>
-              </li>
-              <li>
-                <Link href="index3">IT Services</Link>
-              </li>
-              <li>
-                <Link href="index4">IT Agency</Link>
-              </li>
-            </ul>
-            <div className="dropdown-btn">
-              <span className="fas fa-chevron-down" />
-            </div>
-          </li> */}
-
+      
           <li className="dropdown">
             <a href="#">Company</a>
             <ul>
@@ -265,32 +245,32 @@ const DeskTopMenu = () => {
             <a href="#">services</a>
             <ul>
               <li>
-                <Link href="services" style={{ whiteSpace: "nowrap" }}>
+                <Link href="our-services" style={{ whiteSpace: "nowrap" }}>
                   Mobile App Solutions
                 </Link>
               </li>
               <li>
-                <Link href="services2" style={{ whiteSpace: "nowrap" }}>
+                <Link href="our-services" style={{ whiteSpace: "nowrap" }}>
                   Enterprise Application Development
                 </Link>
               </li>
               <li>
-                <Link href="service-details" style={{ whiteSpace: "nowrap" }}>
+                <Link href="our-services" style={{ whiteSpace: "nowrap" }}>
                   Ecommerce Application Development
                 </Link>
               </li>
               <li>
-                <Link href="services" style={{ whiteSpace: "nowrap" }}>
+                <Link href="our-services" style={{ whiteSpace: "nowrap" }}>
                   UI/UX Strategy
                 </Link>
               </li>
               <li>
-                <Link href="services2" style={{ whiteSpace: "nowrap" }}>
+                <Link href="our-services" style={{ whiteSpace: "nowrap" }}>
                   Digital Marketing
                 </Link>
               </li>
               <li>
-                <Link href="service-details" style={{ whiteSpace: "nowrap" }}>
+                <Link href="our-services" style={{ whiteSpace: "nowrap" }}>
                   ERP Software Development
                 </Link>
               </li>

@@ -2,7 +2,7 @@ import Link from "next/link";
 const PageBanner = ({ pageName, pageTitle }) => {
   return (
     <section
-      className="page-banner-area bgs-cover py-135 rpy-100"
+      className="page-banner-area bgs-cover py-60 rpy-100"
       style={{ backgroundImage: "url(assets/images/background/banner.jpg)" }}
     >
       <div className="container">
