@@ -74,7 +74,7 @@ const Index = () => {
   const matchesSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <Layout header={1}>
+    <Layout header={2}>
       {/* Hero Section Start */}
       <section className="hero-area bgc-gray rel z-1">
         <div className="container">
@@ -255,6 +255,7 @@ const Index = () => {
         </div>
       </section>
       {/* About Area end */}
+
       {/* Hero Section End */}
 
       {/* Partners Area start */}
@@ -316,6 +317,7 @@ const Index = () => {
         </div>
       </section>
       {/* Partners Area end */}
+      
       {/* Project Area start */}
       <section
         className="project-area overflow-hidden bgc-lighter  rpt-100 rel z-1"

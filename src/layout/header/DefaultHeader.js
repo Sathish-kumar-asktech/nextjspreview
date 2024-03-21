@@ -13,13 +13,13 @@ const DefaultHeader = () => {
           <div className="header-inner rel d-flex align-items-center">
             <div className="logo-outer">
               <div className="logo">
-                <Link legacyBehavior href="/index">
+                <Link legacyBehavior href="/">
                   <a>
                     <img
                       src="assets/images/logos/logo.png"
                       alt="Logo"
                       title="Logo"
-                      style={{maxWidth:'50%'}}
+                      style={{ maxWidth: "50%" }}
                     />
                   </a>
                 </Link>
@@ -38,7 +38,7 @@ const DefaultHeader = () => {
             <div className="menu-btns">
               <Link legacyBehavior href="/contact">
                 <a className="theme-btn">
-                  Get a Quote <i className="fas fa-long-arrow-right" />
+                  Hire A Develoepr <i className="fas fa-long-arrow-right" />
                 </a>
               </Link>
             </div>
