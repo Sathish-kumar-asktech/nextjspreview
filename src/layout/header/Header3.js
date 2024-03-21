@@ -9,7 +9,7 @@ const Header3 = () => {
   return (
     <Fragment>
       <header className="main-header header-three menu-white menu-absolute">
-        <HeaderTop />
+        {/* <HeaderTop /> */}
         {/*Header-Upper*/}
         <div className="header-upper">
           <div className="container clearfix">

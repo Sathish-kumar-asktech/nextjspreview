@@ -1,28 +1,22 @@
 import PageBanner from "@/components/PageBanner";
 import Layout from "@/layout";
-// import axios from "axios";
-import { useState } from "react";
-import axios from "@/axios";
+import axios from 'axios';
 
 const Contact = () => {
-  const [tokent, settokent] = useState(
-    "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJldmVudGxpc3QiOlt7IlVzZXJJRCI6IjEiLCJMb2dpbkNvZGUiOiIwMSIsIkxvZ2luTmFtZSI6IkFkbWluIiwiRW1haWxJZCI6ImFkbWluQGdtYWlsLmNvbSIsIlVzZXJUeXBlIjoiQURNSU4ifV0sImlhdCI6MTYzODM1NDczMX0.ZW6zEHIXTxfT-QWEzS6-GuY7bRupf2Jc_tp4fXIRabQ"
-  );
+
   const sendMessage = async (e) => {
     e.preventDefault();
     const form = e.target;
     const formData = new FormData(form);
     try {
-      const response = await axios.instance.get("/GetAllUOM", {
-        headers: { Authorization: tokent, "Content-Type": "application/json" },
-      });
-
-      console.log("Response from backend:", response.data);
+      const response = await axios.post('http://localhost:1999/api/send-message', formData);
+      console.log('Response from backend:', response.data);
     } catch (error) {
-      console.error("Error sending message:", error);
+      console.error('Error sending message:', error);
     }
   };
 
+  
   return (
     <Layout>
       <PageBanner pageName={"Contact Us"} />{" "}
@@ -125,8 +119,7 @@ const Contact = () => {
               </div>
             </div>
             <form
-              onSubmit={sendMessage}
-              // onSubmit={(e) => e.preventDefault()}
+              onSubmit={(e) => e.preventDefault()}
               id="contactForm"
               className="contactForm"
               action="assets/php/form-process.php"

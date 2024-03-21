@@ -15,6 +15,7 @@
     "@mui/icons-material": "^5.15.13",
     "@mui/material": "^5.15.13",
     "@next/font": "13.1.2",
+    "axios": "^1.6.8",
     "isotope-layout": "^3.0.6",
     "lodash": "^4.17.21",
     "next": "13.1.2",

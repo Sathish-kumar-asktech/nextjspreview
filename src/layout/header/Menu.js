@@ -361,7 +361,7 @@ const DeskTopMenu = () => {
           </li>
           
           <li className="dropdown">
-            <a href="#" style={{ whiteSpace: "nowrap" }}>
+            <a href="contact" style={{ whiteSpace: "nowrap" }}>
               Contact US
             </a>
           </li>

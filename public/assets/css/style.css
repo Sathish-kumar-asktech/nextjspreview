@@ -4118,7 +4118,8 @@ h6,
 }
 @media only screen and (max-width: 575px) {
   .main-menu .mobile-logo {
-    max-width: 150px;
+    max-width: 70px;
+    padding: 10px;
   }
 }
 
@@ -4353,8 +4354,8 @@ h6,
   background: transparent;
 }
 .main-menu .navbar-header .navbar-toggle .icon-bar {
-  /* background: var(--base-color); */
-  background: white;
+  background: var(--base-color);
+  /* background: white; */
   height: 2px;
   width: 30px;
   display: block;
