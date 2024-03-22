@@ -19,6 +19,7 @@ import {
   serviceThreeSlider,
   testimonialThreeSlider,
 } from "@/src/sliderProps";
+import { Container } from "@mui/material";
 
 const Counter = dynamic(() => import("@/src/components/Counter"), {
   ssr: false,
@@ -77,7 +78,8 @@ const Index = () => {
     <Layout header={2}>
       {/* Hero Section Start */}
       <section className="hero-area bgc-gray rel z-1">
-        <div className="container">
+        <Container>
+        <div className="">
           <div className="row align-items-center">
             <div className="col-lg-6 align-self-center mb-3">
               <div className="hero-content pt-115 pb-125 rpb-0 wow fadeInUp delay-0-4s">
@@ -138,11 +140,12 @@ const Index = () => {
             alt="Shape"
           />
         </div>
+        </Container>
       </section>
 
       {/* About Area start */}
       <section className="about-area pt-150  rpb-100 rel z-1">
-        <div className="container">
+        <Container >
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="about-content rmb-65 wow fadeInLeft delay-0-2s">
@@ -252,7 +255,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
       {/* About Area end */}
 
@@ -323,7 +326,7 @@ const Index = () => {
         className="project-area overflow-hidden bgc-lighter  rpt-100 rel z-1"
         style={{ paddingTop: 80 }}
       >
-        <div className="container">
+        <Container>
           <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
             {/* <span className="sub-title mb-15">Learn Our Project</span> */}
             <h2 className="new-font-play">
@@ -673,7 +676,7 @@ const Index = () => {
               </div>
             </div>
           </Slider>
-        </div>
+        </Container>
         <div className="project-shapes">
           <img
             className="shape one"
@@ -691,7 +694,7 @@ const Index = () => {
 
       {/* Services Area start */}
       <section className="services-area bgc-gray text-white pt-75 pb-10 rel z-1">
-        <div className="container">
+        <Container>
           <div className="row medium-gap">
             <div className="col-xl-12 col-md-12">
               <div
@@ -911,7 +914,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Services Area end */}
@@ -993,7 +996,7 @@ const Index = () => {
       {/* Techveel Area End */}
       {/* Techveel Area start */}
       <section className=" about-area-four pt-25 mb-5 rpt-0 rel z-2">
-        <div className="container">
+        <Container>
           <div className="row align-items-center">
             <div className="col-xl-6">
               <div className="about-four-image rel z-1 mb-65 wow fadeInRight delay-0-2s">
@@ -1139,13 +1142,13 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
       {/* Techveel Area end */}
 
       {/* Why Choose Us Area start */}
       <section className="why-choose-us-area py-130 rpy-100 rel z-1">
-        <div className="container">
+        <Container >
           <div className="row justify-content-center">
             <div className="col-xl-8">
               <div className="section-title text-center mb-45 wow fadeInUp delay-0-2s">
@@ -1462,7 +1465,7 @@ const Index = () => {
               </Tab.Content>
             </div>
           </Tab.Container>
-        </div>
+        </Container>
         <div className="why-choose-shapes">
           <img
             className="shape one"
@@ -1480,7 +1483,7 @@ const Index = () => {
 
       {/* Statistics Area start */}
       <section className="statistics-area-two rel z-2 mb-130 rmb-100">
-        <div className="container">
+        <Container>
           <div className="row justify-content-center">
             <div className="col-xl-6 col-lg-8">
               <div className="section-title text-center mb-50 wow fadeInUp delay-0-2s">
@@ -1600,13 +1603,13 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
       {/* Statistics Area end */}
 
       {/* Skills Area start */}
       <section className="skills-area">
-        <div className="">
+        <Container>
           <div className="row">
             <div className="col-xl-12">
               <div className="skills-content mt-60 mb-70 rmt-0 rel z-1 wow fadeInLeft delay-0-2s">
@@ -1674,13 +1677,13 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
       {/* Skills Area end */}
 
       {/* Testimonials Area Three Start */}
       <section className="testimonials-three-area py-130 rpy-100">
-        <div className="container">
+        <Container>
           <div className="row gap-80 align-items-center">
             <div className="col-xl-7 col-lg-6">
               <div className="testimonials-three-image rmb-55 wow fadeInLeft delay-0-2s">
@@ -1765,7 +1768,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
       {/* Testimonials Area Three End */}
 
@@ -1776,7 +1779,7 @@ const Index = () => {
           backgroundImage: "url(assets/images/background/contact-form-bg.jpg)",
         }}
       >
-        <div className="container">
+        <Container>
           <div className="row gap-100 align-items-center">
             <div className="col-lg-7">
               <div className="contact-form bg-white p-80 rmb-55 wow fadeInRight delay-0-2s">
@@ -1897,7 +1900,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
       {/* Contact Form Section End */}
 
@@ -1906,7 +1909,7 @@ const Index = () => {
         className="blog-area pb-150 mb-30 mt-4 rmb-0 rel z-1"
         
       >
-        <div className="container" style={{ marginTop: '150px' }}>
+        <Container style={{ marginTop: '150px' }}>
           <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
             <span className="sub-title mb-15">Our Blog &amp; News</span>
             <h2>Latest Blog, New &amp; Articles</h2>
@@ -2027,7 +2030,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
       {/* Blog Area end */}
     </Layout>
