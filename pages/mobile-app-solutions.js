@@ -12,7 +12,7 @@ const Services = () => {
 
       {/* mobile-services*/}
       <section className="about-area-two px-3  py-130 rpy-100 rel z-1">
-        <Container >
+        <Container>
           <div className="row align-items-center gap-90">
             <div className="col-lg-6">
               <div className="about-two-image rel z-1 rmb-65 wow fadeInRight delay-0-2s">
@@ -39,7 +39,7 @@ const Services = () => {
                   operations, or enhance brand visibility, our team of expert
                   developers is here to turn your app ideas into reality.
                 </p>
-                <ul className="list-style-one pt-5">
+                <ul className="list-style-one pt-5 mt-2">
                   <li>
                     Customized app development for iOS and Android platforms
                   </li>
@@ -48,7 +48,7 @@ const Services = () => {
                   <li>Testing, optimization, and ongoing support</li>
                 </ul>
 
-                <div className="about-btns">
+                <div className="about-btns px-3">
                   <Link legacyBehavior href="/about">
                     <a className="theme-btn style-three mt-15">
                       Get a Call Back <i className="fas fa-long-arrow-right" />
@@ -72,7 +72,7 @@ const Services = () => {
 
       {/* Services Area Two start */}
       <section className="services-area-two px-3  rel z-2">
-        <Container>
+        <Container maxWidth={"xl"}>
           <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
             <span className="sub-title mb-10">What We Provides</span>
             {/* <h2>Mobile App Solutions</h2> */}
@@ -84,7 +84,9 @@ const Services = () => {
                   <img src="assets/images/services/ios.png" alt="Service" />
                 </div>
                 <div className="content">
-                  <h4 className="title text-center">Native iOS Development</h4>
+                  <h4 className="title text-center">
+                    <span style={{ color: "#7E97A6" }}>IOS</span> Development
+                  </h4>
                   <p className="text-center">
                     Harness the power of iOS with our native app development
                     services. Our team of experienced developers leverages the
@@ -110,7 +112,8 @@ const Services = () => {
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
-                    Native Android Development
+                    <span style={{ color: "#65B741" }}> Android</span>{" "}
+                    Development
                   </h4>
                   <p className="text-center">
                     Unlock the potential of the Android platform with our native
@@ -137,7 +140,8 @@ const Services = () => {
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
-                    React Native Development
+                    <span style={{ color: "#008DDA" }}>React Native </span>
+                    Development
                   </h4>
                   <p className="text-center">
                     Embrace cross-platform development with React Native. Our
@@ -157,7 +161,6 @@ const Services = () => {
                 </div>
               </div>
             </div>
-
             <div className="col-xl-6 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
@@ -167,7 +170,11 @@ const Services = () => {
                   />
                 </div>
                 <div className="content">
-                  <h4 className="title text-center">Flutter App Development</h4>
+                  <h4 className="title text-center">
+                    {" "}
+                    <span style={{ color: "#5356FF" }}>Flutter </span> App
+                    Development
+                  </h4>
                   <p className="text-center">
                     Experience the power of Flutter for building beautiful,
                     natively compiled applications for mobile, web, and desktop
@@ -186,14 +193,17 @@ const Services = () => {
                 </div>
               </div>
             </div>
-
             <div className="col-xl-6 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
                   <img src="assets/images/services/ionic.png" alt="Service" />
                 </div>
                 <div className="content">
-                  <h4 className="title text-center">Ionic App Development</h4>
+                  <h4 className="title text-center">
+                    {" "}
+                    <span style={{ color: "#378CE7" }}>Ionic</span> App
+                    Development
+                  </h4>
                   <p className="text-center">
                     Leverage the Ionic framework to build high-quality,
                     cross-platform apps using web technologies like HTML, CSS,
@@ -678,8 +688,8 @@ const Services = () => {
       </section>
       {/* Partners Area end */}
 
-       {/* Work Process Area start */}
-       <section className="work-process-area px-3  pt-130 pb-100 rpt-100 rpb-70 rel z-1">
+      {/* Work Process Area start */}
+      <section className="work-process-area px-3  pt-130 pb-100 rpt-100 rpb-70 rel z-1">
         <div className="section-title text-center mb-70 wow fadeInUp delay-0-2s">
           <span className="sub-title mb-15">Working Process</span>
           <h2>Industry Best Practices to the Core</h2>
@@ -753,8 +763,8 @@ const Services = () => {
         </div>
       </section>
 
-       {/* Contact Form Section Start */}
-       <section
+      {/* Contact Form Section Start */}
+      <section
         className="contact-form-area py-130 px-3  rpy-100  mb-4 bgs-cover"
         style={{
           backgroundImage: "url(assets/images/background/contact-form-bg.jpg)",
@@ -884,7 +894,6 @@ const Services = () => {
         </Container>
       </section>
       {/* Contact Form Section End */}
-
     </Layout>
   );
 };
