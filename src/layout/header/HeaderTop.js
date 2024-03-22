@@ -4,7 +4,7 @@ const HeaderTop = () => {
   return (
     <div className="header-top-wrap bgc-secondary">
       <div className="container-fluid">
-        <div className="header-top">          
+        <div className="header-top">
           <div className="container  p-1">
             <div className="header-top">
               <ul>
@@ -29,30 +29,30 @@ const HeaderTop = () => {
                   </a>
                 </li>
 
-                <li className="for-none" style={{ color: "white" }}>
+                {/* <li className="for-none" style={{ color: "white" }}>
                   <i className="far fa-clock" /> Working Hours : Mon - Sat, 10
                   AM to 7 PM
+                </li> */}
+                <li>
+                  <div className="social-style-one">
+                    <a href="#" >
+                      <i className="fab fa-facebook-f" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-twitter" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-instagram" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-linkedin-in" />
+                    </a>
+                                                      
+                  </div>
                 </li>
-                {/* <li>
-                <div className="social-style-one">
-                  <a href="#" style={{color:"white"}}>
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="#" style={{color:"white"}}>
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="#" style={{color:"white"}}>
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="#" style={{color:"white"}}>
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </div>
-              </li> */}
               </ul>
             </div>
           </div>
-        
         </div>
       </div>
     </div>

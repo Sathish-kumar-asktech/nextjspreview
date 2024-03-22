@@ -245,7 +245,7 @@ const DeskTopMenu = () => {
             <a href="#">services</a>
             <ul>
               <li>
-                <Link href="our-services" style={{ whiteSpace: "nowrap" }}>
+                <Link href="mobile-app-solutions" style={{ whiteSpace: "nowrap" }}>
                   Mobile App Solutions
                 </Link>
               </li>

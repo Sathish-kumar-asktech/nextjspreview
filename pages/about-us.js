@@ -14,6 +14,7 @@ import {
   serviceThreeSlider,
   testimonialThreeSlider,
 } from "@/src/sliderProps";
+import { Container } from "@mui/material";
 
 const Counter = dynamic(() => import("@/src/components/Counter"), {
   ssr: false,
@@ -33,8 +34,8 @@ const ServiceDetails = () => {
     <Layout>
       <PageBanner pageName={"About Us"} />
       {/* About Area start */}
-      <section className="about-area-three mt-120  pt-25 rpt-0 pb-100 rpb-65 rel z-1">
-        <div className="container">
+      <section className="about-area-three mt-120  px-3  pt-25 rpt-0 pb-100 rpb-65 rel z-1">
+        <Container>
           <div className="row align-items-center gap-100">
             <div className="col-lg-6">
               <div className="about-content rel z-1 wow fadeInLeft delay-0-2s">
@@ -199,15 +200,15 @@ const ServiceDetails = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
         <div className="about-bg-shape">
           <img src="assets/images/background/about-bg-shape.png" alt="About" />
         </div>
       </section>
       {/* About Area end */}
       {/* Partners Area start */}
-      <section className="partners-area-two bgc-secondary pt-80 pb-50 rel z-1">
-        <div className="container">
+      <section className="partners-area-two bgc-secondary px-3 pt-80 pb-50 rel z-1">
+        <Container>
           <div className="section-title text-white text-center mb-50 wow fadeInUp delay-0-2s">
             {/* <span className="sub-title mb-15">Our Partners</span> */}
             <h2>Our Partners</h2>
@@ -315,7 +316,7 @@ const ServiceDetails = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </Container>
         <div className="partners-shapes">
           <img
             className="left-shape"
@@ -331,8 +332,8 @@ const ServiceDetails = () => {
       </section>
       {/* Partners Area end */}
 
-      <section className="service-details-area m-5 pt-130 rpt-100 pb-115 rpb-85">
-        <div className="container">
+      <section className="service-details-area m-5 pt-130 px-3  rpt-100 pb-115 rpb-85">
+        <Container >
           <div className="row gap-100">
             <div className="col-lg-12">
               <div className="service-details-content">
@@ -537,12 +538,12 @@ const ServiceDetails = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
 
       {/* Statistics Area start */}
       <section className="statistics-area-two rel z-2">
-        <div className="container">
+        <>
           <div
             className="statistics-inner style-two bgs-cover text-white p-80 pb-20"
             style={{
@@ -621,13 +622,13 @@ const ServiceDetails = () => {
               </div>
             </div>
           </div>
-        </div>
+        </>
       </section>
       {/* Statistics Area end */}
 
       {/* Testimonials Area Three Start */}
-      <section className="testimonials-three-area py-130 rpy-100">
-        <div className="container">
+      <section className="testimonials-three-area px-3  py-130 rpy-100">
+        <Container>
           <div className="row gap-80 align-items-center">
             <div className="col-xl-7 col-lg-6">
               <div className="testimonials-three-image rmb-55 wow fadeInLeft delay-0-2s">
@@ -712,18 +713,18 @@ const ServiceDetails = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
       {/* Testimonials Area Three End */}
 
       {/* Contact Form Section Start */}
       <section
-        className="contact-form-area py-130 rpy-100  mb-4 bgs-cover"
+        className="contact-form-area py-130 px-3  rpy-100  mb-4 bgs-cover"
         style={{
           backgroundImage: "url(assets/images/background/contact-form-bg.jpg)",
         }}
       >
-        <div className="container">
+        <Container>
           <div className="row gap-100 align-items-center">
             <div className="col-lg-7">
               <div className="contact-form bg-white p-80 rmb-55 wow fadeInRight delay-0-2s">
@@ -844,7 +845,7 @@ const ServiceDetails = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
       {/* Contact Form Section End */}
     </Layout>

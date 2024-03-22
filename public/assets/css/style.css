@@ -639,8 +639,18 @@ a.theme-btn.style-four:not(:hover):after {
   margin-right: -10px;
 }
 .social-style-one a {
+  color: white;  
+  /* padding: 5px; */
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 10px; 
+  transition: all 0.5s;
+}
+
+
+.social-style-one a:hover {
+  color: greenyellow;
+  /* padding: 5px; */
+  transition: all 0.5s;
 }
 
 /** Social Link Two **/

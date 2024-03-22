@@ -77,7 +77,7 @@ const Index = () => {
   return (
     <Layout header={2}>
       {/* Hero Section Start */}
-      <section className="hero-area bgc-gray rel z-1">
+      <section className="hero-area px-3 bgc-gray rel z-1">
         <Container>
         <div className="">
           <div className="row align-items-center">
@@ -144,7 +144,7 @@ const Index = () => {
       </section>
 
       {/* About Area start */}
-      <section className="about-area pt-150  rpb-100 rel z-1">
+      <section className="about-area px-3  pt-150  rpb-100 rel z-1">
         <Container >
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -262,7 +262,7 @@ const Index = () => {
       {/* Hero Section End */}
 
       {/* Partners Area start */}
-      <section className="partners-area pb-100 pt-150 rmt-30 rpb-70 rel z-1">
+      <section className="partners-area px-3  pb-100 pt-150 rmt-30 rpb-70 rel z-1">
         <div>
           <div className="section-title text-center mb-50 wow fadeInUp delay-0-2s">
             {/* <span className="sub-title mb-15">Global Partners</span> */}
@@ -323,7 +323,7 @@ const Index = () => {
       
       {/* Project Area start */}
       <section
-        className="project-area overflow-hidden bgc-lighter  rpt-100 rel z-1"
+        className="project-area px-3   overflow-hidden bgc-lighter  rpt-100 rel z-1"
         style={{ paddingTop: 80 }}
       >
         <Container>
@@ -693,7 +693,7 @@ const Index = () => {
       {/* Project Area end */}
 
       {/* Services Area start */}
-      <section className="services-area bgc-gray text-white pt-75 pb-10 rel z-1">
+      <section className="services-area px-3  bgc-gray text-white pt-75 pb-10 rel z-1">
         <Container>
           <div className="row medium-gap">
             <div className="col-xl-12 col-md-12">
@@ -919,7 +919,7 @@ const Index = () => {
 
       {/* Services Area end */}
       {/* Work Process Area start */}
-      <section className="work-process-area pt-130 pb-100 rpt-100 rpb-70 rel z-1">
+      <section className="work-process-area px-3  pt-130 pb-100 rpt-100 rpb-70 rel z-1">
         <div className="section-title text-center mb-70 wow fadeInUp delay-0-2s">
           <span className="sub-title mb-15">Working Process</span>
           <h2>Industry Best Practices to the Core</h2>
@@ -995,7 +995,7 @@ const Index = () => {
 
       {/* Techveel Area End */}
       {/* Techveel Area start */}
-      <section className=" about-area-four pt-25 mb-5 rpt-0 rel z-2">
+      <section className=" about-area-four px-3  pt-25 mb-5 rpt-0 rel z-2">
         <Container>
           <div className="row align-items-center">
             <div className="col-xl-6">
@@ -1147,7 +1147,7 @@ const Index = () => {
       {/* Techveel Area end */}
 
       {/* Why Choose Us Area start */}
-      <section className="why-choose-us-area py-130 rpy-100 rel z-1">
+      <section className="why-choose-us-area px-3  py-130 rpy-100 rel z-1">
         <Container >
           <div className="row justify-content-center">
             <div className="col-xl-8">
@@ -1482,7 +1482,7 @@ const Index = () => {
       {/* Why Choose Us Area end */}
 
       {/* Statistics Area start */}
-      <section className="statistics-area-two rel z-2 mb-130 rmb-100">
+      <section className="statistics-area-two px-3  rel z-2 mb-130 rmb-100">
         <Container>
           <div className="row justify-content-center">
             <div className="col-xl-6 col-lg-8">
@@ -1608,7 +1608,7 @@ const Index = () => {
       {/* Statistics Area end */}
 
       {/* Skills Area start */}
-      <section className="skills-area">
+      <section className="skills-area px-3 ">
         <Container>
           <div className="row">
             <div className="col-xl-12">
@@ -1682,7 +1682,7 @@ const Index = () => {
       {/* Skills Area end */}
 
       {/* Testimonials Area Three Start */}
-      <section className="testimonials-three-area py-130 rpy-100">
+      <section className="testimonials-three-area px-3  py-130 rpy-100">
         <Container>
           <div className="row gap-80 align-items-center">
             <div className="col-xl-7 col-lg-6">
@@ -1774,7 +1774,7 @@ const Index = () => {
 
       {/* Contact Form Section Start */}
       <section
-        className="contact-form-area py-130 rpy-100  mb-4 bgs-cover"
+        className="contact-form-area px-3  py-130 rpy-100  mb-4 bgs-cover"
         style={{
           backgroundImage: "url(assets/images/background/contact-form-bg.jpg)",
         }}
@@ -1906,7 +1906,7 @@ const Index = () => {
 
       {/* Blog Area start */}
       <section
-        className="blog-area pb-150 mb-30 mt-4 rmb-0 rel z-1"
+        className="blog-area pb-150 px-3  mb-30 mt-4 rmb-0 rel z-1"
         
       >
         <Container style={{ marginTop: '150px' }}>

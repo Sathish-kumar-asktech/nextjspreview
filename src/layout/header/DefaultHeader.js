@@ -2,6 +2,7 @@ import Link from "next/link";
 import Search from "../Search";
 import HeaderTop from "./HeaderTop";
 import Menu from "./Menu";
+import { Container } from "@mui/material";
 
 const DefaultHeader = () => {
   return (
@@ -10,7 +11,8 @@ const DefaultHeader = () => {
       {/*Header-Upper*/}
       <div className="header-upper bg-white">
       <HeaderTop />
-        <div className="container-fluid clearfix">
+       {/* <div className="container-fluid clearfix>*/}      
+        <Container >
           <div className="header-inner rel d-flex align-items-center">
             <div className="logo-outer">
               <div className="logo">
@@ -44,7 +46,7 @@ const DefaultHeader = () => {
               </Link>
             </div>
             {/* Header Social */}
-            <div className="social-style-two">
+            {/* <div className="social-style-two">
               <a href="#">
                 <i className="fab fa-facebook-f" />
               </a>
@@ -57,9 +59,9 @@ const DefaultHeader = () => {
               <a href="#">
                 <i className="fab fa-linkedin-in" />
               </a>
-            </div>
+            </div> */}
           </div>
-        </div>
+        </Container>
       </div>
       {/*End Header Upper*/}
     </header>

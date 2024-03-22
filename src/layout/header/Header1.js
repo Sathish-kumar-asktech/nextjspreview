@@ -5,6 +5,7 @@ import Menu from "./Menu";
 import { styled } from "@mui/system";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { Container } from "@mui/material";
 
 const Header1 = () => {
   const theme = useTheme();
@@ -18,7 +19,7 @@ const Header1 = () => {
           className="header-top-wrap bgc-gray"
           style={{ backgroundColor: "#0A1D56" }}
         >
-          <div className="container">
+          <Container >
             <div className="header-top">
               <ul>
                 <li>
@@ -64,9 +65,10 @@ const Header1 = () => {
               </li> */}
               </ul>
             </div>
-          </div>
+          </Container>
         </div>
-        <div className={`${matchesScreen && "container"} clearfix`}>
+        {/* <div className={`${matchesScreen && "container"} clearfix`}></div> */}
+        <Container>
           <div className="header-inner rel d-flex align-items-center">
             <div
               className="logo-outer"
@@ -128,7 +130,7 @@ const Header1 = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </Container>
       </div>
       {/*End Header Upper*/}
     </header>
