@@ -10,45 +10,27 @@ import { Nav, Tab } from "react-bootstrap";
 const Services = () => {
   return (
     <Layout>
-      <PageBanner pageName={"Mobile App Solutions"} />
+      <PageBanner pageName={"Digital Marketing Services "} />
 
       {/* mobile-services*/}
       <section className="about-area-two px-3  py-130 rpy-100 rel z-1">
         <Container>
           <div className="row align-items-center gap-90">
             <div className="col-lg-6">
-              <div className="about-two-image rel z-1 rmb-65 wow fadeInRight delay-0-2s">
-                <img
-                  src="assets/images/services/mobile-service2.png"
-                  alt="About"
-                />
-                <div className="bg-circle-shape" />
-              </div>
-            </div>
-            <div className="col-lg-6">
               <div className="about-content rel z-1 wow fadeInLeft delay-0-2s">
                 <div className="section-title mb-30">
                   <span className="sub-title mb-15">Our Services</span>
-                  <h2>Mobile App Solutions</h2>
+                  <h2>Digital Marketing Services </h2>
                 </div>
                 <p>
-                  Empower your business with our bespoke mobile app solutions
-                  tailored to your unique needs. From conceptualization to
-                  deployment, we guide you through every step of the mobile app
-                  development process, ensuring a seamless and engaging user
-                  experience across iOS and Android platforms. Whether you're
-                  looking to expand your customer reach, streamline internal
-                  operations, or enhance brand visibility, our team of expert
-                  developers is here to turn your app ideas into reality.
+                  At Ask Technology, we offer comprehensive digital marketing
+                  solutions to help businesses maximize their online presence,
+                  drive targeted traffic, and achieve measurable results. From
+                  Google Ads and social media advertising to search engine
+                  optimization (SEO) and performance marketing, our services are
+                  designed to enhance brand visibility, generate leads, and
+                  increase conversions across various digital channels.
                 </p>
-                <ul className="list-style-one pt-5 mt-2">
-                  <li>
-                    Customized app development for iOS and Android platforms
-                  </li>
-                  <li>User-centric design and intuitive interfaces</li>
-                  <li>Integration with backend systems and third-party APIs</li>
-                  <li>Testing, optimization, and ongoing support</li>
-                </ul>
 
                 <div className="about-btns py-3">
                   <Link legacyBehavior href="/about">
@@ -56,15 +38,13 @@ const Services = () => {
                       Get a Call Back <i className="fas fa-long-arrow-right" />
                     </a>
                   </Link>
-                  {/* <div className="hotline mt-15">
-                    <i className="fas fa-phone" />
-                    <div className="content">
-                      <span>Hotline</span>
-                      <br />
-                      <a href="callto:+000(123)45688">+000 (123) 456 88</a>
-                    </div>
-                  </div> */}
                 </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="about-two-image rel z-1 rmb-65 wow fadeInRight delay-0-2s">
+                <img src="assets/images/services/digital.png" alt="About" />
+                {/* <div className="bg-circle-shape" /> */}
               </div>
             </div>
           </div>
@@ -73,8 +53,8 @@ const Services = () => {
       {/* About Area end */}
 
       {/* Services Area Two start */}
-      <section className="services-area-two px-3  rel z-2">
-        <Container maxWidth={"xl"}>
+      <section className="services-area-two px-3  mt-50 rel z-2">
+        <Container maxWidth={"lg"}>
           <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
             <span className="sub-title mb-10">What We Provides</span>
             {/* <h2>Mobile App Solutions</h2> */}
@@ -83,144 +63,130 @@ const Services = () => {
             <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/services/ios.png" alt="Service" />
+                  <img src="assets/images/services/ads.png" alt="Service" />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
-                    <span style={{ color: "#7E97A6" }}>IOS</span> Development
+                    <span style={{ color: "#7E97A6" }}>Social Media</span> Ads
                   </h4>
                   <p className="text-center">
-                    Harness the power of iOS with our native app development
-                    services. Our team of experienced developers leverages the
-                    latest tools and technologies to create high-performance,
-                    feature-rich iOS apps that deliver seamless user experiences
-                    and drive business growth.
+                    Engage with your audience on popular social media platforms
+                    through targeted advertising campaigns. From Facebook and
+                    Instagram to LinkedIn and Twitter, we create and manage ads
+                    that resonate with your audience, drive engagement, and
+                    increase brand awareness.
                   </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
+                </div>
+              </div>
+            </div>
+
+            <div className="col-xl-4 col-lg-4 col-md-6">
+              <div className="service-item-two wow fadeInUp delay-0-2s">
+                <div className="image">
+                  <img src="assets/images/services/seo.png" alt="Service" />
+                </div>
+                <div className="content">
+                  <h4 className="title text-center">
+                    <span style={{ color: "#008DDA" }}>SEO </span> Optimization
+                  </h4>
+                  <p className="text-center">
+                    Improve your website's visibility and organic search
+                    rankings with our SEO services. Our SEO experts conduct
+                    comprehensive keyword research, optimize on-page and
+                    off-page elements, and implement strategic tactics to boost
+                    your website's authority and drive organic traffic.
+                  </p>
                 </div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/services/android.png" alt="Service" />
+                  <img src="assets/images/services/ppc.png" alt="Service" />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
-                    <span style={{ color: "#65B741" }}> Android</span>{" "}
-                    Development
+                    {" "}
+                    <span style={{ color: "#5356FF" }}>
+                      Pay-Per-Click (PPC){" "}
+                    </span>
+                    Advertising
                   </h4>
                   <p className="text-center">
-                    Unlock the potential of the Android platform with our native
-                    app development expertise. From smartphones to tablets and
-                    beyond, we build native Android apps that are optimized for
-                    performance, security, and compatibility, ensuring maximum
-                    reach and impact.
+                    Drive immediate results with PPC advertising campaigns that
+                    target high-intent keywords and audiences. Our PPC
+                    specialists create customized campaigns across Google, Bing,
+                    and other platforms to generate qualified leads and maximize
+                    your advertising budget.
                   </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
                 </div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6">
-              <div className="service-item-two wow fadeInUp delay-0-2s">
-                <div className="image">
-                  <img src="assets/images/services/native.png" alt="Service" />
-                </div>
-                <div className="content">
-                  <h4 className="title text-center">
-                    <span style={{ color: "#008DDA" }}>React Native </span>
-                    Development
-                  </h4>
-                  <p className="text-center">
-                    Embrace cross-platform development with React Native. Our
-                    React Native app development services enable you to reach
-                    both iOS and Android users with a single codebase, saving
-                    time and resources while delivering a consistent user
-                    experience across devices.
-                  </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-6 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
                   <img
-                    src="assets/images/services/undraw_flutter_dev_wvqj.png"
+                    src="assets/images/services/marketing.png"
                     alt="Service"
                   />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
-                    {" "}
-                    <span style={{ color: "#5356FF" }}>Flutter </span> App
-                    Development
+                    <span style={{ color: "#7E97A6" }}>Performance </span>
+                    <br /> Marketing
                   </h4>
                   <p className="text-center">
-                    Experience the power of Flutter for building beautiful,
-                    natively compiled applications for mobile, web, and desktop
-                    from a single codebase. Our Flutter app development services
-                    combine speed, flexibility, and expressive UIs to create
-                    stunning apps that stand out in the crowded app marketplace.
+                    Leverage data-driven insights and analytics to optimize your
+                    digital marketing campaigns for maximum performance. Our
+                    performance marketing strategies focus on continuous
+                    monitoring, testing, and refinement to ensure that your
+                    campaigns deliver the best possible results.
                   </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
                 </div>
               </div>
             </div>
-            <div className="col-xl-6 col-lg-4 col-md-6">
+            <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/services/ionic.png" alt="Service" />
+                  <img
+                    src="assets/images/services/ecommercemanage.png"
+                    alt="Service"
+                  />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
-                    {" "}
-                    <span style={{ color: "#378CE7" }}>Ionic</span> App
-                    Development
+                    <span style={{ color: "#65B741" }}> E-commerce Store </span>{" "}
+                    Management
                   </h4>
                   <p className="text-center">
-                    Leverage the Ionic framework to build high-quality,
-                    cross-platform apps using web technologies like HTML, CSS,
-                    and JavaScript. Our Ionic app development services enable
-                    rapid development and deployment of hybrid apps that deliver
-                    native-like performance and functionality across platforms.
+                    Let us handle the day-to-day management of your ecommerce
+                    store. Our ecommerce store management services include
+                    product updates, inventory management, order processing, and
+                    customer support, allowing you to focus on growing your
+                    business.
                   </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-4 col-lg-4 col-md-6">
+              <div className="service-item-two wow fadeInUp delay-0-2s">
+                <div className="image">
+                  <img
+                    src="assets/images/services/migration.png"
+                    alt="Service"
+                  />
+                </div>
+                <div className="content">
+                  <h4 className="title text-center">
+                    <span style={{ color: "#008DDA" }}>E-commerce Store </span>
+                    Migration
+                  </h4>
+                  <p className="text-center">
+                    Seamlessly migrate your ecommerce store to a new platform.
+                    Our ecommerce store migration services ensure a smooth
+                    transition with minimal disruption to your business,
+                    preserving your data, SEO rankings, and customer experience.
+                  </p>
                 </div>
               </div>
             </div>
@@ -1007,7 +973,7 @@ const Services = () => {
             <div className="col-lg-5">
               <div className="contact-info-wrap wow fadeInLeft delay-0-2s">
                 <div className="section-title mb-40">
-                  <span className="sub-title mb-10">Require a Service?  ?</span>
+                  <span className="sub-title mb-10">Require a Service? ?</span>
                   <h2>We Would Love To Hear From You.</h2>
                 </div>
                 <div className="contact-info-part">
@@ -1127,7 +1093,8 @@ const Services = () => {
                           type="submit"
                           className="theme-btn style-two mt-15 w-100"
                         >
-                          Get a Call Back <i className="far fa-long-arrow-right" />
+                          Get a Call Back{" "}
+                          <i className="far fa-long-arrow-right" />
                         </button>
                       </div>
                     </div>

@@ -10,44 +10,35 @@ import { Nav, Tab } from "react-bootstrap";
 const Services = () => {
   return (
     <Layout>
-      <PageBanner pageName={"Mobile App Solutions"} />
+      <PageBanner pageName={"Enterprise Applications Development"} />
 
       {/* mobile-services*/}
       <section className="about-area-two px-3  py-130 rpy-100 rel z-1">
         <Container>
           <div className="row align-items-center gap-90">
-            <div className="col-lg-6">
-              <div className="about-two-image rel z-1 rmb-65 wow fadeInRight delay-0-2s">
-                <img
-                  src="assets/images/services/mobile-service2.png"
-                  alt="About"
-                />
-                <div className="bg-circle-shape" />
-              </div>
-            </div>
-            <div className="col-lg-6">
+          <div className="col-lg-6">
               <div className="about-content rel z-1 wow fadeInLeft delay-0-2s">
                 <div className="section-title mb-30">
                   <span className="sub-title mb-15">Our Services</span>
-                  <h2>Mobile App Solutions</h2>
+                  <h2>Enterprise Application Development</h2>
                 </div>
                 <p>
-                  Empower your business with our bespoke mobile app solutions
-                  tailored to your unique needs. From conceptualization to
-                  deployment, we guide you through every step of the mobile app
-                  development process, ensuring a seamless and engaging user
-                  experience across iOS and Android platforms. Whether you're
-                  looking to expand your customer reach, streamline internal
-                  operations, or enhance brand visibility, our team of expert
-                  developers is here to turn your app ideas into reality.
+                  Transform your business operations with our enterprise
+                  application development services. Our custom-built solutions
+                  are designed to address your unique business challenges,
+                  streamline processes, and enhance productivity. From workflow
+                  automation to data analytics, we leverage the latest
+                  technologies to deliver scalable and robust applications that
+                  empower your organization to stay ahead in today's competitive
+                  landscape.
                 </p>
                 <ul className="list-style-one pt-5 mt-2">
                   <li>
-                    Customized app development for iOS and Android platforms
+                    Tailored solutions to meet specific business requirements
                   </li>
-                  <li>User-centric design and intuitive interfaces</li>
-                  <li>Integration with backend systems and third-party APIs</li>
-                  <li>Testing, optimization, and ongoing support</li>
+                  <li>Scalable architecture for future growth</li>
+                  <li>Integration with existing systems and databases</li>
+                  <li>Comprehensive testing and quality assurance</li>
                 </ul>
 
                 <div className="about-btns py-3">
@@ -67,6 +58,13 @@ const Services = () => {
                 </div>
               </div>
             </div>
+            <div className="col-lg-6">
+              <div className="about-two-image rel z-1 rmb-65 wow fadeInRight delay-0-2s">
+                <img src="assets/images/services/enterprise.png" alt="About" />
+                {/* <div className="bg-circle-shape" /> */}
+              </div>
+            </div>
+           
           </div>
         </Container>
       </section>
@@ -83,18 +81,19 @@ const Services = () => {
             <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/services/ios.png" alt="Service" />
+                  <img src="assets/images/services/coding.png" alt="Service" />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
-                    <span style={{ color: "#7E97A6" }}>IOS</span> Development
+                    <span style={{ color: "#7E97A6" }}>Full Stack </span>{" "}
+                    Development
                   </h4>
                   <p className="text-center">
-                    Harness the power of iOS with our native app development
-                    services. Our team of experienced developers leverages the
-                    latest tools and technologies to create high-performance,
-                    feature-rich iOS apps that deliver seamless user experiences
-                    and drive business growth.
+                    Our full-stack development services cover both front-end and
+                    back-end development, ensuring comprehensive solutions that
+                    meet your business requirements. From user interface design
+                    to database management, we have the expertise to deliver
+                    end-to-end solutions that drive business growth..
                   </p>
                   {/*                 
                   <ul className="list-style-three">
@@ -110,19 +109,19 @@ const Services = () => {
             <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/services/android.png" alt="Service" />
+                  <img src="assets/images/services/asp.png" alt="Service" />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
-                    <span style={{ color: "#65B741" }}> Android</span>{" "}
-                    Development
+                    <span style={{ color: "#65B741" }}> ASP.Net </span>{" "}
+                    Development Services
                   </h4>
                   <p className="text-center">
-                    Unlock the potential of the Android platform with our native
-                    app development expertise. From smartphones to tablets and
-                    beyond, we build native Android apps that are optimized for
-                    performance, security, and compatibility, ensuring maximum
-                    reach and impact.
+                    Leverage the power of ASP.Net for robust and scalable web
+                    applications. Our ASP.Net development services enable rapid
+                    development and deployment of enterprise-grade solutions
+                    that deliver high performance, security, and scalability,
+                    ensuring your business stays ahead of the competition.{" "}
                   </p>
                   {/*                 
                   <ul className="list-style-three">
@@ -138,19 +137,20 @@ const Services = () => {
             <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/services/native.png" alt="Service" />
+                  <img src="assets/images/services/java.png" alt="Service" />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
-                    <span style={{ color: "#008DDA" }}>React Native </span>
-                    Development
+                    <span style={{ color: "#008DDA" }}>Java </span>
+                    Development Services
                   </h4>
                   <p className="text-center">
-                    Embrace cross-platform development with React Native. Our
-                    React Native app development services enable you to reach
-                    both iOS and Android users with a single codebase, saving
-                    time and resources while delivering a consistent user
-                    experience across devices.
+                    Harness the flexibility and reliability of Java for your
+                    enterprise web development needs. Our Java development
+                    services encompass everything from web application
+                    development to enterprise software solutions, leveraging the
+                    latest Java technologies to deliver solutions that meet your
+                    business objectives.
                   </p>
                   {/*                 
                   <ul className="list-style-three">
@@ -163,26 +163,23 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-6 col-lg-4 col-md-6">
+            <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img
-                    src="assets/images/services/undraw_flutter_dev_wvqj.png"
-                    alt="Service"
-                  />
+                  <img src="assets/images/services/php.png" alt="Service" />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
                     {" "}
-                    <span style={{ color: "#5356FF" }}>Flutter </span> App
-                    Development
+                    <span style={{ color: "#5356FF" }}>PHP </span>
+                    Development Services
                   </h4>
                   <p className="text-center">
-                    Experience the power of Flutter for building beautiful,
-                    natively compiled applications for mobile, web, and desktop
-                    from a single codebase. Our Flutter app development services
-                    combine speed, flexibility, and expressive UIs to create
-                    stunning apps that stand out in the crowded app marketplace.
+                    Embrace the power of PHP for building dynamic and
+                    interactive web applications. Our PHP development services
+                    enable rapid development and deployment of custom solutions
+                    that are tailored to your business requirements, ensuring
+                    seamless integration and scalability as your business grows.
                   </p>
                   {/*                 
                   <ul className="list-style-three">
@@ -195,23 +192,54 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-6 col-lg-4 col-md-6">
+            <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/services/ionic.png" alt="Service" />
+                  <img src="assets/images/services/node.png" alt="Service" />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
                     {" "}
-                    <span style={{ color: "#378CE7" }}>Ionic</span> App
-                    Development
+                    <span style={{ color: "#378CE7" }}>Node.js </span>
+                    Development Services
                   </h4>
                   <p className="text-center">
-                    Leverage the Ionic framework to build high-quality,
-                    cross-platform apps using web technologies like HTML, CSS,
-                    and JavaScript. Our Ionic app development services enable
-                    rapid development and deployment of hybrid apps that deliver
-                    native-like performance and functionality across platforms.
+                    Experience the speed and scalability of Node.js for your
+                    enterprise web development projects. Our Node.js development
+                    services enable real-time, event-driven applications that
+                    can handle high volumes of traffic and deliver superior
+                    performance, empowering your business to stay ahead in
+                    today's competitive landscape.
+                  </p>
+                  {/*                 
+                  <ul className="list-style-three">
+                    <li>Paid Marketing</li>
+                    <li>CRO</li>
+                    <li>Content Marketing</li>
+                    <li>Email Marketing</li>
+                    <li>SMO</li>
+                  </ul> */}
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-4 col-lg-4 col-md-6">
+              <div className="service-item-two wow fadeInUp delay-0-2s">
+                <div className="image">
+                  <img src="assets/images/services/ruby.png" alt="Service" />
+                </div>
+                <div className="content">
+                  <h4 className="title text-center">
+                    {" "}
+                    <span style={{ color: "#5356FF" }}>Ruby on Rails </span>
+                    Development Services
+                  </h4>
+                  <p className="text-center">
+                    Unlock the potential of Ruby on Rails for building modern
+                    and scalable web applications. Our Ruby on Rails development
+                    services combine the elegance of Ruby with the power of
+                    Rails to deliver robust and maintainable solutions that meet
+                    your business needs, ensuring faster time-to-market and
+                    increased productivity.
                   </p>
                   {/*                 
                   <ul className="list-style-three">
@@ -1007,7 +1035,7 @@ const Services = () => {
             <div className="col-lg-5">
               <div className="contact-info-wrap wow fadeInLeft delay-0-2s">
                 <div className="section-title mb-40">
-                  <span className="sub-title mb-10">Require a Service?  ?</span>
+                  <span className="sub-title mb-10">Require a Service? ?</span>
                   <h2>We Would Love To Hear From You.</h2>
                 </div>
                 <div className="contact-info-part">
@@ -1127,7 +1155,8 @@ const Services = () => {
                           type="submit"
                           className="theme-btn style-two mt-15 w-100"
                         >
-                          Get a Call Back <i className="far fa-long-arrow-right" />
+                          Get a Call Back{" "}
+                          <i className="far fa-long-arrow-right" />
                         </button>
                       </div>
                     </div>

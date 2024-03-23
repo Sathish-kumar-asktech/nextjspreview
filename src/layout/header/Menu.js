@@ -249,28 +249,29 @@ const DeskTopMenu = () => {
                   Mobile App Solutions
                 </Link>
               </li>
+              
               <li>
-                <Link href="our-services" style={{ whiteSpace: "nowrap" }}>
+                <Link href="enterprise-application-services" style={{ whiteSpace: "nowrap" }}>
                   Enterprise Application Development
                 </Link>
               </li>
               <li>
-                <Link href="our-services" style={{ whiteSpace: "nowrap" }}>
+                <Link href="ecommerce-application-development" style={{ whiteSpace: "nowrap" }}>
                   Ecommerce Application Development
                 </Link>
               </li>
               <li>
-                <Link href="our-services" style={{ whiteSpace: "nowrap" }}>
+                <Link href="ui-ux-strategy" style={{ whiteSpace: "nowrap" }}>
                   UI/UX Strategy
                 </Link>
               </li>
               <li>
-                <Link href="our-services" style={{ whiteSpace: "nowrap" }}>
+                <Link href="digital-marketing-services" style={{ whiteSpace: "nowrap" }}>
                   Digital Marketing
                 </Link>
               </li>
               <li>
-                <Link href="our-services" style={{ whiteSpace: "nowrap" }}>
+                <Link href="erp-software-services" style={{ whiteSpace: "nowrap" }}>
                   ERP Software Development
                 </Link>
               </li>

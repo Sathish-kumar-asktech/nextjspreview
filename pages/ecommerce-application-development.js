@@ -10,45 +10,30 @@ import { Nav, Tab } from "react-bootstrap";
 const Services = () => {
   return (
     <Layout>
-      <PageBanner pageName={"Mobile App Solutions"} />
+      <PageBanner pageName={"Enterprise Applications Development"} />
 
       {/* mobile-services*/}
       <section className="about-area-two px-3  py-130 rpy-100 rel z-1">
         <Container>
           <div className="row align-items-center gap-90">
             <div className="col-lg-6">
-              <div className="about-two-image rel z-1 rmb-65 wow fadeInRight delay-0-2s">
-                <img
-                  src="assets/images/services/mobile-service2.png"
-                  alt="About"
-                />
-                <div className="bg-circle-shape" />
-              </div>
-            </div>
-            <div className="col-lg-6">
               <div className="about-content rel z-1 wow fadeInLeft delay-0-2s">
                 <div className="section-title mb-30">
                   <span className="sub-title mb-15">Our Services</span>
-                  <h2>Mobile App Solutions</h2>
+                  <h2>Ecommerce Application Development</h2>
                 </div>
                 <p>
-                  Empower your business with our bespoke mobile app solutions
-                  tailored to your unique needs. From conceptualization to
-                  deployment, we guide you through every step of the mobile app
-                  development process, ensuring a seamless and engaging user
-                  experience across iOS and Android platforms. Whether you're
-                  looking to expand your customer reach, streamline internal
-                  operations, or enhance brand visibility, our team of expert
-                  developers is here to turn your app ideas into reality.
+                  Unlock the potential of online retail with our Ecommerce
+                  Application Development service. From customizing platforms
+                  like Magento, Shopify, WooCommerce, and OpenCart to building
+                  bespoke solutions tailored to your business needs, we create
+                  seamless and secure ecommerce experiences. Our expertise
+                  ensures optimized performance, intuitive user interfaces, and
+                  robust features to drive sales, enhance customer engagement,
+                  and scale your online business effectively. Trust us to
+                  transform your ecommerce vision into reality and stay ahead in
+                  the competitive digital marketplace.
                 </p>
-                <ul className="list-style-one pt-5 mt-2">
-                  <li>
-                    Customized app development for iOS and Android platforms
-                  </li>
-                  <li>User-centric design and intuitive interfaces</li>
-                  <li>Integration with backend systems and third-party APIs</li>
-                  <li>Testing, optimization, and ongoing support</li>
-                </ul>
 
                 <div className="about-btns py-3">
                   <Link legacyBehavior href="/about">
@@ -56,15 +41,13 @@ const Services = () => {
                       Get a Call Back <i className="fas fa-long-arrow-right" />
                     </a>
                   </Link>
-                  {/* <div className="hotline mt-15">
-                    <i className="fas fa-phone" />
-                    <div className="content">
-                      <span>Hotline</span>
-                      <br />
-                      <a href="callto:+000(123)45688">+000 (123) 456 88</a>
-                    </div>
-                  </div> */}
                 </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="about-two-image rel z-1 rmb-65 wow fadeInRight delay-0-2s">
+                <img src="assets/images/services/e-commerce.png" alt="About" />
+                {/* <div className="bg-circle-shape" /> */}
               </div>
             </div>
           </div>
@@ -73,8 +56,8 @@ const Services = () => {
       {/* About Area end */}
 
       {/* Services Area Two start */}
-      <section className="services-area-two px-3  rel z-2">
-        <Container maxWidth={"xl"}>
+      <section className="services-area-two px-3  mt-50 rel z-2">
+        <Container maxWidth={"lg"}>
           <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
             <span className="sub-title mb-10">What We Provides</span>
             {/* <h2>Mobile App Solutions</h2> */}
@@ -83,27 +66,76 @@ const Services = () => {
             <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
+                  <img src="assets/images/services/erp11.png" alt="Service" />
+                </div>
+                <div className="content">
+                  <h4 className="title text-center">
+                    <span style={{ color: "#7E97A6" }}>Magento </span>{" "}
+                  </h4>
+                  <p className="text-center">
+                    Harness the power of Magento for your ecommerce store. Our
+                    Magento development services cover everything from design
+                    customization to module development, ensuring a robust and
+                    scalable ecommerce solution that meets your business needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-xl-4 col-lg-4 col-md-6">
+              <div className="service-item-two wow fadeInUp delay-0-2s">
+                <div className="image">
+                  <img src="assets/images/services/erp22.png" alt="Service" />
+                </div>
+                <div className="content">
+                  <h4 className="title text-center">
+                    <span style={{ color: "#008DDA" }}>Shopify </span>
+                  </h4>
+                  <p className="text-center">
+                    Launch your online store quickly and easily with Shopify.
+                    Our Shopify development services include theme
+                    customization, app integration, and store optimization,
+                    enabling you to create a seamless shopping experience for
+                    your customers.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-4 col-lg-4 col-md-6">
+              <div className="service-item-two wow fadeInUp delay-0-2s">
+                <div className="image">
+                  <img src="assets/images/services/erp33.png" alt="Service" />
+                </div>
+                <div className="content">
+                  <h4 className="title text-center">
+                    {" "}
+                    <span style={{ color: "#5356FF" }}>WooCommerce </span>
+                  </h4>
+                  <p className="text-center">
+                    Build a powerful ecommerce website with WooCommerce. Our
+                    WooCommerce development services include custom theme
+                    design, plugin development, and payment gateway integration,
+                    helping you create a unique and engaging online store.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-4 col-lg-4 col-md-6">
+              <div className="service-item-two wow fadeInUp delay-0-2s">
+                <div className="image">
                   <img src="assets/images/services/ios.png" alt="Service" />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
-                    <span style={{ color: "#7E97A6" }}>IOS</span> Development
+                    <span style={{ color: "#7E97A6" }}>OpenCart</span><br/><br/>
                   </h4>
                   <p className="text-center">
-                    Harness the power of iOS with our native app development
-                    services. Our team of experienced developers leverages the
-                    latest tools and technologies to create high-performance,
-                    feature-rich iOS apps that deliver seamless user experiences
-                    and drive business growth.
-                  </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
+                    Create a feature-rich ecommerce store with OpenCart. Our
+                    OpenCart development services cover everything from
+                    installation and setup to customization and optimization,
+                    ensuring a fast, secure, and user-friendly shopping
+                    experience for your customers.
+                  </p><br/>
                 </div>
               </div>
             </div>
@@ -114,24 +146,16 @@ const Services = () => {
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
-                    <span style={{ color: "#65B741" }}> Android</span>{" "}
-                    Development
+                    <span style={{ color: "#65B741" }}> E-commerce Store </span>{" "}
+                    Management
                   </h4>
                   <p className="text-center">
-                    Unlock the potential of the Android platform with our native
-                    app development expertise. From smartphones to tablets and
-                    beyond, we build native Android apps that are optimized for
-                    performance, security, and compatibility, ensuring maximum
-                    reach and impact.
+                    Let us handle the day-to-day management of your ecommerce
+                    store. Our ecommerce store management services include
+                    product updates, inventory management, order processing, and
+                    customer support, allowing you to focus on growing your
+                    business.
                   </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
                 </div>
               </div>
             </div>
@@ -142,85 +166,15 @@ const Services = () => {
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
-                    <span style={{ color: "#008DDA" }}>React Native </span>
-                    Development
+                    <span style={{ color: "#008DDA" }}>E-commerce Store </span>
+                    Migration
                   </h4>
                   <p className="text-center">
-                    Embrace cross-platform development with React Native. Our
-                    React Native app development services enable you to reach
-                    both iOS and Android users with a single codebase, saving
-                    time and resources while delivering a consistent user
-                    experience across devices.
+                    Seamlessly migrate your ecommerce store to a new platform.
+                    Our ecommerce store migration services ensure a smooth
+                    transition with minimal disruption to your business,
+                    preserving your data, SEO rankings, and customer experience.
                   </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-6 col-lg-4 col-md-6">
-              <div className="service-item-two wow fadeInUp delay-0-2s">
-                <div className="image">
-                  <img
-                    src="assets/images/services/undraw_flutter_dev_wvqj.png"
-                    alt="Service"
-                  />
-                </div>
-                <div className="content">
-                  <h4 className="title text-center">
-                    {" "}
-                    <span style={{ color: "#5356FF" }}>Flutter </span> App
-                    Development
-                  </h4>
-                  <p className="text-center">
-                    Experience the power of Flutter for building beautiful,
-                    natively compiled applications for mobile, web, and desktop
-                    from a single codebase. Our Flutter app development services
-                    combine speed, flexibility, and expressive UIs to create
-                    stunning apps that stand out in the crowded app marketplace.
-                  </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-6 col-lg-4 col-md-6">
-              <div className="service-item-two wow fadeInUp delay-0-2s">
-                <div className="image">
-                  <img src="assets/images/services/ionic.png" alt="Service" />
-                </div>
-                <div className="content">
-                  <h4 className="title text-center">
-                    {" "}
-                    <span style={{ color: "#378CE7" }}>Ionic</span> App
-                    Development
-                  </h4>
-                  <p className="text-center">
-                    Leverage the Ionic framework to build high-quality,
-                    cross-platform apps using web technologies like HTML, CSS,
-                    and JavaScript. Our Ionic app development services enable
-                    rapid development and deployment of hybrid apps that deliver
-                    native-like performance and functionality across platforms.
-                  </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
                 </div>
               </div>
             </div>
@@ -1007,7 +961,7 @@ const Services = () => {
             <div className="col-lg-5">
               <div className="contact-info-wrap wow fadeInLeft delay-0-2s">
                 <div className="section-title mb-40">
-                  <span className="sub-title mb-10">Require a Service?  ?</span>
+                  <span className="sub-title mb-10">Require a Service? ?</span>
                   <h2>We Would Love To Hear From You.</h2>
                 </div>
                 <div className="contact-info-part">
@@ -1127,7 +1081,8 @@ const Services = () => {
                           type="submit"
                           className="theme-btn style-two mt-15 w-100"
                         >
-                          Get a Call Back <i className="far fa-long-arrow-right" />
+                          Get a Call Back{" "}
+                          <i className="far fa-long-arrow-right" />
                         </button>
                       </div>
                     </div>

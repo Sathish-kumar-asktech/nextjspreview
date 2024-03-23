@@ -10,45 +10,36 @@ import { Nav, Tab } from "react-bootstrap";
 const Services = () => {
   return (
     <Layout>
-      <PageBanner pageName={"Mobile App Solutions"} />
+      <PageBanner pageName={"Enterprise Applications Development"} />
 
       {/* mobile-services*/}
       <section className="about-area-two px-3  py-130 rpy-100 rel z-1">
         <Container>
           <div className="row align-items-center gap-90">
             <div className="col-lg-6">
-              <div className="about-two-image rel z-1 rmb-65 wow fadeInRight delay-0-2s">
-                <img
-                  src="assets/images/services/mobile-service2.png"
-                  alt="About"
-                />
-                <div className="bg-circle-shape" />
-              </div>
-            </div>
-            <div className="col-lg-6">
               <div className="about-content rel z-1 wow fadeInLeft delay-0-2s">
                 <div className="section-title mb-30">
                   <span className="sub-title mb-15">Our Services</span>
-                  <h2>Mobile App Solutions</h2>
+                  <h2>ERP Software Development</h2>
                 </div>
                 <p>
-                  Empower your business with our bespoke mobile app solutions
-                  tailored to your unique needs. From conceptualization to
-                  deployment, we guide you through every step of the mobile app
-                  development process, ensuring a seamless and engaging user
-                  experience across iOS and Android platforms. Whether you're
-                  looking to expand your customer reach, streamline internal
-                  operations, or enhance brand visibility, our team of expert
-                  developers is here to turn your app ideas into reality.
+                  Unlock the full potential of your business with our custom ERP
+                  software development services. Our solutions are tailored to
+                  your industry and organizational needs, streamlining
+                  processes, centralizing data, and providing real-time insights
+                  to drive informed decision-making. From inventory management
+                  to financial reporting, we offer end-to-end ERP solutions that
+                  optimize efficiency, enhance visibility, and fuel business
+                  growth.
                 </p>
-                <ul className="list-style-one pt-5 mt-2">
+                {/* <ul className="list-style-one pt-5 mt-2">
                   <li>
-                    Customized app development for iOS and Android platforms
+                    Tailored solutions to meet specific business requirements
                   </li>
-                  <li>User-centric design and intuitive interfaces</li>
-                  <li>Integration with backend systems and third-party APIs</li>
-                  <li>Testing, optimization, and ongoing support</li>
-                </ul>
+                  <li>Scalable architecture for future growth</li>
+                  <li>Integration with existing systems and databases</li>
+                  <li>Comprehensive testing and quality assurance</li>
+                </ul> */}
 
                 <div className="about-btns py-3">
                   <Link legacyBehavior href="/about">
@@ -67,34 +58,73 @@ const Services = () => {
                 </div>
               </div>
             </div>
+            <div className="col-lg-6">
+              <div className="about-two-image rel z-1 rmb-65 wow fadeInRight delay-0-2s">
+                <img src="assets/images/services/erphome.jpg" alt="About" style={{mixBlendMode:'multiply'}} />
+                {/* <div className="bg-circle-shape" /> */}
+              </div>
+            </div>
           </div>
         </Container>
       </section>
       {/* About Area end */}
 
       {/* Services Area Two start */}
-      <section className="services-area-two px-3  rel z-2">
+      <section className="services-area-two px-3  mt-50 rel z-2">
         <Container maxWidth={"xl"}>
           <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
             <span className="sub-title mb-10">What We Provides</span>
             {/* <h2>Mobile App Solutions</h2> */}
           </div>
           <div className="row justify-content-center">
-            <div className="col-xl-4 col-lg-4 col-md-6">
+            <div className="col-xl-12 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/services/ios.png" alt="Service" />
+                  <img src="assets/images/services/erp11.png" alt="Service" />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
-                    <span style={{ color: "#7E97A6" }}>IOS</span> Development
+                    <span style={{ color: "#7E97A6" }}>ERP Consulting </span>{" "}
+                    Services
                   </h4>
                   <p className="text-center">
-                    Harness the power of iOS with our native app development
-                    services. Our team of experienced developers leverages the
-                    latest tools and technologies to create high-performance,
-                    feature-rich iOS apps that deliver seamless user experiences
-                    and drive business growth.
+                    Our ERP consulting services provide expert guidance and
+                    strategic advice to help you navigate the complexities of
+                    ERP implementation. From needs assessment to system
+                    selection and planning, our consultants work closely with
+                    you to define your requirements and develop a roadmap for
+                    successful ERP deployment.
+                  </p>
+                  {/*                 
+                  <ul className="list-style-three">
+                    <li>Paid Marketing</li>
+                    <li>CRO</li>
+                    <li>Content Marketing</li>
+                    <li>Email Marketing</li>
+                    <li>SMO</li>
+                  </ul> */}
+                </div>
+              </div>
+            </div>
+         
+            <div className="col-xl-4 col-lg-4 col-md-6">
+              <div className="service-item-two wow fadeInUp delay-0-2s">
+                <div className="image">
+                  <img src="assets/images/services/erp22.png" alt="Service" />
+                </div>
+                <div className="content">
+                  <h4 className="title text-center">
+                    <span style={{ color: "#008DDA" }}>Custom ERP </span>
+                    Solutions
+                  </h4>
+                  <p className="text-center">
+                    We specialize in developing custom ERP solutions that are
+                    tailored to your specific business processes and
+                    requirements. Whether you need a solution for finance, human
+                    resources, supply chain management, or any other aspect of
+                    your business, our team of experienced developers will work
+                    with you to design and build a solution that meets your
+                    needs and drives business growth.
                   </p>
                   {/*                 
                   <ul className="list-style-three">
@@ -110,79 +140,23 @@ const Services = () => {
             <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/services/android.png" alt="Service" />
-                </div>
-                <div className="content">
-                  <h4 className="title text-center">
-                    <span style={{ color: "#65B741" }}> Android</span>{" "}
-                    Development
-                  </h4>
-                  <p className="text-center">
-                    Unlock the potential of the Android platform with our native
-                    app development expertise. From smartphones to tablets and
-                    beyond, we build native Android apps that are optimized for
-                    performance, security, and compatibility, ensuring maximum
-                    reach and impact.
-                  </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-lg-4 col-md-6">
-              <div className="service-item-two wow fadeInUp delay-0-2s">
-                <div className="image">
-                  <img src="assets/images/services/native.png" alt="Service" />
-                </div>
-                <div className="content">
-                  <h4 className="title text-center">
-                    <span style={{ color: "#008DDA" }}>React Native </span>
-                    Development
-                  </h4>
-                  <p className="text-center">
-                    Embrace cross-platform development with React Native. Our
-                    React Native app development services enable you to reach
-                    both iOS and Android users with a single codebase, saving
-                    time and resources while delivering a consistent user
-                    experience across devices.
-                  </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-6 col-lg-4 col-md-6">
-              <div className="service-item-two wow fadeInUp delay-0-2s">
-                <div className="image">
-                  <img
-                    src="assets/images/services/undraw_flutter_dev_wvqj.png"
-                    alt="Service"
-                  />
+                  <img src="assets/images/services/erp33.png" alt="Service" />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
                     {" "}
-                    <span style={{ color: "#5356FF" }}>Flutter </span> App
-                    Development
+                    <span style={{ color: "#5356FF" }}>
+                      ERP Implementation{" "}
+                    </span>
+                    Services
                   </h4>
                   <p className="text-center">
-                    Experience the power of Flutter for building beautiful,
-                    natively compiled applications for mobile, web, and desktop
-                    from a single codebase. Our Flutter app development services
-                    combine speed, flexibility, and expressive UIs to create
-                    stunning apps that stand out in the crowded app marketplace.
+                    Our ERP implementation services cover the entire
+                    implementation lifecycle, from planning and design to
+                    deployment and training. We take a systematic approach to
+                    ensure a smooth and successful implementation, minimizing
+                    disruption to your business operations and maximizing the
+                    benefits of your ERP system.
                   </p>
                   {/*                 
                   <ul className="list-style-three">
@@ -195,35 +169,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-6 col-lg-4 col-md-6">
-              <div className="service-item-two wow fadeInUp delay-0-2s">
-                <div className="image">
-                  <img src="assets/images/services/ionic.png" alt="Service" />
-                </div>
-                <div className="content">
-                  <h4 className="title text-center">
-                    {" "}
-                    <span style={{ color: "#378CE7" }}>Ionic</span> App
-                    Development
-                  </h4>
-                  <p className="text-center">
-                    Leverage the Ionic framework to build high-quality,
-                    cross-platform apps using web technologies like HTML, CSS,
-                    and JavaScript. Our Ionic app development services enable
-                    rapid development and deployment of hybrid apps that deliver
-                    native-like performance and functionality across platforms.
-                  </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
-                </div>
-              </div>
-            </div>
+         
           </div>
         </Container>
       </section>
@@ -1007,7 +953,7 @@ const Services = () => {
             <div className="col-lg-5">
               <div className="contact-info-wrap wow fadeInLeft delay-0-2s">
                 <div className="section-title mb-40">
-                  <span className="sub-title mb-10">Require a Service?  ?</span>
+                  <span className="sub-title mb-10">Require a Service? ?</span>
                   <h2>We Would Love To Hear From You.</h2>
                 </div>
                 <div className="contact-info-part">
@@ -1127,7 +1073,8 @@ const Services = () => {
                           type="submit"
                           className="theme-btn style-two mt-15 w-100"
                         >
-                          Get a Call Back <i className="far fa-long-arrow-right" />
+                          Get a Call Back{" "}
+                          <i className="far fa-long-arrow-right" />
                         </button>
                       </div>
                     </div>

@@ -10,7 +10,7 @@ import { Nav, Tab } from "react-bootstrap";
 const Services = () => {
   return (
     <Layout>
-      <PageBanner pageName={"Mobile App Solutions"} />
+      <PageBanner pageName={"UI/UX Strategy"} />
 
       {/* mobile-services*/}
       <section className="about-area-two px-3  py-130 rpy-100 rel z-1">
@@ -18,37 +18,27 @@ const Services = () => {
           <div className="row align-items-center gap-90">
             <div className="col-lg-6">
               <div className="about-two-image rel z-1 rmb-65 wow fadeInRight delay-0-2s">
-                <img
-                  src="assets/images/services/mobile-service2.png"
-                  alt="About"
-                />
-                <div className="bg-circle-shape" />
+                <img src="assets/images/services/ui-ux.png" alt="About" />
+                {/* <div className="bg-circle-shape" /> */}
               </div>
             </div>
             <div className="col-lg-6">
               <div className="about-content rel z-1 wow fadeInLeft delay-0-2s">
                 <div className="section-title mb-30">
                   <span className="sub-title mb-15">Our Services</span>
-                  <h2>Mobile App Solutions</h2>
+                  <h2>UI/UX Strategy</h2>
                 </div>
                 <p>
-                  Empower your business with our bespoke mobile app solutions
-                  tailored to your unique needs. From conceptualization to
-                  deployment, we guide you through every step of the mobile app
-                  development process, ensuring a seamless and engaging user
-                  experience across iOS and Android platforms. Whether you're
-                  looking to expand your customer reach, streamline internal
-                  operations, or enhance brand visibility, our team of expert
-                  developers is here to turn your app ideas into reality.
+                  Crafting exceptional user experiences is at the heart of our
+                  UI/UX Strategy. We blend innovative design principles with
+                  user-centric strategies to create intuitive interfaces across
+                  web, mobile, and product design. From wireframing to
+                  prototyping, our approach ensures seamless interactions,
+                  captivating visuals, and meaningful engagements. Whether
+                  you're launching a new website, mobile app, or product, trust
+                  us to elevate your digital presence and deliver memorable user
+                  experiences that drive success.
                 </p>
-                <ul className="list-style-one pt-5 mt-2">
-                  <li>
-                    Customized app development for iOS and Android platforms
-                  </li>
-                  <li>User-centric design and intuitive interfaces</li>
-                  <li>Integration with backend systems and third-party APIs</li>
-                  <li>Testing, optimization, and ongoing support</li>
-                </ul>
 
                 <div className="about-btns py-3">
                   <Link legacyBehavior href="/about">
@@ -56,14 +46,6 @@ const Services = () => {
                       Get a Call Back <i className="fas fa-long-arrow-right" />
                     </a>
                   </Link>
-                  {/* <div className="hotline mt-15">
-                    <i className="fas fa-phone" />
-                    <div className="content">
-                      <span>Hotline</span>
-                      <br />
-                      <a href="callto:+000(123)45688">+000 (123) 456 88</a>
-                    </div>
-                  </div> */}
                 </div>
               </div>
             </div>
@@ -72,162 +54,96 @@ const Services = () => {
       </section>
       {/* About Area end */}
 
-      {/* Services Area Two start */}
-      <section className="services-area-two px-3  rel z-2">
-        <Container maxWidth={"xl"}>
-          <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
-            <span className="sub-title mb-10">What We Provides</span>
-            {/* <h2>Mobile App Solutions</h2> */}
+      {/* Work Process Area start */}
+      <section className="work-process-area-two pt-130 pb-100 rpt-100 rpb-70 rel z-1">
+        <div className="work-process-line-two text-center">
+          <img src="assets/images/shapes/work-process-line.png" alt="line" />
+        </div>
+        <div className="container">
+          <div className="section-title text-center mb-70 wow fadeInUp delay-0-2s">
+            <h2>Our Design Process</h2>
+            <p className="py-10">
+              By following our structured design process, we ensure that each
+              project delivers optimal results, driving engagement,
+              satisfaction, and success for our clients.
+            </p>
           </div>
-          <div className="row justify-content-center">
-            <div className="col-xl-4 col-lg-4 col-md-6">
-              <div className="service-item-two wow fadeInUp delay-0-2s">
-                <div className="image">
-                  <img src="assets/images/services/ios.png" alt="Service" />
-                </div>
-                <div className="content">
-                  <h4 className="title text-center">
-                    <span style={{ color: "#7E97A6" }}>IOS</span> Development
-                  </h4>
-                  <p className="text-center">
-                    Harness the power of iOS with our native app development
-                    services. Our team of experienced developers leverages the
-                    latest tools and technologies to create high-performance,
-                    feature-rich iOS apps that deliver seamless user experiences
-                    and drive business growth.
-                  </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-lg-4 col-md-6">
-              <div className="service-item-two wow fadeInUp delay-0-2s">
-                <div className="image">
-                  <img src="assets/images/services/android.png" alt="Service" />
-                </div>
-                <div className="content">
-                  <h4 className="title text-center">
-                    <span style={{ color: "#65B741" }}> Android</span>{" "}
-                    Development
-                  </h4>
-                  <p className="text-center">
-                    Unlock the potential of the Android platform with our native
-                    app development expertise. From smartphones to tablets and
-                    beyond, we build native Android apps that are optimized for
-                    performance, security, and compatibility, ensuring maximum
-                    reach and impact.
-                  </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-lg-4 col-md-6">
-              <div className="service-item-two wow fadeInUp delay-0-2s">
-                <div className="image">
-                  <img src="assets/images/services/native.png" alt="Service" />
-                </div>
-                <div className="content">
-                  <h4 className="title text-center">
-                    <span style={{ color: "#008DDA" }}>React Native </span>
-                    Development
-                  </h4>
-                  <p className="text-center">
-                    Embrace cross-platform development with React Native. Our
-                    React Native app development services enable you to reach
-                    both iOS and Android users with a single codebase, saving
-                    time and resources while delivering a consistent user
-                    experience across devices.
-                  </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-6 col-lg-4 col-md-6">
-              <div className="service-item-two wow fadeInUp delay-0-2s">
+          <div className="row gap-50 justify-content-center">
+            <div className="col-xl-3 col-lg-4 col-sm-6">
+              <div className="work-process-item-two mt-40 wow fadeInUp delay-0-2s">
                 <div className="image">
                   <img
-                    src="assets/images/services/undraw_flutter_dev_wvqj.png"
-                    alt="Service"
+                    src="assets/images/work-process/process1.jpg"
+                    alt="Work Process"
                   />
+                  <div className="number">01</div>
                 </div>
                 <div className="content">
-                  <h4 className="title text-center">
-                    {" "}
-                    <span style={{ color: "#5356FF" }}>Flutter </span> App
-                    Development
-                  </h4>
-                  <p className="text-center">
-                    Experience the power of Flutter for building beautiful,
-                    natively compiled applications for mobile, web, and desktop
-                    from a single codebase. Our Flutter app development services
-                    combine speed, flexibility, and expressive UIs to create
-                    stunning apps that stand out in the crowded app marketplace.
+                  <h5>Discover</h5>
+                  <p>
+                    Understand client objectives, target audience, and project
+                    requirements
                   </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
                 </div>
               </div>
             </div>
-            <div className="col-xl-6 col-lg-4 col-md-6">
-              <div className="service-item-two wow fadeInUp delay-0-2s">
+            <div className="col-xl-3 col-lg-4 col-sm-6">
+              <div className="work-process-item-two wow fadeInDown delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/services/ionic.png" alt="Service" />
+                  <img
+                    src="assets/images/work-process/process2.jpg"
+                    alt="Work Process"
+                  />
+                  <div className="number">02</div>
                 </div>
                 <div className="content">
-                  <h4 className="title text-center">
-                    {" "}
-                    <span style={{ color: "#378CE7" }}>Ionic</span> App
-                    Development
-                  </h4>
-                  <p className="text-center">
-                    Leverage the Ionic framework to build high-quality,
-                    cross-platform apps using web technologies like HTML, CSS,
-                    and JavaScript. Our Ionic app development services enable
-                    rapid development and deployment of hybrid apps that deliver
-                    native-like performance and functionality across platforms.
+                  <h5>Define</h5>
+                  <p>
+                    Identify key user personas, define project goals, and
+                    outline design objectives
                   </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-3 col-lg-4 col-sm-6">
+              <div className="work-process-item-two mt-20 wow fadeInUp delay-0-2s">
+                <div className="image">
+                  <img
+                    src="assets/images/work-process/process3.jpg"
+                    alt="Work Process"
+                  />
+                  <div className="number">03</div>
+                </div>
+                <div className="content">
+                  <h5>Design</h5>
+                  <p>
+                    Create wireframes, develop prototypes, and design user
+                    interfaces that align with project objectives and user needs
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-3 col-lg-4 col-sm-6">
+              <div className="work-process-item-two wow fadeInDown delay-0-2s">
+                <div className="image">
+                  <img
+                    src="assets/images/work-process/process4.jpg"
+                    alt="Work Process"
+                  />
+                  <div className="number">04</div>
+                </div>
+                <div className="content">
+                  <h5>Deliver</h5>
+                  <p>
+                    Implement designs, conduct usability testing, and refine the
+                    final product for launch
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </Container>
+        </div>
       </section>
-      {/* Services Area Two end */}
 
       {/* Why Choose Us Area start */}
       <section className="why-choose-us-area px-3  py-130 rpy-100 rel z-1">
@@ -1007,7 +923,7 @@ const Services = () => {
             <div className="col-lg-5">
               <div className="contact-info-wrap wow fadeInLeft delay-0-2s">
                 <div className="section-title mb-40">
-                  <span className="sub-title mb-10">Require a Service?  ?</span>
+                  <span className="sub-title mb-10">Require a Service? ?</span>
                   <h2>We Would Love To Hear From You.</h2>
                 </div>
                 <div className="contact-info-part">
@@ -1127,7 +1043,8 @@ const Services = () => {
                           type="submit"
                           className="theme-btn style-two mt-15 w-100"
                         >
-                          Get a Call Back <i className="far fa-long-arrow-right" />
+                          Get a Call Back{" "}
+                          <i className="far fa-long-arrow-right" />
                         </button>
                       </div>
                     </div>
