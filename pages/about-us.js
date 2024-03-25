@@ -129,12 +129,12 @@ const ServiceDetails = () => {
           </div>
 
           <div className="row align-items-center gap-20 mt-100">
-            <div className="col-xl-6 col-md-6  pt-25">
-              <div className="mission-vision-item  mx-4 wow fadeInUp delay-0-3s">
+            <div className="col-xl-6 col-md-6   pt-25">
+              <div className="mission-vision-item  mx-4delay-0-3s">
                 <div
                   className={`${
                     matchesSmallScreen && "flex-column"
-                  } d-flex  flex-column justify-content-start align-items-center gap-4`}
+                  } d-flex  flex-column  wow fadeInUp  justify-content-start align-items-center gap-4`}
                 >
                   <div className="icon">
                     <img
@@ -164,12 +164,12 @@ const ServiceDetails = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-6 col-md-6  pt-25">
-              <div className="mission-vision-item  mx-4 wow fadeInUp delay-0-3s">
+            <div className="col-xl-6 col-md-6   pt-25">
+              <div className="mission-vision-item  mx-4 wow  delay-0-3s">
                 <div
                   className={`${
                     matchesSmallScreen && "flex-column"
-                  } d-flex  flex-column justify-content-start align-items-center gap-4`}
+                  } d-flex  flex-column wow  fadeInUp justify-content-start  align-items-center gap-4`}
                 >
                   <div className="icon">
                     <img
@@ -333,7 +333,7 @@ const ServiceDetails = () => {
       {/* Partners Area end */}
 
       <section className="service-details-area m-5 pt-130 px-3  rpt-100 pb-115 rpb-85">
-        <Container >
+        <Container>
           <div className="row gap-100">
             <div className="col-lg-12">
               <div className="service-details-content">
@@ -352,7 +352,7 @@ const ServiceDetails = () => {
                       <img
                         src={
                           "https://ik.imagekit.io/sathishask2024/Deconstructed.gif?updatedAt=1710852540100"
-                        }                      
+                        }
                         alt="Why Choose"
                         className="why-choose-img "
                       />

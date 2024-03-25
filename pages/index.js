@@ -20,6 +20,7 @@ import {
   testimonialThreeSlider,
 } from "@/src/sliderProps";
 import { Container } from "@mui/material";
+import Hero4Slider from "@/src/components/slider/Hero4Slider";
 
 const Counter = dynamic(() => import("@/src/components/Counter"), {
   ssr: false,
@@ -77,81 +78,82 @@ const Index = () => {
   return (
     <Layout header={2}>
       {/* Hero Section Start */}
-      <section className="hero-area px-3 bgc-gray rel z-1">
+      <Hero4Slider />
+      {/* <section className="hero-area px-3 bgc-gray rel z-1">
         <Container>
-        <div className="">
-          <div className="row align-items-center">
-            <div className="col-lg-6 align-self-center mb-3">
-              <div className="hero-content pt-115 pb-125 rpb-0 wow fadeInUp delay-0-4s">
-                <h1 style={{ fontFamily: "play" }}>
-                  WE BRING SUCCESS TO YOUR GREAT BUSINESS
-                </h1>
-                <p>
-                  Revolutionize your operations with Ask Technology's
-                  cutting-edge solutions. From ERP tailored for Textile &
-                  Garment Industries to Enterprise-level Goods Traders
-                  Management, our suite of products is designed for excellence
-                </p>
-                <Link legacyBehavior href="/about">
-                  <a className="theme-btn mt-20 wow fadeInUp delay-0-6s">
-                    Explore Our Solutions{" "}
-                    <i className="fas fa-long-arrow-right" />
-                  </a>
-                </Link>
-                <div className="hero-shapes">
+          <div className="">
+            <div className="row align-items-center">
+              <div className="col-lg-6 align-self-center mb-3">
+                <div className="hero-content pt-115 pb-125 rpb-0 wow fadeInUp delay-0-4s">
+                  <h1 style={{ fontFamily: "play" }}>
+                    WE BRING SUCCESS TO YOUR GREAT BUSINESS
+                  </h1>
+                  <p>
+                    Revolutionize your operations with Ask Technology's
+                    cutting-edge solutions. From ERP tailored for Textile &
+                    Garment Industries to Enterprise-level Goods Traders
+                    Management, our suite of products is designed for excellence
+                  </p>
+                  <Link legacyBehavior href="/about">
+                    <a className="theme-btn mt-20 wow fadeInUp delay-0-6s">
+                      Explore Our Solutions{" "}
+                      <i className="fas fa-long-arrow-right" />
+                    </a>
+                  </Link>
+                  <div className="hero-shapes">
+                    <img
+                      className="shape one"
+                      src="assets/images/shapes/dabble-plus.png"
+                      alt="Shape"
+                    />
+                    <img
+                      className="shape two"
+                      src="assets/images/shapes/dabble-plus.png"
+                      alt="Shape"
+                    />
+                    <img
+                      className="shape three"
+                      src="assets/images/shapes/plus.png"
+                      alt="Shape"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6 align-self-end">
+                <div className="hero-images  wow fadeInLeft">
                   <img
-                    className="shape one"
-                    src="assets/images/shapes/dabble-plus.png"
-                    alt="Shape"
-                  />
-                  <img
-                    className="shape two"
-                    src="assets/images/shapes/dabble-plus.png"
-                    alt="Shape"
-                  />
-                  <img
-                    className="shape three"
-                    src="assets/images/shapes/plus.png"
-                    alt="Shape"
+                    src="assets/images/hero/hero-one.jpg"
+                    alt="Hero"
+                    style={{ objectFit: "cover" }}
                   />
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 align-self-end">
-              <div className="hero-images  wow fadeInLeft">
-                <img
-                  src="assets/images/hero/hero-one.jpg"
-                  alt="Hero"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-            </div>
           </div>
-        </div>
-        <div className="hero-shapes">
-          <img
-            className="shape bg-lines"
-            src="assets/images/shapes/hero-bg-line-shapes.png"
-            alt="Shape"
-          />
-          <img
-            className="shape right-shape wow fadeInRight delay-0-8s"
-            src="assets/images/shapes/hero-right-shape.png"
-            alt="Shape"
-          />
-        </div>
+          <div className="hero-shapes">
+            <img
+              className="shape bg-lines"
+              src="assets/images/shapes/hero-bg-line-shapes.png"
+              alt="Shape"
+            />
+            <img
+              className="shape right-shape wow fadeInRight delay-0-8s"
+              src="assets/images/shapes/hero-right-shape.png"
+              alt="Shape"
+            />
+          </div>
         </Container>
-      </section>
+      </section> */}
 
       {/* About Area start */}
       <section className="about-area px-3  pt-150  rpb-100 rel z-1">
-        <Container >
+        <Container>
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="about-content rmb-65 wow fadeInLeft delay-0-2s">
                 <div className="section-title mb-30">
                   <span className="sub-title mb-15 new-font-play">
-                    About Company
+                    {/* About Company */}
                   </span>
                   <h3>Empowering Businesses with Innovative Solutions</h3>
                 </div>
@@ -259,8 +261,6 @@ const Index = () => {
       </section>
       {/* About Area end */}
 
-      {/* Hero Section End */}
-
       {/* Partners Area start */}
       <section className="partners-area px-3  pb-100 pt-150 rmt-30 rpb-70 rel z-1">
         <div>
@@ -320,7 +320,7 @@ const Index = () => {
         </div>
       </section>
       {/* Partners Area end */}
-      
+
       {/* Project Area start */}
       <section
         className="project-area px-3   overflow-hidden bgc-lighter  rpt-100 rel z-1"
@@ -1148,7 +1148,7 @@ const Index = () => {
 
       {/* Why Choose Us Area start */}
       <section className="why-choose-us-area px-3  py-130 rpy-100 rel z-1">
-        <Container >
+        <Container>
           <div className="row justify-content-center">
             <div className="col-xl-8">
               <div className="section-title text-center mb-45 wow fadeInUp delay-0-2s">
@@ -1905,11 +1905,8 @@ const Index = () => {
       {/* Contact Form Section End */}
 
       {/* Blog Area start */}
-      <section
-        className="blog-area pb-150 px-3  mb-30 mt-4 rmb-0 rel z-1"
-        
-      >
-        <Container style={{ marginTop: '150px' }}>
+      <section className="blog-area pb-150 px-3  mb-30 mt-4 rmb-0 rel z-1">
+        <Container style={{ marginTop: "150px" }}>
           <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
             <span className="sub-title mb-15">Our Blog &amp; News</span>
             <h2>Latest Blog, New &amp; Articles</h2>

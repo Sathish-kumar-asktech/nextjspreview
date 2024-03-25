@@ -49,62 +49,55 @@ const MobileMenu = () => {
         >
           <ul className="navigation clearfix">
             <li className="dropdown">
-              <a href="#" onClick={() => active("home")}>
-                Options
-              </a>
-              <ul style={activeSubMenu("home")}>
-                <li>
-                  <Link href="/">IT Company</Link>
-                </li>
-                <li>
-                  <Link href="index2">IT Solutions</Link>
-                </li>
-                <li>
-                  <Link href="index3">IT Services</Link>
-                </li>
-                <li>
-                  <Link href="index4">IT Agency</Link>
-                </li>
-              </ul>
-              <div className="dropdown-btn" onClick={() => active("home")}>
-                <span className="fas fa-chevron-down" />
-              </div>
-            </li>
-            <li className="dropdown">
-              <a href="#" onClick={() => active("home")}>
-                Company
-              </a>
-              <ul style={activeSubMenu("home")}>
-                <li>
-                  <Link href="about-us">About US</Link>
-                </li>
-                <li>
-                  <Link href="index2">Engagement Model</Link>
-                </li>
-                <li>
-                  <Link href="index3">IT Services</Link>
-                </li>
-                <li>
-                  <Link href="index4">Our Team</Link>
-                </li>
-              </ul>
-              <div className="dropdown-btn" onClick={() => active("home")}>
-                <span className="fas fa-chevron-down" />
-              </div>
-            </li>
-            <li className="dropdown">
               <a href="#" onClick={() => active("services")}>
                 services
               </a>
               <ul style={activeSubMenu("services")}>
                 <li>
-                  <Link href="services">Services One</Link>
+                  <Link
+                    href="mobile-app-solutions"
+                    style={{ whiteSpace: "nowrap" }}
+                  >
+                    Mobile App Solutions
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    href="enterprise-application-services"
+                    style={{ whiteSpace: "nowrap" }}
+                  >
+                    Enterprise Application Development
+                  </Link>
                 </li>
                 <li>
-                  <Link href="services2">Services Two</Link>
+                  <Link
+                    href="ecommerce-application-development"
+                    style={{ whiteSpace: "nowrap" }}
+                  >
+                    Ecommerce Application Development
+                  </Link>
                 </li>
                 <li>
-                  <Link href="service-details">service details</Link>
+                  <Link href="ui-ux-strategy" style={{ whiteSpace: "nowrap" }}>
+                    UI/UX Strategy
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="digital-marketing-services"
+                    style={{ whiteSpace: "nowrap" }}
+                  >
+                    Digital Marketing
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="erp-software-services"
+                    style={{ whiteSpace: "nowrap" }}
+                  >
+                    ERP Software Development
+                  </Link>
                 </li>
               </ul>
               <div className="dropdown-btn" onClick={() => active("services")}>
@@ -118,13 +111,19 @@ const MobileMenu = () => {
               </a>
               <ul style={activeSubMenu("Project")}>
                 <li>
-                  <Link href="project-grid">Project Grid</Link>
+                  <Link href="project-grid">
+                    ERP for Textile & Garment Industries{" "}
+                  </Link>
                 </li>
                 <li>
-                  <Link href="project-masonry">Project Masonry.</Link>
+                  <Link href="project-masonry">
+                    Target SCM - Supply Chain Management.
+                  </Link>
                 </li>
                 <li>
-                  <Link href="project-details">Project Details</Link>
+                  <Link href="project-details">
+                    HRMS - Target HR & Payroll Solutions
+                  </Link>
                 </li>
               </ul>
               <div className="dropdown-btn" onClick={() => active("Project")}>
@@ -173,6 +172,26 @@ const MobileMenu = () => {
             </li>
 
             <li className="dropdown">
+              <a href="#" onClick={() => active("home")}>
+                Company
+              </a>
+              <ul style={activeSubMenu("home")}>
+                <li>
+                  <Link href="about-us">About US</Link>
+                </li>
+                <li>
+                  <Link href="index2">Engagement Model</Link>
+                </li>
+                <li>
+                  <Link href="index3">Our Team</Link>
+                </li>
+              </ul>
+              <div className="dropdown-btn" onClick={() => active("home")}>
+                <span className="fas fa-chevron-down" />
+              </div>
+            </li>
+
+            <li className="dropdown">
               <a href="#" onClick={() => active("blog")}>
                 Contact Us
               </a>
@@ -185,8 +204,6 @@ const MobileMenu = () => {
                 <span className="fas fa-chevron-down" />
               </div>
             </li>
-
-           
           </ul>
         </Accordion.Collapse>
       </Accordion>
@@ -222,41 +239,31 @@ const DeskTopMenu = () => {
 
       <div className="navbar-collapse collapse clearfix">
         <ul className="navigation clearfix">
-      
-          <li className="dropdown">
-            <a href="#">Company</a>
-            <ul>
-              <li>
-                <Link href="about-us">About US</Link>
-              </li>
-              <li>
-                <Link href="index2">Engagement Model</Link>
-              </li>
-              <li>
-                <Link href="index3">Our Team</Link>
-              </li>
-            </ul>
-            <div className="dropdown-btn">
-              <span className="fas fa-chevron-down" />
-            </div>
-          </li>
-
           <li className="dropdown">
             <a href="#">services</a>
             <ul>
               <li>
-                <Link href="mobile-app-solutions" style={{ whiteSpace: "nowrap" }}>
+                <Link
+                  href="mobile-app-solutions"
+                  style={{ whiteSpace: "nowrap" }}
+                >
                   Mobile App Solutions
                 </Link>
               </li>
-              
+
               <li>
-                <Link href="enterprise-application-services" style={{ whiteSpace: "nowrap" }}>
+                <Link
+                  href="enterprise-application-services"
+                  style={{ whiteSpace: "nowrap" }}
+                >
                   Enterprise Application Development
                 </Link>
               </li>
               <li>
-                <Link href="ecommerce-application-development" style={{ whiteSpace: "nowrap" }}>
+                <Link
+                  href="ecommerce-application-development"
+                  style={{ whiteSpace: "nowrap" }}
+                >
                   Ecommerce Application Development
                 </Link>
               </li>
@@ -266,12 +273,18 @@ const DeskTopMenu = () => {
                 </Link>
               </li>
               <li>
-                <Link href="digital-marketing-services" style={{ whiteSpace: "nowrap" }}>
+                <Link
+                  href="digital-marketing-services"
+                  style={{ whiteSpace: "nowrap" }}
+                >
                   Digital Marketing
                 </Link>
               </li>
               <li>
-                <Link href="erp-software-services" style={{ whiteSpace: "nowrap" }}>
+                <Link
+                  href="erp-software-services"
+                  style={{ whiteSpace: "nowrap" }}
+                >
                   ERP Software Development
                 </Link>
               </li>
@@ -340,16 +353,30 @@ const DeskTopMenu = () => {
               <span className="fas fa-chevron-down" />
             </div>
           </li>
-          
+
+          <li className="dropdown">
+            <a href="#">Company</a>
+            <ul>
+              <li>
+                <Link href="about-us">About US</Link>
+              </li>
+              <li>
+                <Link href="index2">Engagement Model</Link>
+              </li>
+              <li>
+                <Link href="index3">Our Team</Link>
+              </li>
+            </ul>
+            <div className="dropdown-btn">
+              <span className="fas fa-chevron-down" />
+            </div>
+          </li>
+
           <li className="dropdown">
             <a href="contact" style={{ whiteSpace: "nowrap" }}>
               Contact US
             </a>
           </li>
-
-          
-          
-
         </ul>
       </div>
     </nav>

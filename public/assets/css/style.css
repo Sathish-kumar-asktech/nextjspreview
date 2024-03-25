@@ -5491,6 +5491,13 @@ h6,
   margin-bottom: 20px;
   color: var(--secondary-color);
 }
+
+
+.slider-item-two .sub-title2 {
+  margin-bottom: 20px;
+  color: #30A2FF
+}
+
 .slider-item-two .sub-title:before {
   background: var(--secondary-color);
 }
