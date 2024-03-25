@@ -14,7 +14,7 @@ const Services = () => {
 
       {/* mobile-services*/}
       <section className="about-area-two px-3  pt-130 rpy-100 rel z-1">
-        <Container>
+        <Container >
           <div className="row align-items-center gap-90">
             <div className="col-lg-6">
               <div className="about-content rel z-1 wow fadeInLeft delay-0-2s">
@@ -182,7 +182,7 @@ const Services = () => {
 
       {/* Services Area Two start */}
       <section className="services-area-two px-3  mt-50 rel z-2">
-        <Container maxWidth={"xl"}>
+        <Container maxWidth={"lg"}>
           <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
             <Divider>
               <Chip
@@ -212,6 +212,7 @@ const Services = () => {
                     is tailored to meet the unique needs of the garment
                     industry, ensuring efficiency, compliance, and
                     profitability.
+                  
                   </p>
                 </div>
               </div>
@@ -232,7 +233,7 @@ const Services = () => {
                     our specialized ERP solution. From supplier management to
                     order processing and quality control, our solution helps you
                     streamline processes, improve collaboration, and deliver
-                    superior service to your clients.
+                    superior service to your clients.     <br/><br/>
                   </p>
                 </div>
               </div>
@@ -254,7 +255,7 @@ const Services = () => {
                     procurement to production planning and quality management,
                     our solution provides end-to-end visibility and control over
                     your manufacturing operations, enabling you to meet customer
-                    demands and maximize profitability.
+                    demands and maximize profitability.     <br/><br/>
                   </p>
                 </div>
               </div>
@@ -299,7 +300,7 @@ const Services = () => {
                     optimization and delivery tracking, our solution provides
                     real-time visibility into your logistics operations,
                     enabling you to improve efficiency, reduce costs, and
-                    deliver exceptional service to your customers.
+                    deliver exceptional service to your customers.      <br/><br/>
                   </p>
                 </div>
               </div>
