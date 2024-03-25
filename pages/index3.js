@@ -204,7 +204,7 @@ const Index3 = () => {
       <section className="what-we-provide rel z-1">
         <div className="container">
           <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
-            <span className="sub-title mb-10">What We Provides</span>
+            <span className="sub-title mb-10">Our Services</span>
             <h2>Digital Core Services</h2>
           </div>
           <Slider {...serviceThreeSlider} className="service-three-slider">

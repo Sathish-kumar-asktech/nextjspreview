@@ -59,14 +59,14 @@ const Services = () => {
       <section className="services-area-two px-3  mt-50 rel z-2">
         <Container maxWidth={"lg"}>
           <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
-            <span className="sub-title mb-10">What We Provides</span>
+            <span className="sub-title mb-10">Our Services</span>
             {/* <h2>Mobile App Solutions</h2> */}
           </div>
           <div className="row justify-content-center">
             <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/services/erp11.png" alt="Service" />
+                  <img src="assets/images/services/magento.svg" alt="Service" />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
@@ -85,7 +85,7 @@ const Services = () => {
             <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/services/erp22.png" alt="Service" />
+                  <img src="assets/images/services/shopify.png" alt="Service" />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
@@ -104,7 +104,7 @@ const Services = () => {
             <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/services/erp33.png" alt="Service" />
+                  <img src="assets/images/services/woo.png" alt="Service" />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
@@ -123,7 +123,7 @@ const Services = () => {
             <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/services/ios.png" alt="Service" />
+                  <img src="assets/images/services/opencart.png" alt="Service" />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
@@ -142,7 +142,7 @@ const Services = () => {
             <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/services/android.png" alt="Service" />
+                  <img src="assets/images/services/storeecom.png" alt="Service" />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
@@ -162,7 +162,7 @@ const Services = () => {
             <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/services/native.png" alt="Service" />
+                  <img src="assets/images/services/migra.png" alt="Service" />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">

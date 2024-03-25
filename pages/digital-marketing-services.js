@@ -56,10 +56,32 @@ const Services = () => {
       <section className="services-area-two px-3  mt-50 rel z-2">
         <Container maxWidth={"lg"}>
           <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
-            <span className="sub-title mb-10">What We Provides</span>
+            <span className="sub-title mb-10">Our Services</span>
             {/* <h2>Mobile App Solutions</h2> */}
           </div>
           <div className="row justify-content-center">
+            <div className="col-xl-4 col-lg-4 col-md-6">
+              <div className="service-item-two wow fadeInUp delay-0-2s">
+                <div className="image">
+                  <img src="assets/images/services/gads.png" alt="Service" />
+                </div>
+                <div className="content">
+                  <h4 className="title text-center">
+                    <span style={{ color: "#068FFF" }}>Google Ads </span>{" "}
+                    Network
+                  </h4>
+                  <p className="text-center">
+                    Utilize the power of Google Ads to reach your target
+                    audience with precision targeting, compelling ad creatives,
+                    and strategic bidding strategies. Our Google Ads experts
+                    optimize campaigns to maximize ROI and drive qualified
+                    traffic to your website.
+                    <br/><br/>
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div className="col-xl-4 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
@@ -99,7 +121,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-6">
+            <div className="col-xl-6 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
                   <img src="assets/images/services/ppc.png" alt="Service" />
@@ -118,11 +140,12 @@ const Services = () => {
                     specialists create customized campaigns across Google, Bing,
                     and other platforms to generate qualified leads and maximize
                     your advertising budget.
+                    <br/><br/>
                   </p>
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-6">
+            <div className="col-xl-6 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
                   <img
@@ -133,7 +156,7 @@ const Services = () => {
                 <div className="content">
                   <h4 className="title text-center">
                     <span style={{ color: "#7E97A6" }}>Performance </span>
-                    <br /> Marketing
+                  Marketing
                   </h4>
                   <p className="text-center">
                     Leverage data-driven insights and analytics to optimize your
@@ -145,51 +168,7 @@ const Services = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-6">
-              <div className="service-item-two wow fadeInUp delay-0-2s">
-                <div className="image">
-                  <img
-                    src="assets/images/services/ecommercemanage.png"
-                    alt="Service"
-                  />
-                </div>
-                <div className="content">
-                  <h4 className="title text-center">
-                    <span style={{ color: "#65B741" }}> E-commerce Store </span>{" "}
-                    Management
-                  </h4>
-                  <p className="text-center">
-                    Let us handle the day-to-day management of your ecommerce
-                    store. Our ecommerce store management services include
-                    product updates, inventory management, order processing, and
-                    customer support, allowing you to focus on growing your
-                    business.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-lg-4 col-md-6">
-              <div className="service-item-two wow fadeInUp delay-0-2s">
-                <div className="image">
-                  <img
-                    src="assets/images/services/migration.png"
-                    alt="Service"
-                  />
-                </div>
-                <div className="content">
-                  <h4 className="title text-center">
-                    <span style={{ color: "#008DDA" }}>E-commerce Store </span>
-                    Migration
-                  </h4>
-                  <p className="text-center">
-                    Seamlessly migrate your ecommerce store to a new platform.
-                    Our ecommerce store migration services ensure a smooth
-                    transition with minimal disruption to your business,
-                    preserving your data, SEO rankings, and customer experience.
-                  </p>
-                </div>
-              </div>
-            </div>
+       
           </div>
         </Container>
       </section>
@@ -932,22 +911,6 @@ const Services = () => {
                   <h5>
                     <Link legacyBehavior href="service-details">
                       Financial
-                    </Link>
-                  </h5>
-                </div>
-              </div>
-              <div className="col-xl-12 p-20 m-10">
-                <div className="feature-item wow fadeInUp delay-0-2s">
-                  <div className="icon">
-                    <img
-                      src="assets/images/services/e-learning.png"
-                      alt="Icon"
-                      className="industries-icon"
-                    />
-                  </div>
-                  <h5>
-                    <Link legacyBehavior href="service-details">
-                      E-Learning
                     </Link>
                   </h5>
                 </div>

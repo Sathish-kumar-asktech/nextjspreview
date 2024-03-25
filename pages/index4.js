@@ -240,7 +240,7 @@ const Index4 = () => {
       <section className="services-area-five pt-65 rpt-35 pb-130 rpb-100 rel z-2">
         <div className="container-fluid">
           <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
-            <span className="sub-title mb-10">What We Provides</span>
+            <span className="sub-title mb-10">Our Services</span>
             <h2>Digital Core Services</h2>
             <span className="bg-text">Service</span>
           </div>

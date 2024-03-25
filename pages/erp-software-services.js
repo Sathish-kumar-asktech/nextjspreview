@@ -1,6 +1,6 @@
 import PageBanner from "@/components/PageBanner";
 import Layout from "@/layout";
-import { Container } from "@mui/material";
+import { Chip, Container, Divider } from "@mui/material";
 import Link from "next/link";
 
 import Marquee from "react-fast-marquee";
@@ -13,7 +13,7 @@ const Services = () => {
       <PageBanner pageName={"Enterprise Applications Development"} />
 
       {/* mobile-services*/}
-      <section className="about-area-two px-3  py-130 rpy-100 rel z-1">
+      <section className="about-area-two px-3  pt-130 rpy-100 rel z-1">
         <Container>
           <div className="row align-items-center gap-90">
             <div className="col-lg-6">
@@ -32,36 +32,147 @@ const Services = () => {
                   optimize efficiency, enhance visibility, and fuel business
                   growth.
                 </p>
-                {/* <ul className="list-style-one pt-5 mt-2">
-                  <li>
-                    Tailored solutions to meet specific business requirements
-                  </li>
-                  <li>Scalable architecture for future growth</li>
-                  <li>Integration with existing systems and databases</li>
-                  <li>Comprehensive testing and quality assurance</li>
-                </ul> */}
+              </div>
+              <div className="about-btns py-3">
+                <Link legacyBehavior href="/about">
+                  <a className="theme-btn style-three mt-15">
+                    Get a Call Back <i className="fas fa-long-arrow-right" />
+                  </a>
+                </Link>
+              </div>
+            </div>
 
-                <div className="about-btns py-3">
-                  <Link legacyBehavior href="/about">
-                    <a className="theme-btn style-three mt-15">
-                      Get a Call Back <i className="fas fa-long-arrow-right" />
-                    </a>
-                  </Link>
-                  {/* <div className="hotline mt-15">
-                    <i className="fas fa-phone" />
-                    <div className="content">
-                      <span>Hotline</span>
-                      <br />
-                      <a href="callto:+000(123)45688">+000 (123) 456 88</a>
+            <div className="col-lg-6">
+              <div className="about-two-image rel z-1 rmb-65 wow fadeInRight delay-0-2s">
+                <img
+                  src="assets/images/services/erphome.jpg"
+                  alt="About"
+                  style={{ mixBlendMode: "multiply" }}
+                />
+              </div>
+            </div>
+            
+            <div className="col-lg-12 mt-50 ">
+              <h4 className="my-4 pb-4 text-center ">
+                Why Partner with AskTek For Your ERP System Implementation ?
+              </h4>
+              <div className="row">
+                <div className="col-sm-6">
+                  <div className="feature-item style-two wow fadeInUp delay-0-2s">
+                    <div className="icon">
+                    <img
+                      src="assets/images/services/implementation.png"
+                      alt="Icon"
+                      className="industries-icon"
+                    />
                     </div>
-                  </div> */}
+                    <Link legacyBehavior href="service-details">
+                      <h4>Training</h4>
+                    </Link>
+                    <p>implementation, and ongoing support</p>
+                  </div>
+
+                  <div className="feature-item style-two wow fadeInUp delay-0-2s">
+                    <div className="icon">
+                    <img
+                      src="assets/images/services/web-tools.png"
+                      alt="Icon"
+                      className="industries-icon"
+                    />
+                    </div>
+                    <Link legacyBehavior href="service-details">
+                      <h4>Customization</h4>
+                    </Link>
+                    <p>to meet industry-specific requirements</p>
+                  </div>
+                </div>
+                <div className="col-sm-6">
+                  <div className="feature-item style-two wow fadeInDown delay-0-2s">
+                    <div className="icon">
+                    <img
+                      src="assets/images/services/module.png"
+                      alt="Icon"
+                      className="industries-icon"
+                    />
+                    </div>
+                    <Link legacyBehavior href="service-details">
+                      <h4> Modules </h4>
+                    </Link>
+                    <p>for finance, human resources, supply chain, and more</p>
+                  </div>
+                  <div className="feature-item style-two wow fadeInDown delay-0-2s">
+                    <div className="icon">
+                    <img
+                      src="assets/images/services/resize.png"
+                      alt="Icon"
+                      className="industries-icon"
+                    />
+                    </div>
+                    <Link legacyBehavior href="service-details">
+                      <h4>Scalable</h4>
+                    </Link>
+                    <p>architecture for business expansion</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
-              <div className="about-two-image rel z-1 rmb-65 wow fadeInRight delay-0-2s">
-                <img src="assets/images/services/erphome.jpg" alt="About" style={{mixBlendMode:'multiply'}} />
-                {/* <div className="bg-circle-shape" /> */}
+            <div className="col-xl-12 mt-50 ">
+              <div className="about-four-content mb-65 rel z-1 wow fadeInLeft delay-0-2s">
+                <div className="section-title mb-50 text-center">
+                  <h2>Our Custom ERP Development Services</h2>
+                </div>
+                <ul className="list-style-one my-30">
+                  <li>
+                    <p>
+                      <span style={{ fontFamily: "Oswald", color: "#53BF9D" }}>
+                        ERP Consulting Services{" "}
+                      </span>
+                      <br />
+                      <span style={{ color: "#85A389", fontWeight: "normal" }}>
+                        Our ERP consulting services provide expert guidance and
+                        strategic advice to help you navigate the complexities
+                        of ERP implementation. From needs assessment to system
+                        selection and planning, our consultants work closely
+                        with you to define your requirements and develop a
+                        roadmap for successful ERP deployment.
+                      </span>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <span style={{ fontFamily: "Oswald", color: "#53BF9D" }}>
+                        Custom ERP Solutions{" "}
+                      </span>
+                      <br />
+                      <span style={{ color: "#85A389", fontWeight: "normal" }}>
+                        We specialize in developing custom ERP solutions that
+                        are tailored to your specific business processes and
+                        requirements. Whether you need a solution for finance,
+                        human resources, supply chain management, or any other
+                        aspect of your business, our team of experienced
+                        developers will work with you to design and build a
+                        solution that meets your needs and drives business
+                        growth
+                      </span>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <span style={{ fontFamily: "Oswald", color: "#53BF9D" }}>
+                        ERP Implementation Services{" "}
+                      </span>
+                      <br />
+                      <span style={{ color: "#85A389", fontWeight: "normal" }}>
+                        Our ERP implementation services cover the entire
+                        implementation lifecycle, from planning and design to
+                        deployment and training. We take a systematic approach
+                        to ensure a smooth and successful implementation,
+                        minimizing disruption to your business operations and
+                        maximizing the benefits of your ERP system
+                      </span>
+                    </p>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -73,103 +184,150 @@ const Services = () => {
       <section className="services-area-two px-3  mt-50 rel z-2">
         <Container maxWidth={"xl"}>
           <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
-            <span className="sub-title mb-10">What We Provides</span>
-            {/* <h2>Mobile App Solutions</h2> */}
+            <Divider>
+              <Chip
+                label="Explore Our Ready-to-Deploy ERP Solutions for Your Industry"
+                size="medium"
+                color="primary"
+              />
+            </Divider>           
           </div>
           <div className="row justify-content-center">
-            <div className="col-xl-12 col-lg-4 col-md-6">
+            <div className="col-xl-6 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/services/erp11.png" alt="Service" />
+                  <img src="assets/images/services/garments.png" alt="Service" />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
-                    <span style={{ color: "#7E97A6" }}>ERP Consulting </span>{" "}
-                    Services
+                    <span style={{ color: "#7E97A6" }}>
+                      Garment Manufacturing{" "}
+                    </span>{" "}
+                    and Exporters
                   </h4>
                   <p className="text-center">
-                    Our ERP consulting services provide expert guidance and
-                    strategic advice to help you navigate the complexities of
-                    ERP implementation. From needs assessment to system
-                    selection and planning, our consultants work closely with
-                    you to define your requirements and develop a roadmap for
-                    successful ERP deployment.
+                    Streamline your garment manufacturing and export operations
+                    with our comprehensive ERP solution. From order management
+                    to production tracking and inventory control, our solution
+                    is tailored to meet the unique needs of the garment
+                    industry, ensuring efficiency, compliance, and
+                    profitability.
                   </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
                 </div>
               </div>
             </div>
-         
-            <div className="col-xl-4 col-lg-4 col-md-6">
+
+            <div className="col-xl-6 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/services/erp22.png" alt="Service" />
+                  <img src="assets/images/services/laundry.png" alt="Service" />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
-                    <span style={{ color: "#008DDA" }}>Custom ERP </span>
-                    Solutions
+                    <span style={{ color: "#008DDA" }}>Garment Buying </span>
+                    House
                   </h4>
                   <p className="text-center">
-                    We specialize in developing custom ERP solutions that are
-                    tailored to your specific business processes and
-                    requirements. Whether you need a solution for finance, human
-                    resources, supply chain management, or any other aspect of
-                    your business, our team of experienced developers will work
-                    with you to design and build a solution that meets your
-                    needs and drives business growth.
+                    Manage your garment buying house operations efficiently with
+                    our specialized ERP solution. From supplier management to
+                    order processing and quality control, our solution helps you
+                    streamline processes, improve collaboration, and deliver
+                    superior service to your clients.
                   </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-6">
+
+            <div className="col-xl-6 col-lg-4 col-md-6">
               <div className="service-item-two wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/services/erp33.png" alt="Service" />
+                  <img src="assets/images/services/iron.png" alt="Service" />
                 </div>
                 <div className="content">
                   <h4 className="title text-center">
-                    {" "}
-                    <span style={{ color: "#5356FF" }}>
-                      ERP Implementation{" "}
+                    <span style={{ color: "#7E97A6" }}>Steel </span>{" "}
+                    Manufacturing
+                  </h4>
+                  <p className="text-center">
+                    Optimize your steel manufacturing processes with our
+                    industry-specific ERP solution. From raw material
+                    procurement to production planning and quality management,
+                    our solution provides end-to-end visibility and control over
+                    your manufacturing operations, enabling you to meet customer
+                    demands and maximize profitability.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-xl-6 col-lg-4 col-md-6">
+              <div className="service-item-two wow fadeInUp delay-0-2s">
+                <div className="image">
+                  <img src="assets/images/services/jewelry-store.png" alt="Service" />
+                </div>
+                <div className="content">
+                  <h4 className="title text-center">
+                    <span style={{ color: "#008DDA" }}>
+                      Material Management{" "}
                     </span>
-                    Services
+                    (Jewellery & Others)
                   </h4>
                   <p className="text-center">
-                    Our ERP implementation services cover the entire
-                    implementation lifecycle, from planning and design to
-                    deployment and training. We take a systematic approach to
-                    ensure a smooth and successful implementation, minimizing
-                    disruption to your business operations and maximizing the
-                    benefits of your ERP system.
+                    Efficiently manage material procurement and inventory with
+                    our ERP solution tailored for jewellery and other
+                    material-intensive industries. With features such as
+                    inventory tracking, vendor management, and demand
+                    forecasting, our solution helps you optimize inventory
+                    levels, reduce costs, and improve supply chain efficiency.
                   </p>
-                  {/*                 
-                  <ul className="list-style-three">
-                    <li>Paid Marketing</li>
-                    <li>CRO</li>
-                    <li>Content Marketing</li>
-                    <li>Email Marketing</li>
-                    <li>SMO</li>
-                  </ul> */}
                 </div>
               </div>
             </div>
-         
+
+            <div className="col-xl-6 col-lg-4 col-md-6">
+              <div className="service-item-two wow fadeInUp delay-0-2s">
+                <div className="image">
+                  <img src="assets/images/services/delivery-truck.png" alt="Service" />
+                </div>
+                <div className="content">
+                  <h4 className="title text-center">
+                    <span style={{ color: "#7E97A6" }}>Courier </span> & Cargo
+                  </h4>
+                  <p className="text-center">
+                    Streamline your courier and cargo operations with our
+                    specialized ERP solution. From order management to route
+                    optimization and delivery tracking, our solution provides
+                    real-time visibility into your logistics operations,
+                    enabling you to improve efficiency, reduce costs, and
+                    deliver exceptional service to your customers.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-xl-6 col-lg-4 col-md-6">
+              <div className="service-item-two wow fadeInUp delay-0-2s">
+                <div className="image">
+                  <img src="assets/images/services/deal.png" alt="Service" />
+                </div>
+                <div className="content">
+                  <h4 className="title text-center">
+                    <span style={{ color: "#008DDA" }}>Real </span>
+                    Estate
+                  </h4>
+                  <p className="text-center">
+                    Manage your real estate operations efficiently with our
+                    comprehensive ERP solution. From property management to
+                    leasing and tenant management, our solution provides a
+                    centralized platform to streamline processes, improve
+                    collaboration, and drive profitability in your real estate
+                    business..
+                    <br />
+                    <br />
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </Container>
       </section>

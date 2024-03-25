@@ -206,7 +206,7 @@ const Service2 = () => {
       <section className="what-we-provide overflow-hidden py-130 rpy-100 rel z-1">
         <div className="container">
           <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
-            <span className="sub-title mb-10">What We Provides</span>
+            <span className="sub-title mb-10">Our Services</span>
             <h2>Digital Core Services</h2>
           </div>
           <Slider {...serviceThreeSlider} className="service-three-slider">

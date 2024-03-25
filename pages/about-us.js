@@ -352,11 +352,9 @@ const ServiceDetails = () => {
                       <img
                         src={
                           "https://ik.imagekit.io/sathishask2024/Deconstructed.gif?updatedAt=1710852540100"
-                        }
-                        // src="assets/images/about/why-choose1.jpg"
+                        }                      
                         alt="Why Choose"
                         className="why-choose-img "
-                        // style={{maxWidth:'70%',objectFit:'contain'}}
                       />
                     </div>
                   </div>

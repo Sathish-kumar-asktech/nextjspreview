@@ -639,13 +639,12 @@ a.theme-btn.style-four:not(:hover):after {
   margin-right: -10px;
 }
 .social-style-one a {
-  color: white;  
+  color: white;
   /* padding: 5px; */
   margin-left: 10px;
-  margin-right: 10px; 
+  margin-right: 10px;
   transition: all 0.5s;
 }
-
 
 .social-style-one a:hover {
   color: greenyellow;
@@ -5862,8 +5861,6 @@ h6,
   z-index: 1;
 }
 
-
-
 .why-choose-img {
   object-fit: contain;
   max-height: fit-content;
@@ -5895,7 +5892,10 @@ h6,
   .why-choose-content h3 {
     font-size: 25px;
   }
-  
+}
+
+.css-1016kjc-MuiChip-root {
+  font-size: 16px;
 }
 
 .why-choose-content .list-style-one li {
@@ -6084,7 +6084,7 @@ h6,
   width: 25px;
   height: 25px;
   color: white;
-  margin-top: 18px;
+  /* margin-top: 18px; */
   line-height: 21px;
   background: var(--secondary-color);
   border-color: var(--secondary-color);
@@ -6228,7 +6228,8 @@ h6,
   margin-bottom: 46px;
   transition: all 0.5s;
   padding: 15px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
   border-radius: 10%;
 }
 /* 
@@ -6889,8 +6890,7 @@ h6,
   padding: 30px 15px 25px;
 }
 
-.industries-icon
-{
+.industries-icon {
   max-width: 60px;
   margin: 10px;
 }
@@ -6920,11 +6920,10 @@ h6,
   border: 1px solid var(--border-color);
 }
 .feature-item:hover {
-  /* background: #EEEDEB; */
-  scale: 1.1;
+  scale: 1.05;
   transition: all 0.5s;
-  /* background: var(--secondary-color); */
 }
+
 .feature-item:hover .icon,
 .feature-item:hover h5,
 .feature-item:hover h5 a,

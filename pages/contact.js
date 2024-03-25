@@ -86,7 +86,7 @@ const Contact = () => {
                   <i className="fal fa-clock" />
                 </div>
                 <h4>Working Hour</h4>
-                <b>Monday _ Saturday,</b>
+                <b>Monday - Saturday,</b>
                 <span>10:00am - 07:00pm</span>
               </div>
             </div>
