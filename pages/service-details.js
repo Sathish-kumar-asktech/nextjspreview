@@ -12,6 +12,7 @@ const ServiceDetails = () => {
   ];
   return (
     <Layout>
+      
       <PageBanner pageName={"Service Details"} />
       <section className="service-details-area pt-130 rpt-100 pb-115 rpb-85">
         <div className="container">

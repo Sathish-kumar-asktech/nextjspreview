@@ -298,7 +298,7 @@ const DeskTopMenu = () => {
             <a href="#">Products</a>
             <ul>
               <li>
-                <Link href="project-grid" style={{ whiteSpace: "nowrap" }}>
+                <Link href="erp-for-textiles-and-garments" style={{ whiteSpace: "nowrap" }}>
                   ERP for Textile & Garment Industries{" "}
                 </Link>
               </li>

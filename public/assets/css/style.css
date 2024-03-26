@@ -949,6 +949,14 @@ a.theme-btn.style-four:not(:hover):after {
   opacity: 0.6;
 }
 
+.text-white .benefits-item .icon i {
+  color: var(--primary-color);
+}
+
+.text-white .benefits-item .content p {
+  opacity: 0.6;
+}
+
 .text-white .service-two-item .icon i {
   color: var(--primary-color);
 }
@@ -5492,10 +5500,9 @@ h6,
   color: var(--secondary-color);
 }
 
-
 .slider-item-two .sub-title2 {
   margin-bottom: 20px;
-  color: #30A2FF
+  color: #30a2ff;
 }
 
 .slider-item-two .sub-title:before {
@@ -5878,6 +5885,21 @@ h6,
   align-items: center;
 }
 
+.product-features-img {
+  object-fit: contain;
+  max-height: fit-content;
+  mix-blend-mode: multiply;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-features {
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+
 /* 
 .why-choose-image:before {
   content: "";
@@ -6239,6 +6261,7 @@ h6,
     rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
   border-radius: 10%;
 }
+
 /* 
 .mission-vision-item:hover {
   scale: 1.05;
@@ -6251,6 +6274,24 @@ h6,
   padding: 15px;
   cursor: pointer;
 } */
+
+/* Service Style Two */
+.benefits-item {
+  margin-bottom: 46px;
+  transition: all 0.5s;
+  padding: 15px;
+}
+
+.benefits-item:hover {
+  scale: 1.05;
+  color: black;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: all 0.2s;
+  padding: 15px;
+  cursor: pointer;
+}
 
 /* Service Style Two */
 .service-two-item {
@@ -6282,6 +6323,12 @@ h6,
     display: -ms-flexbox;
     display: flex;
   }
+
+  .benefits-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .service-two-item .icon {
   font-size: 40px;
@@ -6291,6 +6338,16 @@ h6,
   /* margin: 5px 30px 25px 0; */
 }
 .service-two-item .content h4 {
+  margin-bottom: 15px;
+}
+
+.benefits-item .icon {
+  font-size: 40px;
+  max-width: 100px;
+  line-height: 1;
+  color: var(--secondary-color);
+}
+.benefits-item .content h4 {
   margin-bottom: 15px;
 }
 
@@ -9970,7 +10027,7 @@ blockquote .name:before {
 
 /* Contact Page Form */
 .contact-form-wrap {
-  margin-top: 100px;
+  /* margin-top: 100px; */
   padding: 130px 110px;
   border-radius: 50px;
 }
@@ -11258,6 +11315,14 @@ blockquote .name:before {
   margin-right: 15px;
 }
 
+.icon-size {
+  max-width: 60px;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Footer Bottom */
 .footer-bottom-menu ul {
   -ms-flex-wrap: wrap;
@@ -11298,4 +11363,27 @@ blockquote .name:before {
   right: 0;
   bottom: 10%;
   z-index: -1;
+}
+
+.sticky-button-container {
+  position: fixed;
+  top: 50%; 
+  right: -55px;
+  transform: translateY(-50%) rotate(360deg); /* Rotate the button */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.sticky-button {
+  /* Your button styles */
+  background-color: #3E00FF;
+  color: #ffffff;
+  border: none;
+  rotate: 360deg;
+  border-radius: 5px;
+  transform: rotate(-90deg); /* Counter-rotate the text */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.css-1fu2e3p-MuiPaper-root-MuiDialog-paper {
+  border-radius: 20px;
 }
