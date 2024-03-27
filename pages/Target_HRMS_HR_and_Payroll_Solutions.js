@@ -774,7 +774,7 @@ const ProjectGrid = () => {
                           onChange={handleChange}
                         />
                       </Grid>
-                      <Grid item xs={12} sm={12}>
+                      <Grid item xs={12} sm={6}>
                         <TextField
                           fullWidth
                           label="Your Company Name"
@@ -784,7 +784,7 @@ const ProjectGrid = () => {
                           onChange={handleChange}
                         />
                       </Grid>
-                      <Grid item xs={12} sm={12}>
+                      <Grid item xs={12} sm={6}>
                         <TextField
                           fullWidth
                           select
