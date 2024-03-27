@@ -93,17 +93,17 @@ const ProjectGrid = () => {
 
   return (
     <>
-      <div className="headShake">
-        <Button
-          onClick={handleButtonClick}
-          variant="contained"
-          color="warning"
-          className="sticky-button headShake sticky-button-container"
-        >
-          Quick Enquiry
-        </Button>
-      </div>
       <Layout>
+        <div className="headShake">
+          <Button
+            onClick={handleButtonClick}
+            variant="contained"
+            color="warning"
+            className="sticky-button headShake sticky-button-container"
+          >
+            Quick Enquiry
+          </Button>
+        </div>
         <Dialog open={open} onClose={handleClose} maxWidth={"lg"}>
           <DialogContent className="bg-white p-0 m-0 ">
             <div className="form-style-two bg-white ">
@@ -233,36 +233,37 @@ const ProjectGrid = () => {
             <div className="row justify-content-center">
               <div className="col-10">
                 <div className="section-title text-center mb-50 wow fadeInUp delay-0-2s">
-                  <h2>TARGET - ERP for Textile & Garment Industries</h2>
-                  <h5>
-                    Unleashing Excellence in Textile & Garment Manufacturing
+                  <h2 className="text-gradient-title ">
+                    Target SCM - Supply Chain Management
+                  </h2>
+                  <h5 className="text-success">
+                    Powering Your Supply Chain Dynamics
                   </h5>
                   <div className="image my-50 wow fadeInUp delay-0-2s">
                     <img
-                      src="assets/images/projects/mockup-erp.png"
+                      src="/assets/images/projects/mockup-erp.png"
                       alt="Service Details"
                       style={{ objectFit: "contain", maxWidth: "60%" }}
                     />
                   </div>
                   <p>
-                    Elevate your textile and garment manufacturing with TARGET,
-                    our comprehensive ERP solution. Tailored for manufacturers
-                    and exporters, TARGET streamlines production processes,
-                    optimizes inventory management, and simplifies export
-                    documentation. Experience efficiency like never before, and
-                    watch your operations seamlessly align with global
-                    standards.
+                    Transform your supply chain with Target SCM, a versatile
+                    solution applicable across industries. Boost purchase and
+                    distribution processes, and gain real-time visibility into
+                    your supply chain. With online tools for customer purchase
+                    orders and tracking, Target SCM ensures efficiency and
+                    transparency in every link of your supply chain.
                   </p>
                 </div>
                 <div className="project-shapes">
                   <img
                     className="shape one"
-                    src="assets/images/shapes/project-left.png"
+                    src="/assets/images/shapes/project-left.png"
                     alt="shape"
                   />
                   <img
                     className="shape two"
-                    src="assets/images/shapes/project-right.png"
+                    src="/assets/images/shapes/project-right.png"
                     alt="shape"
                   />
                 </div>
@@ -274,71 +275,11 @@ const ProjectGrid = () => {
                   <Chip label="Key Features" size="medium" />
                 </Divider>
               </div>
-              <div className="col-lg-3  col-md-4 col-6 col-small">
+              <div className="col-lg-2  col-md-4 col-6 col-small">
                 <div className="feature-item d-flex flex-column justify-content-center align-items-center gap-3 wow fadeInUp delay-0-2s">
                   <div className="icon icon-size">
                     <img
-                      src="assets/images/projects/erp/planning-strategy.png"
-                      alt="Icon"
-                    />
-                  </div>
-                  <h5>
-                    <Link legacyBehavior href="service-details">
-                      Production Planning
-                    </Link>
-                  </h5>
-                </div>
-              </div>
-              <div className="col-lg-3  col-md-4 col-6 col-small">
-                <div className="feature-item d-flex flex-column justify-content-center align-items-center gap-3 wow fadeInDown delay-0-2s">
-                  <div className="icon icon-size">
-                    <img
-                      src="assets/images/projects/erp/time-sheet.png"
-                      alt="Icon"
-                    />
-                  </div>
-                  <h5>
-                    <Link legacyBehavior href="service-details">
-                      Scheduling
-                    </Link>
-                  </h5>
-                </div>
-              </div>
-              <div className="col-lg-3  col-md-4 col-6 col-small">
-                <div className="feature-item d-flex flex-column justify-content-center align-items-center gap-3 wow fadeInUp delay-0-2s">
-                  <div className="icon icon-size">
-                    <img
-                      src="assets/images/projects/erp/inventory-management.png"
-                      alt="Icon"
-                    />
-                  </div>
-                  <h5>
-                    <Link legacyBehavior href="service-details">
-                      Inventory Control
-                    </Link>
-                  </h5>
-                </div>
-              </div>
-              <div className="col-lg-3  col-md-4 col-6 col-small">
-                <div className="feature-item d-flex flex-column justify-content-center align-items-center gap-3 wow fadeInDown delay-0-2s">
-                  <div className="icon icon-size">
-                    <img
-                      src="assets/images/projects/erp/businessorder.png"
-                      alt="Icon"
-                    />
-                  </div>
-                  <h5>
-                    <Link legacyBehavior href="service-details">
-                      Order Management
-                    </Link>
-                  </h5>
-                </div>
-              </div>
-              <div className="col-lg-3  col-md-4 col-6 col-small">
-                <div className="feature-item d-flex flex-column justify-content-center align-items-center gap-3 wow fadeInUp delay-0-2s">
-                  <div className="icon icon-size">
-                    <img
-                      src="assets/images/projects/erp/supply-chain.png"
+                      src="/assets/images/projects/erp/planning-strategy.png"
                       alt="Icon"
                     />
                   </div>
@@ -349,47 +290,77 @@ const ProjectGrid = () => {
                   </h5>
                 </div>
               </div>
-              <div className="col-lg-3  col-md-4 col-6 col-small">
+              <div className="col-lg-2  col-md-4 col-6 col-small">
                 <div className="feature-item d-flex flex-column justify-content-center align-items-center gap-3 wow fadeInDown delay-0-2s">
                   <div className="icon icon-size">
                     <img
-                      src="assets/images/projects/erp/quality-assurance.png"
+                      src="/assets/images/projects/erp/time-sheet.png"
                       alt="Icon"
                     />
                   </div>
                   <h5>
                     <Link legacyBehavior href="service-details">
-                      Quality Assurance
+                      Inventory Optimization
                     </Link>
                   </h5>
                 </div>
               </div>
-              <div className="col-lg-3  col-md-4 col-6 col-small">
-                <div className="feature-item d-flex flex-column justify-content-center align-items-center gap-3  wow fadeInUp delay-0-2s">
+              <div className="col-lg-2  col-md-4 col-6 col-small">
+                <div className="feature-item d-flex flex-column justify-content-center align-items-center gap-3 wow fadeInUp delay-0-2s">
                   <div className="icon icon-size">
                     <img
-                      src="assets/images/projects/erp/yearly-report.png"
+                      src="/assets/images/projects/erp/inventory-management.png"
                       alt="Icon"
                     />
                   </div>
                   <h5>
                     <Link legacyBehavior href="service-details">
-                      Financial Management
+                      Procurement Automation
                     </Link>
                   </h5>
                 </div>
               </div>
-              <div className="col-lg-3  col-md-4 col-6 col-small">
-                <div className="feature-item d-flex flex-column justify-content-center align-items-center gap-3  wow fadeInDown delay-0-2s">
+              <div className="col-lg-2  col-md-4 col-6 col-small">
+                <div className="feature-item d-flex flex-column justify-content-center align-items-center gap-3 wow fadeInDown delay-0-2s">
                   <div className="icon icon-size">
                     <img
-                      src="assets/images/projects/erp/dashboard.png"
+                      src="/assets/images/projects/erp/businessorder.png"
                       alt="Icon"
                     />
                   </div>
                   <h5>
                     <Link legacyBehavior href="service-details">
-                      Reporting & Analytics
+                      Warehouse Management
+                    </Link>
+                  </h5>
+                </div>
+              </div>
+              <div className="col-lg-2  col-md-4 col-6 col-small">
+                <div className="feature-item d-flex flex-column justify-content-center align-items-center gap-3 wow fadeInUp delay-0-2s">
+                  <div className="icon icon-size">
+                    <img
+                      src="/assets/images/projects/erp/supply-chain.png"
+                      alt="Icon"
+                    />
+                  </div>
+                  <h5>
+                    <Link legacyBehavior href="service-details">
+                      Logistics & Distribution
+                    </Link>
+                  </h5>
+                </div>
+              </div>
+              <div className="col-lg-2  col-md-4 col-6 col-small">
+                <div className="feature-item d-flex flex-column justify-content-center align-items-center gap-3 wow fadeInDown delay-0-2s">
+                  <div className="icon icon-size">
+                    <img
+                      src="/assets/images/projects/erp/quality-assurance.png"
+                      alt="Icon"
+                    />
+                  </div>
+                  <h5>
+                    <Link legacyBehavior href="service-details">
+                      Supplier Collaboration
                     </Link>
                   </h5>
                 </div>
@@ -416,7 +387,7 @@ const ProjectGrid = () => {
                     <div className="col-lg-4 fadeInUp">
                       <div className="why-choose-image fadeInUp rmb-55">
                         <img
-                          src="assets/images/projects/erp/Manufacturing.png"
+                          src="/assets/images/projects/erp/Manufacturing.png"
                           alt="Why Choose"
                           className="product-features-img"
                         />
@@ -453,7 +424,7 @@ const ProjectGrid = () => {
                     <div className="col-lg-4  fadeInRight order-lg-2 order-sm-1 order-1 ">
                       <div className="why-choose-image rmt-55">
                         <img
-                          src="assets/images/projects/erp/inventory.png"
+                          src="/assets/images/projects/erp/inventory.png"
                           alt="Why Choose"
                           className="product-features-img"
                         />
@@ -465,7 +436,7 @@ const ProjectGrid = () => {
                     <div className="col-lg-4 fadeInUp">
                       <div className="why-choose-image rmb-55">
                         <img
-                          src="assets/images/projects/erp/Invoice-amico.png"
+                          src="/assets/images/projects/erp/Invoice-amico.png"
                           alt="Why Choose"
                           className="product-features-img"
                         />
@@ -499,7 +470,7 @@ const ProjectGrid = () => {
                     <div className="col-lg-4 fadeInRight order-lg-2 order-sm-1 order-1 ">
                       <div className="why-choose-image rmt-55">
                         <img
-                          src="assets/images/projects/erp/Logistics-pana.png"
+                          src="/assets/images/projects/erp/Logistics-pana.png"
                           alt="Why Choose"
                           className="product-features-img "
                         />
@@ -511,7 +482,7 @@ const ProjectGrid = () => {
                     <div className="col-lg-4 fadeInUp">
                       <div className="why-choose-image rmb-55">
                         <img
-                          src="assets/images/projects/erp/Manufacturing.png"
+                          src="/assets/images/projects/erp/Manufacturing.png"
                           alt="Why Choose"
                           className="product-features-img"
                         />
@@ -545,7 +516,7 @@ const ProjectGrid = () => {
                     <div className="col-lg-4 fadeInRight order-lg-2 order-sm-1 order-1 ">
                       <div className="why-choose-image rmt-55">
                         <img
-                          src="assets/images/projects/erp/Financial data-amico.png"
+                          src="/assets/images/projects/erp/Financial data-amico.png"
                           alt="Why Choose"
                           className="product-features-img "
                         />
@@ -571,7 +542,7 @@ const ProjectGrid = () => {
                             <div className="benefits-item wow fadeInUp delay-0-4s">
                               <div className="icon d-flex justify-content-center align-items-center px-4">
                                 <img
-                                  src="assets/images/projects/erp/time-management.png"
+                                  src="/assets/images/projects/erp/time-management.png"
                                   alt="Icon"
                                 />
                               </div>
@@ -592,7 +563,7 @@ const ProjectGrid = () => {
                             <div className="benefits-item wow fadeInUp delay-0-6s">
                               <div className="icon d-flex justify-content-center align-items-center px-4">
                                 <img
-                                  src="assets/images/projects/erp/vision.png"
+                                  src="/assets/images/projects/erp/vision.png"
                                   alt="Icon"
                                 />
                               </div>
@@ -614,7 +585,7 @@ const ProjectGrid = () => {
                             <div className="benefits-item wow fadeInUp delay-0-3s">
                               <div className="icon d-flex justify-content-center align-items-center px-4">
                                 <img
-                                  src="assets/images/projects/erp/costs.png"
+                                  src="/assets/images/projects/erp/costs.png"
                                   alt="Icon"
                                 />
                               </div>
@@ -635,7 +606,7 @@ const ProjectGrid = () => {
                             <div className="benefits-item wow fadeInUp delay-0-5s">
                               <div className="icon d-flex justify-content-center align-items-center px-4">
                                 <img
-                                  src="assets/images/projects/erp/satisfaction.png"
+                                  src="/assets/images/projects/erp/satisfaction.png"
                                   alt="Icon"
                                 />
                               </div>
@@ -656,7 +627,7 @@ const ProjectGrid = () => {
                             <div className="benefits-item wow fadeInUp delay-0-7s">
                               <div className="icon d-flex justify-content-center align-items-center px-4">
                                 <img
-                                  src="assets/images/projects/erp/approval.png"
+                                  src="/assets/images/projects/erp/approval.png"
                                   alt="Icon"
                                 />
                               </div>
@@ -678,7 +649,7 @@ const ProjectGrid = () => {
                             <div className="benefits-item wow fadeInUp delay-0-7s">
                               <div className="icon d-flex justify-content-center align-items-center px-4">
                                 <img
-                                  src="assets/images/projects/erp/maximize.png"
+                                  src="/assets/images/projects/erp/maximize.png"
                                   alt="Icon"
                                 />
                               </div>
@@ -710,33 +681,67 @@ const ProjectGrid = () => {
         <section
           className="contact-form-area py-50 pb-100 px-3  rpy-100  mb-4 bgs-cover"
           style={{
-            backgroundImage: "url(assets/images/background/feature-bg.jpg)",
+            backgroundImage:
+              "url(assets/images/background/contact-form-bg.jpg)",
           }}
         >
           <Container>
             <div className="row gap-100 align-items-center">
-              <div className="col-lg-12 mb-40">
-                <div className="d-flex justify-content-center align-items-center gap-5 contact-info-wrap wow fadeInLeft delay-0-2s">
-                  <div className="why-choose-image d-flex justify-content-center align-items-center gap-2 fadeInUp rmb-55">
+              <div className="col-lg-5">
+                <div className="contact-info-wrap wow fadeInLeft delay-0-2s">
+                  <div className="section-title mb-40">
+                    <span className="sub-title mb-10">
+                      Explore Our ERP Solutions?
+                    </span>
+                    <h2>Book a Demo Today</h2>
+                  </div>
+                  <div className="why-choose-image fadeInUp rmb-55">
                     <img
                       src="/assets/images/projects/erp/Demo-amico.png"
                       alt="Why Choose"
-                      style={{ maxWidth: "200px" }}
+                      className=""
                     />
                   </div>
-                  <div className="section-title mb-40">
-                    <h2>Request a Demo Today</h2>
-                    <span
-                      className="sub-title  mb-10"
-                      style={{ color: "#" }}
-                    >
-                      Explore Our Textile & Garments Solutions
-                    </span>
-                  </div>
+
+                  {/* <div className="contact-info-part">                   
+                    <div className="contact-info-item">
+                      <div className="icon">
+                        <i className="far fa-map-marked-alt" />
+                      </div>
+                      <div className="content">
+                        <span>Location</span>
+                        <h5>Kodambakkam, Chennai</h5>
+                      </div>
+                    </div>
+                    <div className="contact-info-item">
+                      <div className="icon">
+                        <i className="far fa-envelope-open-text" />
+                      </div>
+                      <div className="content">
+                        <span>Email Us</span>
+                        <h5>
+                          <a href="mailto:support@gmail.com">
+                            sales@asktek.net
+                          </a>
+                        </h5>
+                      </div>
+                    </div>
+                    <div className="contact-info-item">
+                      <div className="icon">
+                        <i className="far fa-phone" />
+                      </div>
+                      <div className="content">
+                        <span>Hotline</span>
+                        <h5>
+                          <a href="calto:+04445034080">+044 4503 4080</a>
+                        </h5>
+                      </div>
+                    </div>
+                  </div> */}
                 </div>
               </div>
-              <div className="col-lg-12 ">
-                <div className="contact-form shadowbox-2 bg-white p-50 rmb-55 wow fadeInRight delay-0-2s">
+              <div className="col-lg-7">
+                <div className="contact-form bg-white p-50 rmb-55 wow fadeInRight delay-0-2s">
                   <form onSubmit={handleSubmit} className=" bg-white">
                     <Grid container spacing={3}>
                       <Grid item xs={12} sm={6}>
@@ -841,8 +846,7 @@ const ProjectGrid = () => {
                         className="d-flex justify-content-center align-items-center gap-2"
                       >
                         <button type="submit" className="theme-btn style-two ">
-                          Get A Call Back{" "}
-                          <i className="far fa-long-arrow-right" />
+                          send message <i className="far fa-long-arrow-right" />
                         </button>
                         {/*                     
                     <Button type="submit" variant="contained" color="primary">

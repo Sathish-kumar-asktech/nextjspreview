@@ -50,7 +50,7 @@ const ProjectGrid = () => {
     company_name: "",
     email: "",
     city: "",
-    product: "ERP",
+    product: "HRMS",
     enquiry_details: "",
   });
 
@@ -93,17 +93,17 @@ const ProjectGrid = () => {
 
   return (
     <>
-      <div className="headShake">
-        <Button
-          onClick={handleButtonClick}
-          variant="contained"
-          color="warning"
-          className="sticky-button headShake sticky-button-container"
-        >
-          Quick Enquiry
-        </Button>
-      </div>
       <Layout>
+        <div className="headShake">
+          <Button
+            onClick={handleButtonClick}
+            variant="contained"
+            color="warning"
+            className="sticky-button headShake sticky-button-container"
+          >
+            Quick Enquiry
+          </Button>
+        </div>
         <Dialog open={open} onClose={handleClose} maxWidth={"lg"}>
           <DialogContent className="bg-white p-0 m-0 ">
             <div className="form-style-two bg-white ">
@@ -233,36 +233,37 @@ const ProjectGrid = () => {
             <div className="row justify-content-center">
               <div className="col-10">
                 <div className="section-title text-center mb-50 wow fadeInUp delay-0-2s">
-                  <h2>TARGET - ERP for Textile & Garment Industries</h2>
-                  <h5>
-                    Unleashing Excellence in Textile & Garment Manufacturing
+                  <h2 className="text-gradient-title2 ">
+                    Target HRMS - HR & Payroll Solutions
+                  </h2>
+                  <h5 className="text-primary">
+                    Empowering Your Workforce, Streamlining Payroll
                   </h5>
                   <div className="image my-50 wow fadeInUp delay-0-2s">
                     <img
-                      src="assets/images/projects/mockup-erp.png"
+                      src="/assets/images/projects/mockup-erp.png"
                       alt="Service Details"
                       style={{ objectFit: "contain", maxWidth: "60%" }}
                     />
                   </div>
                   <p>
-                    Elevate your textile and garment manufacturing with TARGET,
-                    our comprehensive ERP solution. Tailored for manufacturers
-                    and exporters, TARGET streamlines production processes,
-                    optimizes inventory management, and simplifies export
-                    documentation. Experience efficiency like never before, and
-                    watch your operations seamlessly align with global
-                    standards.
+                    Say goodbye to HR and payroll complexities with Target HRMS.
+                    Tailored for diverse industries, especially manufacturing
+                    and compliance-focused factories, our solution provides a
+                    complete HR and payroll package. Experience the ease of
+                    mobile-responsive dashboards, ensuring that your workforce
+                    management is as dynamic as your business.
                   </p>
                 </div>
                 <div className="project-shapes">
                   <img
                     className="shape one"
-                    src="assets/images/shapes/project-left.png"
+                    src="/assets/images/shapes/project-left.png"
                     alt="shape"
                   />
                   <img
                     className="shape two"
-                    src="assets/images/shapes/project-right.png"
+                    src="/assets/images/shapes/project-right.png"
                     alt="shape"
                   />
                 </div>
@@ -274,122 +275,93 @@ const ProjectGrid = () => {
                   <Chip label="Key Features" size="medium" />
                 </Divider>
               </div>
-              <div className="col-lg-3  col-md-4 col-6 col-small">
+              <div className="col-lg-2  col-md-4 col-6 col-small">
                 <div className="feature-item d-flex flex-column justify-content-center align-items-center gap-3 wow fadeInUp delay-0-2s">
                   <div className="icon icon-size">
                     <img
-                      src="assets/images/projects/erp/planning-strategy.png"
+                      src="/assets/images/projects/hrms/perform.png"
                       alt="Icon"
                     />
                   </div>
                   <h5>
                     <Link legacyBehavior href="service-details">
-                      Production Planning
+                      Employee Management
                     </Link>
                   </h5>
                 </div>
               </div>
-              <div className="col-lg-3  col-md-4 col-6 col-small">
+              <div className="col-lg-2  col-md-4 col-6 col-small">
                 <div className="feature-item d-flex flex-column justify-content-center align-items-center gap-3 wow fadeInDown delay-0-2s">
                   <div className="icon icon-size">
                     <img
-                      src="assets/images/projects/erp/time-sheet.png"
+                      src="/assets/images/projects/hrms/process.png"
                       alt="Icon"
                     />
                   </div>
-                  <h5>
+                  <h5 className="text-muted">
                     <Link legacyBehavior href="service-details">
-                      Scheduling
+                      Attendance Tracking
                     </Link>
                   </h5>
                 </div>
               </div>
-              <div className="col-lg-3  col-md-4 col-6 col-small">
+              <div className="col-lg-2  col-md-4 col-6 col-small">
                 <div className="feature-item d-flex flex-column justify-content-center align-items-center gap-3 wow fadeInUp delay-0-2s">
                   <div className="icon icon-size">
                     <img
-                      src="assets/images/projects/erp/inventory-management.png"
+                      src="/assets/images/projects/hrms/fiscal.png"
                       alt="Icon"
                     />
                   </div>
-                  <h5>
+                  <h5 className="text-muted">
                     <Link legacyBehavior href="service-details">
-                      Inventory Control
+                      Payroll Processing
                     </Link>
                   </h5>
                 </div>
               </div>
-              <div className="col-lg-3  col-md-4 col-6 col-small">
+              <div className="col-lg-2  col-md-4 col-6 col-small">
                 <div className="feature-item d-flex flex-column justify-content-center align-items-center gap-3 wow fadeInDown delay-0-2s">
                   <div className="icon icon-size">
                     <img
-                      src="assets/images/projects/erp/businessorder.png"
+                      src="/assets/images/projects/hrms/manager.png"
                       alt="Icon"
                     />
                   </div>
-                  <h5>
+                  <h5 className="text-muted">
                     <Link legacyBehavior href="service-details">
-                      Order Management
+                      Benefits Administration
                     </Link>
                   </h5>
                 </div>
               </div>
-              <div className="col-lg-3  col-md-4 col-6 col-small">
+              <div className="col-lg-2  col-md-4 col-6 col-small">
                 <div className="feature-item d-flex flex-column justify-content-center align-items-center gap-3 wow fadeInUp delay-0-2s">
                   <div className="icon icon-size">
                     <img
-                      src="assets/images/projects/erp/supply-chain.png"
+                      src="/assets/images/projects/hrms/employee.png"
                       alt="Icon"
                     />
                   </div>
-                  <h5>
+                  <h5 className="text-muted">
                     <Link legacyBehavior href="service-details">
-                      Supplier Management
+                      Performance Management
                     </Link>
                   </h5>
                 </div>
               </div>
-              <div className="col-lg-3  col-md-4 col-6 col-small">
+
+              <div className="col-lg-2  col-md-4 col-6 col-small">
                 <div className="feature-item d-flex flex-column justify-content-center align-items-center gap-3 wow fadeInDown delay-0-2s">
                   <div className="icon icon-size">
                     <img
-                      src="assets/images/projects/erp/quality-assurance.png"
+                      src="/assets/images/projects/hrms/compliance.png"
                       alt="Icon"
                     />
                   </div>
-                  <h5>
+                  <h5 className="text-muted">
                     <Link legacyBehavior href="service-details">
-                      Quality Assurance
-                    </Link>
-                  </h5>
-                </div>
-              </div>
-              <div className="col-lg-3  col-md-4 col-6 col-small">
-                <div className="feature-item d-flex flex-column justify-content-center align-items-center gap-3  wow fadeInUp delay-0-2s">
-                  <div className="icon icon-size">
-                    <img
-                      src="assets/images/projects/erp/yearly-report.png"
-                      alt="Icon"
-                    />
-                  </div>
-                  <h5>
-                    <Link legacyBehavior href="service-details">
-                      Financial Management
-                    </Link>
-                  </h5>
-                </div>
-              </div>
-              <div className="col-lg-3  col-md-4 col-6 col-small">
-                <div className="feature-item d-flex flex-column justify-content-center align-items-center gap-3  wow fadeInDown delay-0-2s">
-                  <div className="icon icon-size">
-                    <img
-                      src="assets/images/projects/erp/dashboard.png"
-                      alt="Icon"
-                    />
-                  </div>
-                  <h5>
-                    <Link legacyBehavior href="service-details">
-                      Reporting & Analytics
+                      Compliance Management
                     </Link>
                   </h5>
                 </div>
@@ -416,7 +388,7 @@ const ProjectGrid = () => {
                     <div className="col-lg-4 fadeInUp">
                       <div className="why-choose-image fadeInUp rmb-55">
                         <img
-                          src="assets/images/projects/erp/Manufacturing.png"
+                          src="/assets/images/projects/hrms/Shared workspace-amico.png"
                           alt="Why Choose"
                           className="product-features-img"
                         />
@@ -424,14 +396,14 @@ const ProjectGrid = () => {
                     </div>
                     <div className="col-lg-8 fadeInUp">
                       <div className="why-choose-content fadeInUp">
-                        <h4>Production Management</h4>
+                        <h3>Employee Management</h3>
                         <p>
-                          Aims to optimize efficiency by implementing real-time
-                          monitoring and scheduling to streamline processes.
-                          This involves overseeing the tracking of raw
-                          materials, work-in-progress, and finished goods to
-                          ensure smooth operations throughout the production
-                          cycle
+                          Involves maintaining a centralized employee database
+                          to manage personnel information such as contact
+                          details, employment history, and performance reviews,
+                          along with providing an employee self-service portal
+                          for accessing personal information, submitting leave
+                          requests, and updating details.
                         </p>
                       </div>
                     </div>
@@ -440,12 +412,12 @@ const ProjectGrid = () => {
                   <div className="row gap-90   fadeInRight justify-content-center  align-items-center">
                     <div className="col-lg-8 fadeInRight order-lg-1 order-sm-2  order-2">
                       <div className="why-choose-content">
-                        <h3>Inventory Management</h3>
+                        <h3>Time & Attendance </h3>
                         <p>
-                          Involves optimizing inventory levels through advanced
-                          forecasting techniques to minimize stockouts,
-                          alongside managing multi-location warehouses and
-                          monitoring material movements.
+                          Tracking utilizes an automated system to record
+                          employee attendance, hours worked, and overtime, often
+                          integrating with biometric devices or mobile apps for
+                          accurate time capture.
                         </p>
                       </div>
                     </div>
@@ -453,7 +425,7 @@ const ProjectGrid = () => {
                     <div className="col-lg-4  fadeInRight order-lg-2 order-sm-1 order-1 ">
                       <div className="why-choose-image rmt-55">
                         <img
-                          src="assets/images/projects/erp/inventory.png"
+                          src="/assets/images/projects/hrms/Work time-cuate.png"
                           alt="Why Choose"
                           className="product-features-img"
                         />
@@ -465,7 +437,7 @@ const ProjectGrid = () => {
                     <div className="col-lg-4 fadeInUp">
                       <div className="why-choose-image rmb-55">
                         <img
-                          src="assets/images/projects/erp/Invoice-amico.png"
+                          src="/assets/images/projects/hrms/Office management-bro.png"
                           alt="Why Choose"
                           className="product-features-img"
                         />
@@ -473,12 +445,12 @@ const ProjectGrid = () => {
                     </div>
                     <div className="col-lg-8 fadeInUp">
                       <div className="why-choose-content">
-                        <h3>Order Processing</h3>
+                        <h3>Payroll Processing </h3>
                         <p>
-                          Entails seamlessly handling customer orders and
-                          overseeing order fulfillment operations, including the
-                          generation of invoices, packing slips, and shipping
-                          labels
+                          Includes comprehensive functionality to calculate
+                          salaries, deductions, and taxes accurately, along with
+                          automated payroll runs that cover direct deposit,
+                          check printing, and tax filing.
                         </p>
                       </div>
                     </div>
@@ -487,11 +459,13 @@ const ProjectGrid = () => {
                   <div className="row gap-90  fadeInRight justify-content-center  align-items-center">
                     <div className="col-lg-8 fadeInRight order-lg-1 order-sm-2  order-2">
                       <div className="why-choose-content">
-                        <h3>Supply Chain Integration</h3>
+                        <h3>Benefits Administration</h3>
                         <p>
-                          Facilitates collaboration with suppliers and
-                          distributors by tracking shipments, managing supplier
-                          performance, and optimizing procurement processes.
+                          Encompasses the management of employee benefits such
+                          as health insurance, retirement plans, and flexible
+                          spending accounts, including enrollment management,
+                          eligibility tracking, and employee self-service for
+                          benefits selection.
                         </p>
                       </div>
                     </div>
@@ -499,7 +473,7 @@ const ProjectGrid = () => {
                     <div className="col-lg-4 fadeInRight order-lg-2 order-sm-1 order-1 ">
                       <div className="why-choose-image rmt-55">
                         <img
-                          src="assets/images/projects/erp/Logistics-pana.png"
+                          src="/assets/images/projects/hrms/Work time-amico.png"
                           alt="Why Choose"
                           className="product-features-img "
                         />
@@ -511,7 +485,7 @@ const ProjectGrid = () => {
                     <div className="col-lg-4 fadeInUp">
                       <div className="why-choose-image rmb-55">
                         <img
-                          src="assets/images/projects/erp/Manufacturing.png"
+                          src="/assets/images/projects/hrms/Co-workers-pana.png"
                           alt="Why Choose"
                           className="product-features-img"
                         />
@@ -519,11 +493,13 @@ const ProjectGrid = () => {
                     </div>
                     <div className="col-lg-8 fadeInUp">
                       <div className="why-choose-content">
-                        <h3>Quality Control</h3>
+                        <h3>Performance Management</h3>
                         <p>
-                          Measures are implemented throughout the production
-                          process, including the capture and analysis of quality
-                          data to enhance product quality and compliance
+                          Involves implementing a performance appraisal system
+                          for setting goals, conducting evaluations, and
+                          providing feedback, supported by performance
+                          dashboards and analytics for tracking employee
+                          performance and identifying areas for improvement.
                         </p>
                       </div>
                     </div>
@@ -532,12 +508,12 @@ const ProjectGrid = () => {
                   <div className="row gap-90 fadeInRight  justify-content-center  align-items-center">
                     <div className="col-lg-8 fadeInRight order-lg-1 order-sm-2  order-2">
                       <div className="why-choose-content">
-                        <h3>Financial Management</h3>
+                        <h3>Compliance Management </h3>
                         <p>
-                          Automates processes such as invoicing, billing, and
-                          payment processing, while also generating financial
-                          reports like profit and loss statements and balance
-                          sheets
+                          Ensures adherence to labor laws, regulations, and
+                          company policies through automated compliance alerts
+                          and notifications, facilitating timely adherence to
+                          regulatory requirements.
                         </p>
                       </div>
                     </div>
@@ -545,7 +521,7 @@ const ProjectGrid = () => {
                     <div className="col-lg-4 fadeInRight order-lg-2 order-sm-1 order-1 ">
                       <div className="why-choose-image rmt-55">
                         <img
-                          src="assets/images/projects/erp/Financial data-amico.png"
+                          src="/assets/images/projects/hrms/Typing-pana.png"
                           alt="Why Choose"
                           className="product-features-img "
                         />
@@ -562,101 +538,85 @@ const ProjectGrid = () => {
                               <span className="sub-title mb-15">
                                 Business Benefits
                               </span>
-                              <h3 style={{ color: "#8758FF" }}>
+                              <h3 style={{ color: "#0D9276" }}>
                                 Unlocking Business Advantages
                               </h3>
                             </div>
                           </div>
-                          <div className="col-xl-6 col-md-6">
-                            <div className="benefits-item wow fadeInUp delay-0-4s">
-                              <div className="icon d-flex justify-content-center align-items-center px-4">
-                                <img
-                                  src="assets/images/projects/erp/time-management.png"
-                                  alt="Icon"
-                                />
-                              </div>
-                              <div className="content">
-                                <h4>
-                                  <Link legacyBehavior href="service-details">
-                                    Improved Efficiency
-                                  </Link>
-                                </h4>
-                                <p>
-                                  Streamline processes and eliminate manual
-                                  tasks to increase operational efficiency
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-xl-6 col-md-6">
-                            <div className="benefits-item wow fadeInUp delay-0-6s">
-                              <div className="icon d-flex justify-content-center align-items-center px-4">
-                                <img
-                                  src="assets/images/projects/erp/vision.png"
-                                  alt="Icon"
-                                />
-                              </div>
-                              <div className="content">
-                                <h4>
-                                  <Link legacyBehavior href="service-details">
-                                    Enhanced Visibility
-                                  </Link>
-                                </h4>
-                                <p>
-                                  Gain real-time insights into production,
-                                  inventory, and financial data for informed
-                                  decision-making.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-xl-6 col-md-6">
-                            <div className="benefits-item wow fadeInUp delay-0-3s">
-                              <div className="icon d-flex justify-content-center align-items-center px-4">
-                                <img
-                                  src="assets/images/projects/erp/costs.png"
-                                  alt="Icon"
-                                />
-                              </div>
-                              <div className="content">
-                                <h4>
-                                  <Link legacyBehavior href="service-details">
-                                    Cost Reduction
-                                  </Link>
-                                </h4>
-                                <p>
-                                  Optimize inventory levels, minimize stockouts,
-                                  and reduce production downtime to lower costs.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-xl-6 col-md-6">
-                            <div className="benefits-item wow fadeInUp delay-0-5s">
-                              <div className="icon d-flex justify-content-center align-items-center px-4">
-                                <img
-                                  src="assets/images/projects/erp/satisfaction.png"
-                                  alt="Icon"
-                                />
-                              </div>
-                              <div className="content">
-                                <h4>
-                                  <Link legacyBehavior href="service-details">
-                                    Increased Customer Satisfaction
-                                  </Link>
-                                </h4>
-                                <p>
-                                  Deliver products on time and meet quality
-                                  standards to enhance customer satisfaction.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
+
                           <div className="col-xl-6 col-md-6">
                             <div className="benefits-item wow fadeInUp delay-0-7s">
                               <div className="icon d-flex justify-content-center align-items-center px-4">
                                 <img
-                                  src="assets/images/projects/erp/approval.png"
+                                  src="/assets/images/projects/erp/statistics.png"
+                                  alt="Icon"
+                                />
+                              </div>
+                              <div className="content">
+                                <h4>
+                                  <Link legacyBehavior href="service-details">
+                                    Efficiency
+                                  </Link>
+                                </h4>
+                                <p>
+                                  Streamline HR processes, reduce manual tasks,
+                                  and improve overall efficiency
+                                </p>
+                              </div>
+                            </div>{" "}
+                          </div>
+
+                          <div className="col-xl-6 col-md-6">
+                            <div className="benefits-item wow fadeInUp delay-0-6s">
+                              <div className="icon d-flex justify-content-center align-items-center px-4">
+                                <img
+                                  src="/assets/images/projects/hrms/target.png"
+                                  alt="Icon"
+                                />
+                              </div>
+                              <div className="content">
+                                <h4>
+                                  <Link legacyBehavior href="service-details">
+                                    Accuracy
+                                  </Link>
+                                </h4>
+                                <p>
+                                  Minimize errors in payroll processing and
+                                  compliance management, ensuring accurate and
+                                  timely payments.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="col-xl-6 col-md-6">
+                            <div className="benefits-item wow fadeInUp delay-0-5s">
+                              <div className="icon d-flex justify-content-center align-items-center px-4">
+                                <img
+                                  src="/assets/images/projects/erp/satisfaction.png"
+                                  alt="Icon"
+                                />
+                              </div>
+                              <div className="content">
+                                <h4>
+                                  <Link legacyBehavior href="service-details">
+                                    Employee Satisfaction
+                                  </Link>
+                                </h4>
+                                <p>
+                                  Provide self-service options for employees,
+                                  empowering them to manage their information
+                                  and benefits.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="col-xl-6 col-md-6">
+                            <div className="benefits-item wow fadeInUp delay-0-7s">
+                              <div className="icon d-flex justify-content-center align-items-center px-4">
+                                <img
+                                  src="/assets/images/projects/erp/approval.png"
                                   alt="Icon"
                                 />
                               </div>
@@ -667,34 +627,57 @@ const ProjectGrid = () => {
                                   </Link>
                                 </h4>
                                 <p>
-                                  Ensure compliance with industry regulations
-                                  and standards, reducing the risk of penalties
-                                  and fines.
+                                  Ensure compliance with labor laws,
+                                  regulations, and industry standards, reducing
+                                  the risk of penalties and fines.
                                 </p>
                               </div>
                             </div>
                           </div>
+
                           <div className="col-xl-6 col-md-6">
-                            <div className="benefits-item wow fadeInUp delay-0-7s">
+                            <div className="benefits-item wow fadeInUp delay-0-3s">
                               <div className="icon d-flex justify-content-center align-items-center px-4">
                                 <img
-                                  src="assets/images/projects/erp/maximize.png"
+                                  src="/assets/images/projects/erp/costs.png"
                                   alt="Icon"
                                 />
                               </div>
                               <div className="content">
                                 <h4>
                                   <Link legacyBehavior href="service-details">
-                                    Scalability
+                                    Cost Savings
                                   </Link>
                                 </h4>
                                 <p>
-                                  Scale your operations seamlessly as your
-                                  business grows, with the flexibility to add
-                                  new features and modules.
+                                  Reduce administrative costs associated with HR
+                                  and payroll tasks
                                 </p>
                               </div>
-                            </div>{" "}
+                            </div>
+                          </div>
+
+                          <div className="col-xl-6 col-md-6">
+                            <div className="benefits-item wow fadeInUp delay-0-4s">
+                              <div className="icon d-flex justify-content-center align-items-center px-4">
+                                <img
+                                  src="/assets/images/projects/hrms/insight.png"
+                                  alt="Icon"
+                                />
+                              </div>
+                              <div className="content">
+                                <h4>
+                                  <Link legacyBehavior href="service-details">
+                                    Insightful Reporting
+                                  </Link>
+                                </h4>
+                                <p>
+                                  Access real-time data and analytics for
+                                  informed decision-making and strategic
+                                  workforce planning.
+                                </p>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -728,9 +711,9 @@ const ProjectGrid = () => {
                     <h2>Request a Demo Today</h2>
                     <span
                       className="sub-title  mb-10"
-                      style={{ color: "#" }}
+                      style={{ color: "#FA7070" }}
                     >
-                      Explore Our Textile & Garments Solutions
+                      Explore Our HR & Payroll Solutions
                     </span>
                   </div>
                 </div>

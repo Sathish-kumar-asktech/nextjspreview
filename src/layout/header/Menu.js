@@ -303,12 +303,12 @@ const DeskTopMenu = () => {
                 </Link>
               </li>
               <li>
-                <Link href="project-masonry" style={{ whiteSpace: "nowrap" }}>
+                <Link href="Target_SCM_Supply_Chain_Managements" style={{ whiteSpace: "nowrap" }}>
                   Target SCM - Supply Chain Management.
                 </Link>
               </li>
               <li>
-                <Link href="project-details" style={{ whiteSpace: "nowrap" }}>
+                <Link href="Target_HRMS_HR_and_Payroll_Solutions" style={{ whiteSpace: "nowrap" }}>
                   HRMS - Target HR & Payroll Solutions
                 </Link>
               </li>
