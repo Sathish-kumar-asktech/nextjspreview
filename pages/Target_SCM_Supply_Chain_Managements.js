@@ -217,7 +217,6 @@ const ProjectGrid = () => {
             </div>
           </DialogContent>
         </Dialog>
-
         <>
           <Button
             onClick={handleButtonClick}

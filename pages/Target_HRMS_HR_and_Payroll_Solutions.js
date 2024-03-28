@@ -93,17 +93,7 @@ const ProjectGrid = () => {
 
   return (
     <>
-      <Layout>
-        <div className="headShake">
-          <Button
-            onClick={handleButtonClick}
-            variant="contained"
-            color="warning"
-            className="sticky-button headShake sticky-button-container"
-          >
-            Quick Enquiry
-          </Button>
-        </div>
+      <Layout>       
         <Dialog open={open} onClose={handleClose} maxWidth={"lg"}>
           <DialogContent className="bg-white p-0 m-0 ">
             <div className="form-style-two bg-white ">
@@ -227,7 +217,15 @@ const ProjectGrid = () => {
             </div>
           </DialogContent>
         </Dialog>
-
+        <>
+          <Button
+            onClick={handleButtonClick}
+            variant="contained"
+            color="warning"
+            className="sticky-button headShake sticky-button-container"
+          >
+            Quick Enquiry
+          </Button>
         <section className="project-grid-area rel z-2 py-50 rpy-100">
           <div className="container">
             <div className="row justify-content-center">
@@ -840,6 +838,7 @@ const ProjectGrid = () => {
           </Container>
         </section>
         {/* Contact Form Section End */}
+        </>
       </Layout>
     </>
   );
