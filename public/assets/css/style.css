@@ -6241,8 +6241,9 @@ h6,
 .service-item.style-three .icon {
   line-height: 1;
   font-size: 85px;
-  margin-bottom: 20px;
-  color: var(--secondary-color);
+  margin-bottom: 20px;  
+  color: #219C90;
+  /* color: var(--secondary-color); */
 }
 .service-item.style-three h4 {
   margin-bottom: 15px;
@@ -6819,8 +6820,9 @@ h6,
   line-height: 1;
   font-size: 50px;
   margin-bottom: 22px;
-  display: inline-block;
-  color: var(--secondary-color);
+  display: inline-block;  
+  color: #219C90;
+  /* color: var(--secondary-color); */
 }
 .service-item-six h4 {
   font-size: 24px;
@@ -11399,6 +11401,12 @@ blockquote .name:before {
 
 .text-gradient-title2 {
   background: -webkit-linear-gradient(#2c839e, #583bcb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-title3 {
+  background: -webkit-linear-gradient(#92cd39, #15bb9f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

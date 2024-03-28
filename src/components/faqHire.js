@@ -35,7 +35,7 @@ const defaultAccordionData = [
 ];
 
 const FaqHire = ({ defaultActive, accordions, accordionsData }) => {
-  const [active, setActive] = useState(defaultActive ? defaultActive : 2);
+  const [active, setActive] = useState(defaultActive ? defaultActive : 0);
   const [data, setData] = useState(
     accordionsData ? accordionsData : defaultAccordionData
   );

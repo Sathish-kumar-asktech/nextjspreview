@@ -51,7 +51,6 @@ const icons = [
   "apple.png",
   "android-icon.webp",
   "aws.png",
-  "flutter.png",
   "flutter.svg",
 ];
 
@@ -1646,16 +1645,17 @@ const Index = () => {
                   <div className="col-lg-12 my-4">
                     <div className="section-title mb-55 container wow fadeInUp delay-0-2s">
                       {/* <span className="sub-title mb-15" style={{fontFamily:'oswald'}} >Our Tech Stack</span> */}
-                      <h3
+                      <h2
                         style={{
                           textAlign: "center",
-                          fontFamily: "Play",
+                          fontFamily: "oswald",
                           color: "#007F73",
                         }}
+                        className="text-gradient-title2"
                       >
                         Explore the robust technologies we master, powering our
                         innovative solutions and driving digital transformation
-                      </h3>
+                      </h2>
                       <span className="bg-text">TECHNOLOGY</span>
                     </div>
                   </div>

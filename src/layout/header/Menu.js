@@ -111,17 +111,25 @@ const MobileMenu = () => {
               </a>
               <ul style={activeSubMenu("Project")}>
                 <li>
-                  <Link href="project-grid">
+                  <Link
+                    href="erp-for-textiles-and-garments"                    
+                  >
                     ERP for Textile & Garment Industries{" "}
                   </Link>
                 </li>
                 <li>
-                  <Link href="project-masonry">
+                  <Link
+                    href="Target_SCM_Supply_Chain_Managements"
+                    
+                  >
                     Target SCM - Supply Chain Management.
                   </Link>
                 </li>
                 <li>
-                  <Link href="project-details">
+                  <Link
+                    href="Target_HRMS_HR_and_Payroll_Solutions"
+                    
+                  >
                     HRMS - Target HR & Payroll Solutions
                   </Link>
                 </li>
@@ -192,15 +200,28 @@ const MobileMenu = () => {
             </li>
 
             <li className="dropdown">
-              <a href="#" onClick={() => active("blog")}>
+              <a href="#" onClick={() => active("contact")}>
                 Contact Us
               </a>
-              <ul style={activeSubMenu("blog")}>
+              <ul style={activeSubMenu("contact")}>
                 <li>
-                  <Link href="blog">Contact Us</Link>
+                  <Link href="contact">Contact Us</Link>
                 </li>
               </ul>
-              <div className="dropdown-btn" onClick={() => active("blog")}>
+              <div className="dropdown-btn" onClick={() => active("contact")}>
+                <span className="fas fa-chevron-down" />
+              </div>
+            </li>
+            <li className="dropdown">
+              <a href="#" onClick={() => active("hire_a_developer")}>
+                Hire a Developer
+              </a>
+              <ul style={activeSubMenu("hire_a_developer")}>
+                <li>
+                  <Link href="hire_a_developer">Hire a Developer</Link>
+                </li>
+              </ul>
+              <div className="dropdown-btn" onClick={() => active("hire_a_developer")}>
                 <span className="fas fa-chevron-down" />
               </div>
             </li>
@@ -298,17 +319,26 @@ const DeskTopMenu = () => {
             <a href="#">Products</a>
             <ul>
               <li>
-                <Link href="erp-for-textiles-and-garments" style={{ whiteSpace: "nowrap" }}>
+                <Link
+                  href="erp-for-textiles-and-garments"
+                  style={{ whiteSpace: "nowrap" }}
+                >
                   ERP for Textile & Garment Industries{" "}
                 </Link>
               </li>
               <li>
-                <Link href="Target_SCM_Supply_Chain_Managements" style={{ whiteSpace: "nowrap" }}>
+                <Link
+                  href="Target_SCM_Supply_Chain_Managements"
+                  style={{ whiteSpace: "nowrap" }}
+                >
                   Target SCM - Supply Chain Management.
                 </Link>
               </li>
               <li>
-                <Link href="Target_HRMS_HR_and_Payroll_Solutions" style={{ whiteSpace: "nowrap" }}>
+                <Link
+                  href="Target_HRMS_HR_and_Payroll_Solutions"
+                  style={{ whiteSpace: "nowrap" }}
+                >
                   HRMS - Target HR & Payroll Solutions
                 </Link>
               </li>
