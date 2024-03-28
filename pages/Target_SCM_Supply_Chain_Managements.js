@@ -686,7 +686,6 @@ const ProjectGrid = () => {
               </div>
             </Container>
           </section>
-
           {/* Contact Form Section Start */}
           <section
             className="contact-form-area py-50 pb-100 px-3  rpy-100  mb-4 bgs-cover"
